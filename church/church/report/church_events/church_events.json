@@ -1,0 +1,29 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-09-04 21:18:41.262983",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"Church Event\"],[\"event_name\",\"Church Event\"],[\"type\",\"Church Event\"]],\"order_by\":\"`tabChurch Event`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":341,\"event_name\":125,\"type\":235},\"group_by\":null}",
+ "letterhead": null,
+ "modified": "2025-09-04 21:58:14.950121",
+ "modified_by": "Administrator",
+ "module": "Church",
+ "name": "Church Events",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Church Event",
+ "report_name": "Church Events",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

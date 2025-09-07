@@ -1,0 +1,50 @@
+[
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Event Type",
+  "modified": "2025-09-01 00:59:38.988367",
+  "name": "Sunday Evening Service",
+  "type": "Sunday Evening Service"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Event Type",
+  "modified": "2025-09-01 01:00:17.100333",
+  "name": "Prayer Meeting",
+  "type": "Prayer Meeting"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Event Type",
+  "modified": "2025-09-01 01:00:31.063673",
+  "name": "Baptism",
+  "type": "Baptism"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Event Type",
+  "modified": "2025-09-01 01:00:51.578037",
+  "name": "Communion",
+  "type": "Communion"
+ },
+ {
+  "description": "",
+  "docstatus": 0,
+  "doctype": "Church Event Type",
+  "modified": "2025-09-01 01:01:46.102984",
+  "name": "Business Meeting",
+  "type": "Business Meeting"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Event Type",
+  "modified": "2025-09-01 00:59:49.876562",
+  "name": "Sunday Morning Service",
+  "type": "Sunday Morning Service"
+ }
+]

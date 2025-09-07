@@ -1,0 +1,19 @@
+{
+ "action": "Create Entry",
+ "creation": "2025-09-01 01:21:35.262713",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2025-09-01 01:21:35.262713",
+ "modified_by": "Administrator",
+ "name": "Church Family",
+ "owner": "Administrator",
+ "reference_document": "Church Family",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Add families that are represented in your church.",
+ "validate_action": 1
+}

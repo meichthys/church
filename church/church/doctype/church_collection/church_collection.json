@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{date}",
+ "creation": "2025-09-02 00:47:02.825073",
+ "description": "A specific collection of `Church Donation`s that are generally from `Church Person`s and associated with a specific `Church Event`s.",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "event",
+  "column_break_ijpy",
+  "total_amount",
+  "section_break_izta",
+  "donations"
+ ],
+ "fields": [
+  {
+   "description": "The `Church Event` associated with this collection.",
+   "fieldname": "event",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Event",
+   "options": "Church Event"
+  },
+  {
+   "default": "now",
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_izta",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "For 'anonymous' donations, enter the total amount and leave `Person` and `Check #` blank. To apply a single check to multiple funds, create another donation record with the same check number. The `Bank Reconciliation Report` will combine the separate donations together for easier reconciliation with bank statements.",
+   "fieldname": "donations",
+   "fieldtype": "Table",
+   "label": "Donations",
+   "options": "Church Donation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ijpy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Amount",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-04 23:45:50.511534",
+ "modified_by": "Administrator",
+ "module": "Church",
+ "name": "Church Collection",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

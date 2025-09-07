@@ -1,0 +1,21 @@
+{
+ "action": "Create Entry",
+ "action_label": "",
+ "creation": "2025-09-01 01:20:15.914066",
+ "description": "",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2025-09-01 01:28:40.000011",
+ "modified_by": "Administrator",
+ "name": "Church Person",
+ "owner": "Administrator",
+ "reference_document": "Church Person",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Add people that attend your church.",
+ "validate_action": 1
+}

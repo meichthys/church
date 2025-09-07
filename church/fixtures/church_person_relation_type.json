@@ -1,0 +1,194 @@
+[
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.640635",
+  "name": "Wife",
+  "relation_type": "Wife"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.653758",
+  "name": "Uncle",
+  "relation_type": "Uncle"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.657867",
+  "name": "Stepsister",
+  "relation_type": "Stepsister"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.661456",
+  "name": "Stepmother",
+  "relation_type": "Stepmother"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.665259",
+  "name": "Stepfather",
+  "relation_type": "Stepfather"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.669379",
+  "name": "Stepbrother",
+  "relation_type": "Stepbrother"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.673111",
+  "name": "Son",
+  "relation_type": "Son"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.676676",
+  "name": "Sister-in-law",
+  "relation_type": "Sister-in-law"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.680119",
+  "name": "Niece",
+  "relation_type": "Niece"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.683478",
+  "name": "Nephew",
+  "relation_type": "Nephew"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.687305",
+  "name": "Mother-in-law",
+  "relation_type": "Mother-in-law"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.691750",
+  "name": "Husband",
+  "relation_type": "Husband"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.695315",
+  "name": "Grandson",
+  "relation_type": "Grandson"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.698809",
+  "name": "Grandmother",
+  "relation_type": "Grandmother"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.702102",
+  "name": "Grandfather",
+  "relation_type": "Grandfather"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.705686",
+  "name": "Granddaughter",
+  "relation_type": "Granddaughter"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.710246",
+  "name": "Father-in-law",
+  "relation_type": "Father-in-law"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.713876",
+  "name": "Daughter",
+  "relation_type": "Daughter"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.717387",
+  "name": "Brother-in-law",
+  "relation_type": "Brother-in-law"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.721712",
+  "name": "Aunt",
+  "relation_type": "Aunt"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.726072",
+  "name": "Father",
+  "relation_type": "Father"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.730197",
+  "name": "Mother",
+  "relation_type": "Mother"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:24:08.733999",
+  "name": "Sister",
+  "relation_type": "Sister"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:30:00.557230",
+  "name": "Brother",
+  "relation_type": "Brother"
+ }
+]
