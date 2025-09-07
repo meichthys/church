@@ -2,7 +2,7 @@
  "charts": [
   {
    "chart_name": "Church Collections",
-   "label": "Church Collections by Week"
+   "label": "Church Collections"
   },
   {
    "chart_name": "New Church Members",
@@ -13,7 +13,7 @@
    "label": "Chuch Persons"
   }
  ],
- "content": "[{\"id\":\"NSqchc_eQ4\",\"type\":\"onboarding\",\"data\":{\"onboarding_name\":\"Church\",\"col\":12}},{\"id\":\"IJrKjV4okF\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Church Persons\",\"col\":4}},{\"id\":\"KKEzrzUrHD\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Church Members\",\"col\":4}},{\"id\":\"kGIFAvXSgO\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Church Families\",\"col\":4}},{\"id\":\"saevJoJvF7\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Chuch Persons\",\"col\":6}},{\"id\":\"Pump9_CfUX\",\"type\":\"chart\",\"data\":{\"chart_name\":\"New Church Members\",\"col\":6}},{\"id\":\"-u9DfoTPbG\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Church Collections by Week\",\"col\":12}},{\"id\":\"nN5R0rrK8W\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"PjWabbxTec\",\"type\":\"card\",\"data\":{\"card_name\":\"People\",\"col\":4}},{\"id\":\"TDh-inBJuc\",\"type\":\"card\",\"data\":{\"card_name\":\"Events\",\"col\":4}},{\"id\":\"Xwvf2HyJiA\",\"type\":\"card\",\"data\":{\"card_name\":\"Collections\",\"col\":4}},{\"id\":\"ssO7yMeqJ9\",\"type\":\"card\",\"data\":{\"card_name\":\"Person Reports\",\"col\":4}},{\"id\":\"Rbw38py5Jn\",\"type\":\"card\",\"data\":{\"card_name\":\"Event Reports\",\"col\":4}},{\"id\":\"m34hRRgTkK\",\"type\":\"card\",\"data\":{\"card_name\":\"Collection Reports\",\"col\":4}},{\"id\":\"l_H4g7YzJQ\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "content": "[{\"id\":\"NSqchc_eQ4\",\"type\":\"onboarding\",\"data\":{\"onboarding_name\":\"Church\",\"col\":12}},{\"id\":\"IJrKjV4okF\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Church Persons\",\"col\":4}},{\"id\":\"KKEzrzUrHD\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Church Members\",\"col\":4}},{\"id\":\"kGIFAvXSgO\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Church Families\",\"col\":4}},{\"id\":\"saevJoJvF7\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Chuch Persons\",\"col\":6}},{\"id\":\"Pump9_CfUX\",\"type\":\"chart\",\"data\":{\"chart_name\":\"New Church Members\",\"col\":6}},{\"id\":\"MmG7zVkZbr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Church Collections\",\"col\":12}},{\"id\":\"nN5R0rrK8W\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"PjWabbxTec\",\"type\":\"card\",\"data\":{\"card_name\":\"People\",\"col\":4}},{\"id\":\"TDh-inBJuc\",\"type\":\"card\",\"data\":{\"card_name\":\"Events\",\"col\":4}},{\"id\":\"Xwvf2HyJiA\",\"type\":\"card\",\"data\":{\"card_name\":\"Collections\",\"col\":4}},{\"id\":\"ssO7yMeqJ9\",\"type\":\"card\",\"data\":{\"card_name\":\"Person Reports\",\"col\":4}},{\"id\":\"Rbw38py5Jn\",\"type\":\"card\",\"data\":{\"card_name\":\"Event Reports\",\"col\":4}},{\"id\":\"m34hRRgTkK\",\"type\":\"card\",\"data\":{\"card_name\":\"Collection Reports\",\"col\":4}},{\"id\":\"l_H4g7YzJQ\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
  "creation": "2025-08-22 00:39:02.127277",
  "custom_blocks": [],
  "docstatus": 0,
@@ -289,7 +289,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-09-05 01:24:18.348279",
+ "modified": "2025-09-07 00:56:10.942011",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church",
