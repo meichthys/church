@@ -63,6 +63,7 @@ Hopefully this roadmap will help avoid too much scope creep and provide a sense 
 - Auto add spouse to `Church Person`s relationships
 - Event templating/recurrence
   - Templating via `Church Event Type` default values table(?)
+- Add table to `Church Family` form to show current members
 
 ### 🤝 Contributing
 
