@@ -29,8 +29,14 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-09-04 23:56:57.935045",
+ "links": [
+  {
+   "link_doctype": "Church Collection",
+   "link_fieldname": "payment_type",
+   "table_fieldname": "donations"
+  }
+ ],
+ "modified": "2025-09-08 23:05:24.312342",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church Payment Type",

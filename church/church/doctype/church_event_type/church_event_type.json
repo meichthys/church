@@ -30,8 +30,13 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-09-04 23:59:26.837133",
+ "links": [
+  {
+   "link_doctype": "Church Event",
+   "link_fieldname": "type"
+  }
+ ],
+ "modified": "2025-09-08 23:01:03.227258",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church Event Type",

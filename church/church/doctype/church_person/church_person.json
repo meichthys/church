@@ -40,7 +40,7 @@
   "anniversary",
   "spouse",
   "column_break_fkwj",
-  "table_relations",
+  "relationships",
   "notes_tab",
   "notes"
  ],
@@ -150,14 +150,6 @@
    "label": "Is Head of Household"
   },
   {
-   "allow_in_quick_entry": 1,
-   "description": "Note: Relations are not automatically reciprocal. (i.e. If you are editing 'Mark' and add 'Jane' as 'Sister', Jane's record will not automatically be updated to show 'Mark' as 'Brother'. ",
-   "fieldname": "table_relations",
-   "fieldtype": "Table",
-   "label": "Notable Relationships",
-   "options": "Church Person Relation"
-  },
-  {
    "fieldname": "photo",
    "fieldtype": "Attach Image",
    "label": "Photo"
@@ -188,7 +180,8 @@
    "fieldtype": "Link",
    "label": "Membership Status",
    "mandatory_depends_on": "eval:doc.is_member",
-   "options": "Church Member Status Type"
+   "options": "Church Member Status Type",
+   "search_index": 1
   },
   {
    "default": "0",
@@ -253,13 +246,21 @@
    "fieldname": "notes",
    "fieldtype": "Text Editor",
    "label": "Notes"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "description": "Note: Relations are not automatically reciprocal. (i.e. If you are editing 'Mark' and add 'Jane' as 'Sister', Jane's record will not automatically be updated to show 'Mark' as 'Brother'. ",
+   "fieldname": "relationships",
+   "fieldtype": "Table",
+   "label": "Notable Relationships",
+   "options": "Church Person Relation"
   }
  ],
  "grid_page_length": 50,
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-06 01:12:17.688813",
+ "modified": "2025-09-08 23:12:28.638350",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church Person",

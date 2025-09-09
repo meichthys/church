@@ -29,8 +29,14 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-09-05 00:00:05.160645",
+ "links": [
+  {
+   "link_doctype": "Church Event",
+   "link_fieldname": "attendance_type",
+   "table_fieldname": "attendance"
+  }
+ ],
+ "modified": "2025-09-08 22:59:01.439172",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church Event Attendance Type",

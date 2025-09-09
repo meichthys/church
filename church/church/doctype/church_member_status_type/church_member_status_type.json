@@ -36,8 +36,13 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-09-05 00:01:44.911284",
+ "links": [
+  {
+   "link_doctype": "Church Person",
+   "link_fieldname": "membership_status"
+  }
+ ],
+ "modified": "2025-09-08 22:47:26.542488",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church Member Status Type",

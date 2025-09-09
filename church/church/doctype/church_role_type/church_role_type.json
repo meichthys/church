@@ -29,8 +29,14 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-09-05 00:01:13.708323",
+ "links": [
+  {
+   "link_doctype": "Church Person",
+   "link_fieldname": "role",
+   "table_fieldname": "church_roles"
+  }
+ ],
+ "modified": "2025-09-08 23:08:20.626294",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church Role Type",
