@@ -15,6 +15,8 @@ frappe.ui.form.on("Church Person", {
 	before_save(frm) {
 		// Call ensure_single_head_of_household
 		frm.call("ensure_single_head_of_household");
+		// Call add_spouse_to_relationships
+		frm.call("add_spouse_to_relationships");
 	},
 	after_save(frm) {
 		frm.call("update_is_current_role")

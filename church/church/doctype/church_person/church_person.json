@@ -12,6 +12,7 @@
   "first_name",
   "last_name",
   "full_name",
+  "gender",
   "column_break_agva",
   "photo",
   "birthday",
@@ -254,13 +255,20 @@
    "fieldtype": "Table",
    "label": "Notable Relationships",
    "options": "Church Person Relation"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-08 23:12:28.638350",
+ "modified": "2025-09-08 23:37:58.374411",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church Person",

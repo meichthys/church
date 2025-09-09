@@ -42,10 +42,9 @@ After the above installation and a WebUI reload, you should see the `Church` app
 
 Hopefully this roadmap will help avoid too much scope creep and provide a sense of where this project is headed. The items below are listed in order of current priority.
 
-- Collection Improvements
-  - Make collections submittable(?)
 - Add Onboarding Tours
   - Add 'Tutorial' button to each doctype form
+- Ministry tracking
 - Fund Tracking
   - Update fund balance after collection submission
 - Add standard church website pages:
@@ -55,12 +54,12 @@ Hopefully this roadmap will help avoid too much scope creep and provide a sense 
   - Beliefs/Statement of Faith
   - Calendar
   - Contact Us
+- Collection Improvements
+  - Make collections submittable(?)
 - Add portal for `Church Person`s
   - Show tracked giving
   - Show tracked attendance
     - Allow updating attendance status(?)
-- Ministry tracking
-- Auto add spouse to `Church Person`s relationships
 - Event templating/recurrence
   - Templating via `Church Event Type` default values table(?)
 - Add table to `Church Family` form to show current members

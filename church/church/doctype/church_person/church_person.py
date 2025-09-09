@@ -14,14 +14,42 @@ class ChurchPerson(Document):
 		self.full_name = f"{self.first_name} {self.last_name}"
 
 	@frappe.whitelist()
-	def new_family_from_person(self):
-		doc = frappe.new_doc("Church Family")
-		doc.family_name = self.last_name
-		doc.save()
-		self.set("family", doc)
+	def add_spouse_to_relationships(self):
+		if not self.spouse:
+			return
+		self.spouse_doc = frappe.get_doc("Church Person", self.spouse, for_update=True)
+		# Determine relationship type based on gender
+		if self.spouse_doc.gender == "Male":
+			spouse_relationship_type = "Wife"
+			relationship_type = "Husband"
+		elif self.spouse_doc.gender == "Female":
+			spouse_relationship_type = "Husband"
+			relationship_type = "Wife"
+		else:
+			frappe.throw(__(f"Invalid spouse gender: {self.spouse_doc.gender}"))
+
+		spouse_doc = frappe.get_doc("Church Person", self.spouse)
+		spouse_doc.db_set("is_married", True)
+		spouse_doc.db_set("spouse", self.name)
+		already_exists = False
+		if spouse_doc.relationships:
+			for spouse_relationship in spouse_doc.relationships:
+				if spouse_relationship.relation_type == spouse_relationship_type and spouse_relationship.church_person == self.name:
+					already_exists = True
+		if not already_exists:
+			spouse_doc.append("relationships", {"church_person": self.name, "relation_type": spouse_relationship_type})
+		spouse_doc.save()
+
+		already_exists = False
+		if self.relationships:
+			for self_relationship in self.relationships:
+				if self_relationship.relation_type == relationship_type and self_relationship.church_person == spouse_doc.name:
+					already_exists = True
+		if not already_exists:
+			self.append("relationships", {"church_person": spouse_doc.name, "relation_type": relationship_type})
 		self.save()
-		self.reload()
-		frappe.msgprint(f"New family created: {doc.family_name}")
+		frappe.msgprint("✅ Spousal relationships have been synced between spouses.")
+
 
 	@frappe.whitelist()
 	def ensure_single_head_of_household(self):
@@ -46,6 +74,16 @@ class ChurchPerson(Document):
 					# )
 					head_doc.is_head_of_household = False
 					head_doc.save()
+
+	@frappe.whitelist()
+	def new_family_from_person(self):
+		doc = frappe.new_doc("Church Family")
+		doc.family_name = self.last_name
+		doc.save()
+		self.set("family", doc)
+		self.save()
+		self.reload()
+		frappe.msgprint(f"New family created: {doc.family_name}")
 
 	@frappe.whitelist()
 	def update_is_current_role(self):
