@@ -11,48 +11,11 @@ class ChurchPerson(Document):
 	def before_save(self):
 		# We set this here since virtual fields do not work with
 		#   View Settings -> Title Field as of 2025-08-26
-		self.full_name = f"{self.first_name} {self.last_name}"
+		self.full_name = f"{self.first_name}" + (
+			(" " + self.last_name) if self.last_name else ""
+		)
 
-	@frappe.whitelist()
-	def add_spouse_to_relationships(self):
-		if not self.spouse:
-			return
-		self.spouse_doc = frappe.get_doc("Church Person", self.spouse, for_update=True)
-		# Determine relationship type based on gender
-		if self.spouse_doc.gender == "Male":
-			spouse_relationship_type = "Wife"
-			relationship_type = "Husband"
-		elif self.spouse_doc.gender == "Female":
-			spouse_relationship_type = "Husband"
-			relationship_type = "Wife"
-		else:
-			frappe.throw(__(f"Invalid spouse gender: {self.spouse_doc.gender}"))
-
-		spouse_doc = frappe.get_doc("Church Person", self.spouse)
-		spouse_doc.db_set("is_married", True)
-		spouse_doc.db_set("spouse", self.name)
-		already_exists = False
-		if spouse_doc.relationships:
-			for spouse_relationship in spouse_doc.relationships:
-				if spouse_relationship.relation_type == spouse_relationship_type and spouse_relationship.church_person == self.name:
-					already_exists = True
-		if not already_exists:
-			spouse_doc.append("relationships", {"church_person": self.name, "relation_type": spouse_relationship_type})
-		spouse_doc.save()
-
-		already_exists = False
-		if self.relationships:
-			for self_relationship in self.relationships:
-				if self_relationship.relation_type == relationship_type and self_relationship.church_person == spouse_doc.name:
-					already_exists = True
-		if not already_exists:
-			self.append("relationships", {"church_person": spouse_doc.name, "relation_type": relationship_type})
-		self.save()
-		frappe.msgprint("✅ Spousal relationships have been synced between spouses.")
-
-
-	@frappe.whitelist()
-	def ensure_single_head_of_household(self):
+	def validate(self):
 		if self.is_head_of_household:
 			old_heads_of_household = frappe.db.get_all(
 				doctype="Church Person",
@@ -65,15 +28,33 @@ class ChurchPerson(Document):
 			if old_heads_of_household:
 				for head in old_heads_of_household:
 					head_doc = frappe.get_doc("Church Person", head["name"])
-					# ToDo: It may be good to display a message that we are
-					#   changing these documents. For some reason frappe.msgprint
-					#   seems to only return an empty message here:
-					# frappe.msgprint(
-					# 	f"A Head of Household for '{self.family}' was already set.\n"
-					# 	f"{head_doc.name} was removed from being Head of Household for '{self.family}'"
-					# )
+					frappe.msgprint(
+						f"ℹ️ {head_doc.full_name} was removed from being the head of this household."
+					)
 					head_doc.is_head_of_household = False
 					head_doc.save()
+
+		# Sync spouses
+		if self.spouse:
+			# Sync spouses
+			spouse = frappe.get_doc("Church Person", self.spouse)
+			if spouse.spouse != self.name:
+				frappe.db.set_value("Church Person", spouse.name, "spouse", self.name)
+				frappe.db.set_value("Church Person", spouse.name, "is_married", True)
+				frappe.msgprint(
+					f"Spouses have been linked:<br>"
+					f"{self.full_name} 👩‍❤️‍👨 {spouse.full_name}"
+				)
+		else:
+			if self._doc_before_save.spouse:
+				spouse = frappe.get_doc("Church Person", self._doc_before_save.spouse)
+				frappe.db.set_value("Church Person", spouse.name, "is_married", False)
+				frappe.db.set_value("Church Person", spouse.name, "spouse", None)
+				self.is_married = False
+				frappe.msgprint(
+					f"Spouses have been unlinked:<br>"
+					f"{self.full_name} 💔 {spouse.full_name}"
+				)
 
 	@frappe.whitelist()
 	def new_family_from_person(self):
@@ -92,7 +73,10 @@ class ChurchPerson(Document):
 				frappe.utils.get_datetime(role.start_date)
 				< datetime.now()
 				< frappe.utils.get_datetime(role.end_date)
-			) or (not role.end_date and frappe.utils.get_datetime(role.start_date) < datetime.now()):
+			) or (
+				not role.end_date
+				and frappe.utils.get_datetime(role.start_date) < datetime.now()
+			):
 				role.is_current_role = 1
 			else:
 				role.is_current_role = 0
