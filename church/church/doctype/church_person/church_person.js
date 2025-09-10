@@ -3,10 +3,12 @@
 
 frappe.ui.form.on("Church Person", {
 	refresh(frm) {
-		// Add 'New Family From Person' button
-		frm.add_custom_button(__('New Family From Person'), function () {
-			frm.call("new_family_from_person")
-		});
+		// Add 'New Family From Person' button if Last Name is populated
+		if (frm.doc.last_name) {
+			frm.add_custom_button(__('New Family From Person'), function () {
+				frm.call("new_family_from_person")
+			})
+		};
 		// Add 'Church Person Tour' button
 		frm.add_custom_button(__('Tutorial'), function () {
 			frm.tour.init("Church Person").then(() => frm.tour.start());
