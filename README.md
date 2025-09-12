@@ -26,7 +26,7 @@ The following features have been implemented in this app (see the [🗺️ Roadm
 
 ### 📥 Installation
 
-To use this app, you must have a working Frappe environment. The easiest way to get a working Frappe environment is to use [Frappe Cloud](https://frappe.io/cloud). For a few dollars per month you can run an instance in the cloud. To self-host an instance on a home pc or server, you can use [frappe-manager](https://github.com/rtcamp/frappe-manager) to quickly setup a local frappe instance. Making a local instance of frappe accessible from outside of your network is currentlyl out of the scope of this project, but with some persistence and some technical expertise, it shouldn't be too difficult.
+To use this app, you must have a working Frappe environment. The easiest way to get a working Frappe environment is to use [Frappe Cloud](https://frappe.io/cloud). For a few dollars per month you can run an instance in the cloud. To self-host an instance on a home pc or server, you can use [frappe-manager](https://github.com/rtcamp/frappe-manager) to quickly setup a local frappe instance. Making a local instance of frappe accessible from outside of your network is currently out of the scope of this project, but with some persistence and some technical expertise, it shouldn't be too difficult.
 
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
