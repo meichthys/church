@@ -94,8 +94,18 @@ fixtures = [
 		"filters": [["status", "in", ("Inactive", "Active")]],
 	},
 	{
+		"dt": "Church Prayer Request Status",
+		"filters": [["status", "in", ("Answered", "Intercession", "Requested")]],
+	},
+	{
+		"dt": "Church Prayer Request Type",
+		"filters": [["type", "in", ("Health", "Praise", "Salvation", "Unspoken")]],
+	},
+	{
 		"dt": "Church Role Type",
-		"filters": [["role", "in", ("Deacon", "Elder", "Pastor", "Secretary", "Treasurer")]],
+		"filters": [
+			["role", "in", ("Deacon", "Elder", "Pastor", "Secretary", "Treasurer")]
+		],
 	},
 	{
 		"dt": "Dashboard Chart",

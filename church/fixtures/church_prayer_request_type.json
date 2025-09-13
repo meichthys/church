@@ -1,0 +1,34 @@
+[
+ {
+  "description": "A praise (not a request for prayer)",
+  "docstatus": 0,
+  "doctype": "Church Prayer Request Type",
+  "modified": "2025-09-13 01:26:17.502213",
+  "name": "Praise",
+  "type": "Praise"
+ },
+ {
+  "description": "Related to the health of a `Church Person`",
+  "docstatus": 0,
+  "doctype": "Church Prayer Request Type",
+  "modified": "2025-09-13 01:26:40.182238",
+  "name": "Health",
+  "type": "Health"
+ },
+ {
+  "description": "Related to an unspecified topic",
+  "docstatus": 0,
+  "doctype": "Church Prayer Request Type",
+  "modified": "2025-09-13 01:27:48.604973",
+  "name": "Unspoken",
+  "type": "Unspoken"
+ },
+ {
+  "description": "Related to the salvation of a `Church Person`",
+  "docstatus": 0,
+  "doctype": "Church Prayer Request Type",
+  "modified": "2025-09-13 01:28:48.259192",
+  "name": "Salvation",
+  "type": "Salvation"
+ }
+]

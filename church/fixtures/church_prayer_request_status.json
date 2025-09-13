@@ -1,0 +1,26 @@
+[
+ {
+  "description": "The prayer request has been requested",
+  "docstatus": 0,
+  "doctype": "Church Prayer Request Status",
+  "modified": "2025-09-13 00:49:39.116401",
+  "name": "Requested",
+  "status": "Requested"
+ },
+ {
+  "description": "The prayer request has been answered",
+  "docstatus": 0,
+  "doctype": "Church Prayer Request Status",
+  "modified": "2025-09-13 00:49:57.973400",
+  "name": "Answered",
+  "status": "Answered"
+ },
+ {
+  "description": "The prayer request is being prayed for",
+  "docstatus": 0,
+  "doctype": "Church Prayer Request Status",
+  "modified": "2025-09-13 00:51:54.820822",
+  "name": "Intercession",
+  "status": "Intercession"
+ }
+]
