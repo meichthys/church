@@ -4,13 +4,13 @@
    "role": "Administrator"
   }
  ],
- "creation": "2025-09-01 01:22:49.239262",
+ "creation": "2025-09-07 00:14:45.033193",
  "docstatus": 0,
  "doctype": "Module Onboarding",
  "documentation_url": "https://github.com/meichthys/church",
  "idx": 0,
  "is_complete": 0,
- "modified": "2025-09-03 00:16:21.639005",
+ "modified": "2025-09-13 01:21:17.537153",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church",
@@ -24,6 +24,9 @@
   },
   {
    "step": "Church Event"
+  },
+  {
+   "step": "Church Prayer Request"
   }
  ],
  "subtitle": "People, Families, Events, Ministries, and more...",
