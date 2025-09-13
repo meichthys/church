@@ -24,14 +24,6 @@
   "type": "Baptism"
  },
  {
-  "description": null,
-  "docstatus": 0,
-  "doctype": "Church Event Type",
-  "modified": "2025-09-01 01:00:51.578037",
-  "name": "Communion",
-  "type": "Communion"
- },
- {
   "description": "",
   "docstatus": 0,
   "doctype": "Church Event Type",
@@ -46,5 +38,13 @@
   "modified": "2025-09-01 00:59:49.876562",
   "name": "Sunday Morning Service",
   "type": "Sunday Morning Service"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Event Type",
+  "modified": "2025-09-01 01:00:51.578037",
+  "name": "Communion",
+  "type": "Communion"
  }
 ]
