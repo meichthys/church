@@ -12,7 +12,7 @@
   "doctype": "Module Onboarding",
   "documentation_url": "https://github.com/meichthys/church",
   "is_complete": 0,
-  "modified": "2025-09-03 00:16:21.639005",
+  "modified": "2025-09-13 01:21:17.537153",
   "module": "Church",
   "name": "Church",
   "steps": [
@@ -33,6 +33,12 @@
     "parentfield": "steps",
     "parenttype": "Module Onboarding",
     "step": "Church Event"
+   },
+   {
+    "parent": "Church",
+    "parentfield": "steps",
+    "parenttype": "Module Onboarding",
+    "step": "Church Prayer Request"
    }
   ],
   "subtitle": "People, Families, Events, Ministries, and more...",
