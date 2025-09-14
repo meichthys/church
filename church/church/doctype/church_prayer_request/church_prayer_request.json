@@ -54,7 +54,7 @@
   },
   {
    "allow_in_quick_entry": 1,
-   "default": "1",
+   "default": "0",
    "description": "Check this if you don't want this request shared with the church body.",
    "fieldname": "is_private",
    "fieldtype": "Check",
@@ -73,7 +73,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-13 01:15:44.930709",
+ "modified": "2025-09-13 22:32:49.649463",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church Prayer Request",
