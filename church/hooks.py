@@ -120,8 +120,20 @@ fixtures = [
 		"filters": [["Name", "like", "church"]],
 	},
 	{
+		"dt": "Module Profile",
+		"filters": [["Name", "in", ("Church")]],
+	},
+	{
 		"dt": "Onboarding Step",
 		"filters": [["Name", "in", ["Church Person"]]],
+	},
+	{
+		"dt": "Role",
+		"filters": [["Name", "in", ["Church Manager", "Church User"]]],
+	},
+	{
+		"dt": "Role Profile",
+		"filters": [["Name", "in", ["Church Manager", "Church User"]]],
 	},
 ]
 # Apps
