@@ -232,6 +232,7 @@
    "fieldname": "spouse",
    "fieldtype": "Link",
    "label": "Spouse",
+   "link_filters": "[[\"Church Person\",\"name\",\"!=\",\"{{doc.id}}\"]]",
    "options": "Church Person"
   },
   {
@@ -267,8 +268,13 @@
  "grid_page_length": 50,
  "image_field": "photo",
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-09-08 23:37:58.374411",
+ "links": [
+  {
+   "link_doctype": "Church Prayer Request",
+   "link_fieldname": "related_person"
+  }
+ ],
+ "modified": "2025-09-13 23:58:19.453438",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church Person",

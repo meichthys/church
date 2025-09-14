@@ -1,6 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
+ "autoname": "autoincrement",
  "creation": "2025-09-13 00:16:52.698863",
  "description": "A request for prayer from (or for) a `Church Person`.",
  "doctype": "DocType",
@@ -37,6 +37,8 @@
    "description": "If this request is for a specific person, select/add the person here.",
    "fieldname": "related_person",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Related Person",
    "options": "Church Person"
   },
@@ -48,7 +50,7 @@
    "allow_in_quick_entry": 1,
    "fieldname": "request",
    "fieldtype": "Small Text",
-   "in_standard_filter": 1,
+   "in_list_view": 1,
    "label": "Request",
    "reqd": 1
   },
@@ -58,6 +60,7 @@
    "description": "Check this if you don't want this request shared with the church body.",
    "fieldname": "is_private",
    "fieldtype": "Check",
+   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Is Private"
   },
@@ -65,6 +68,8 @@
    "allow_in_quick_entry": 1,
    "fieldname": "type",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Type",
    "options": "Church Prayer Request Type",
    "reqd": 1
@@ -73,10 +78,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-13 22:32:49.649463",
+ "modified": "2025-09-14 00:53:25.841497",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church Prayer Request",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
