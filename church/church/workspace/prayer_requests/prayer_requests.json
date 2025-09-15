@@ -9,7 +9,7 @@
    "label": "Answered Prayers"
   }
  ],
- "content": "[{\"id\":\"7xxtlFoDVX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Prayer Requests\",\"col\":4}},{\"id\":\"OAUM9QI_Ol\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Answered Prayers\",\"col\":4}},{\"id\":\"4iwgo8N4pj\",\"type\":\"spacer\",\"data\":{\"col\":4}},{\"id\":\"DJWYwyHnvf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Active Prayer Request Count\",\"col\":6}},{\"id\":\"Dd1PoGtYXd\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Answered Prayers\",\"col\":6}},{\"id\":\"Nx2vS9lnXp\",\"type\":\"card\",\"data\":{\"card_name\":\"Prayer Request Documents\",\"col\":4}}]",
+ "content": "[{\"id\":\"T2NecsUQOb\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"Rejoice always. Pray without ceasing.\\\"</i>\",\"col\":12}},{\"id\":\"7xxtlFoDVX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Prayer Requests\",\"col\":4}},{\"id\":\"OAUM9QI_Ol\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Answered Prayers\",\"col\":4}},{\"id\":\"4iwgo8N4pj\",\"type\":\"spacer\",\"data\":{\"col\":4}},{\"id\":\"DJWYwyHnvf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Active Prayer Request Count\",\"col\":6}},{\"id\":\"Dd1PoGtYXd\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Answered Prayers\",\"col\":6}},{\"id\":\"Nx2vS9lnXp\",\"type\":\"card\",\"data\":{\"card_name\":\"Prayer Request Documents\",\"col\":4}}]",
  "creation": "2025-09-14 22:19:57.991467",
  "custom_blocks": [],
  "docstatus": 0,
@@ -62,7 +62,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-09-14 23:28:56.755537",
+ "modified": "2025-09-14 23:48:10.921449",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Prayer Requests",

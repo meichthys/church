@@ -5,7 +5,7 @@
    "label": "Church Collections"
   }
  ],
- "content": "[{\"id\":\"MmG7zVkZbr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Church Collections\",\"col\":12}},{\"id\":\"nN5R0rrK8W\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Xwvf2HyJiA\",\"type\":\"card\",\"data\":{\"card_name\":\"Collection Documents\",\"col\":4}},{\"id\":\"m34hRRgTkK\",\"type\":\"card\",\"data\":{\"card_name\":\"Collection Reports\",\"col\":4}},{\"id\":\"l_H4g7YzJQ\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "content": "[{\"id\":\"mncYXd3Fp_\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"Which of you, wishing to build a tower, does not first sit down and \\ncount the cost to see if he has the resources to complete it?\\\"</i>\",\"col\":12}},{\"id\":\"MmG7zVkZbr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Church Collections\",\"col\":12}},{\"id\":\"nN5R0rrK8W\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Xwvf2HyJiA\",\"type\":\"card\",\"data\":{\"card_name\":\"Collection Documents\",\"col\":4}},{\"id\":\"m34hRRgTkK\",\"type\":\"card\",\"data\":{\"card_name\":\"Collection Reports\",\"col\":4}},{\"id\":\"l_H4g7YzJQ\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
  "creation": "2025-09-14 22:29:59.428671",
  "custom_blocks": [],
  "docstatus": 0,
@@ -18,45 +18,6 @@
  "is_hidden": 0,
  "label": "Collections",
  "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Collections",
-   "link_count": 3,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Church Collection",
-   "link_count": 0,
-   "link_to": "Church Collection",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Church Fund",
-   "link_count": 0,
-   "link_to": "Church Fund",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Church Payment Type",
-   "link_count": 0,
-   "link_to": "Church Payment Type",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
   {
    "hidden": 0,
    "is_query_report": 0,
@@ -138,7 +99,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-09-14 23:28:31.906451",
+ "modified": "2025-09-14 23:49:16.432742",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Collections",
