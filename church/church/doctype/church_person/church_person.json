@@ -181,7 +181,7 @@
    "fieldtype": "Link",
    "label": "Membership Status",
    "mandatory_depends_on": "eval:doc.is_member",
-   "options": "Church Member Status Type",
+   "options": "Church Member Status",
    "search_index": 1
   },
   {
@@ -274,7 +274,7 @@
    "link_fieldname": "related_person"
   }
  ],
- "modified": "2025-09-13 23:58:19.453438",
+ "modified": "2025-09-14 23:08:07.204902",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church Person",
