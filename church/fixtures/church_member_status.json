@@ -1,0 +1,20 @@
+[
+ {
+  "color": null,
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Member Status",
+  "modified": "2025-08-26 01:16:00.741909",
+  "name": "Inactive",
+  "status": "Inactive"
+ },
+ {
+  "color": null,
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Member Status",
+  "modified": "2025-08-26 01:15:49.268376",
+  "name": "Active",
+  "status": "Active"
+ }
+]
