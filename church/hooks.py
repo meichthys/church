@@ -7,6 +7,12 @@ app_license = "mit"
 
 fixtures = [
 	{
+		"dt": "Church Bible Book",
+	},
+	{
+		"dt": "Church Bible Translation",
+	},
+	{
 		"dt": "Church Event Attendance Type",
 		"filters": [["type", "in", ("Absent", "Assumed", "Confirmed", "Unknown")]],
 	},
@@ -90,7 +96,7 @@ fixtures = [
 		],
 	},
 	{
-		"dt": "Church Member Status Type",
+		"dt": "Church Member Status",
 		"filters": [["status", "in", ("Inactive", "Active")]],
 	},
 	{
@@ -106,6 +112,10 @@ fixtures = [
 		"filters": [
 			["role", "in", ("Deacon", "Elder", "Pastor", "Secretary", "Treasurer")]
 		],
+	},
+	{
+		"dt": "Custom DocPerm",
+		"filters": [["role", "like", "Church%"]],
 	},
 	{
 		"dt": "Dashboard Chart",
@@ -129,11 +139,15 @@ fixtures = [
 	},
 	{
 		"dt": "Role",
-		"filters": [["Name", "in", ["Church Manager", "Church User"]]],
+		"filters": [["Name", "like", "Church%"]],
 	},
 	{
 		"dt": "Role Profile",
 		"filters": [["Name", "in", ["Church Manager", "Church User"]]],
+	},
+	{
+		"dt": "Web Page",
+		"filters": [["Name", "in", ["About Us", "Our Beliefs"]]],
 	},
 ]
 # Apps
@@ -148,7 +162,7 @@ fixtures = [
 # 		"logo": "/assets/church/logo.png",
 # 		"title": "Church",
 # 		"route": "/church",
-# 		"has_permission": "church.api.permission.has_app_permission"
+# 		"has_permission": "church.api.permission.has_app_permission",
 # 	}
 # ]
 

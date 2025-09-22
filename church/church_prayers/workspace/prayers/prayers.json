@@ -1,0 +1,87 @@
+{
+ "charts": [
+  {
+   "chart_name": "Church Prayer Request Count (Active)",
+   "label": "Active Prayer Request Count"
+  },
+  {
+   "chart_name": "Church Prayer Requests (Answered)",
+   "label": "Answered Prayers"
+  }
+ ],
+ "content": "[{\"id\":\"T2NecsUQOb\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"Rejoice always. Pray without ceasing.\\\"</i>\",\"col\":12}},{\"id\":\"7xxtlFoDVX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Prayer Requests\",\"col\":4}},{\"id\":\"OAUM9QI_Ol\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Answered Prayers\",\"col\":4}},{\"id\":\"4iwgo8N4pj\",\"type\":\"spacer\",\"data\":{\"col\":4}},{\"id\":\"DJWYwyHnvf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Active Prayer Request Count\",\"col\":6}},{\"id\":\"Dd1PoGtYXd\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Answered Prayers\",\"col\":6}},{\"id\":\"Nx2vS9lnXp\",\"type\":\"card\",\"data\":{\"card_name\":\"Prayer Request Documents\",\"col\":4}}]",
+ "creation": "2025-09-14 22:19:57.991467",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "upload",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Prayers",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Prayer Request Documents",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Church Prayer Request",
+   "link_count": 0,
+   "link_to": "Church Prayer Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Church Prayer Request Status",
+   "link_count": 0,
+   "link_to": "Church Prayer Request Status",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Church Prayer Request Type",
+   "link_count": 0,
+   "link_to": "Church Prayer Request Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-09-21 22:51:45.052319",
+ "modified_by": "Administrator",
+ "module": "Church Prayers",
+ "name": "Prayers",
+ "number_cards": [
+  {
+   "label": "Active Prayer Requests",
+   "number_card_name": "Church Prayer Request Count"
+  },
+  {
+   "label": "Answered Prayers",
+   "number_card_name": "Church Prayer Request Count (Answered)"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "Church",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 24.0,
+ "shortcuts": [],
+ "title": "Prayers"
+}

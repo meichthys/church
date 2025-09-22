@@ -1,0 +1,22 @@
+{
+ "action": "Create Entry",
+ "action_label": "Add Church Person",
+ "creation": "2025-09-07 00:14:45.050314",
+ "description": "Adding `Church Person`s allows you to track the person's roles, attendance, donations, etc.",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "form_tour": "Church Person",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2025-09-18 00:37:50.242082",
+ "modified_by": "Administrator",
+ "name": "Church Person",
+ "owner": "Administrator",
+ "reference_document": "Church Person",
+ "show_form_tour": 1,
+ "show_full_form": 1,
+ "title": "Add people that attend your church.",
+ "validate_action": 1
+}
