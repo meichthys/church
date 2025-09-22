@@ -7,6 +7,12 @@ app_license = "mit"
 
 fixtures = [
 	{
+		"dt": "Church Bible Book",
+	},
+	{
+		"dt": "Church Bible Translation",
+	},
+	{
 		"dt": "Church Event Attendance Type",
 		"filters": [["type", "in", ("Absent", "Assumed", "Confirmed", "Unknown")]],
 	},
@@ -90,7 +96,7 @@ fixtures = [
 		],
 	},
 	{
-		"dt": "Church Member Status Type",
+		"dt": "Church Member Status",
 		"filters": [["status", "in", ("Inactive", "Active")]],
 	},
 	{
@@ -134,6 +140,10 @@ fixtures = [
 	{
 		"dt": "Role Profile",
 		"filters": [["Name", "in", ["Church Manager", "Church User"]]],
+	},
+	{
+		"dt": "Web Page",
+		"filters": [["Name", "in", ["About Us", "Our Beliefs"]]],
 	},
 ]
 # Apps

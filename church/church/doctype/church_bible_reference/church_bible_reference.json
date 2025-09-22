@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{book} {chapter}:{verse} ({translation})",
+ "creation": "2025-09-17 21:42:32.438305",
+ "description": "A Bible reference (i.e John 3:16)",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "book",
+  "chapter",
+  "verse",
+  "translation"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "book",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Book",
+   "options": "Church Bible Book",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "chapter",
+   "fieldtype": "Int",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Chapter"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "verse",
+   "fieldtype": "Int",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Verse"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "translation",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Translation",
+   "options": "Church Bible Translation"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-17 23:29:46.888067",
+ "modified_by": "Administrator",
+ "module": "Church",
+ "name": "Church Bible Reference",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
