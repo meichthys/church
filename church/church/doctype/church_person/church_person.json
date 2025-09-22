@@ -258,11 +258,12 @@
    "options": "Church Person Relation"
   },
   {
+   "allow_in_quick_entry": 1,
+   "default": "Unknown",
    "fieldname": "gender",
    "fieldtype": "Select",
    "label": "Gender",
-   "options": "Female\nMale\nUnknown",
-   "reqd": 1
+   "options": "Female\nMale\nUnknown"
   }
  ],
  "grid_page_length": 50,
@@ -274,7 +275,7 @@
    "link_fieldname": "related_person"
   }
  ],
- "modified": "2025-09-15 23:42:56.216145",
+ "modified": "2025-09-15 23:46:22.721788",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church Person",
