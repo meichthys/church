@@ -67,6 +67,8 @@ bench install-app church
 
 After the above installation you should be able to access the web interface using the URL you defined in the `bench create` command above. You should see the `Church` app installed when you view `Help > About`.
 
+Before you start using the app, it is a good idea to setup a new `User` in the system with the `Church Admin` Role Profile and `Church Admin` Module Profile. This user will be able to manage all aspects of the church (the `Administrator` user should be reserved for system wide maintenance or troubleshooting). Additionally, if you want to delegate some responsibilities to other people, you can create additional `User`s with the `Church User` Role Profile and `Church User` Module Profiles. Thise types of users will be able to read and update most information, but not critical information. To see a list of permissions you can open the `Role Permissions Manager` and select the `Church Admin` or `Church User` roles to see what permissions these users roles have.
+
 ## 🗺️ Feature Roadmap
 
 Hopefully this roadmap will help avoid too much scope creep and provide a sense of where this project is headed. The items below are listed in order of current priority.
@@ -97,6 +99,16 @@ Hopefully this roadmap will help avoid too much scope creep and provide a sense 
 Contributions are very welcome! If you plan any large contributions, please let me know first so we can coordinate and make the chances of a merged pull-request more likely.
 
 - Doctype Naming: I've generally been using a single fieldname for the doctype names when the records in the doctype have low chance of clashing. If there is a higher chance of clashing, I've been using multiple fields in the name along with a `{##}` auto increment. The number of digits in the auto-increment are just sane values that should never be exceeded. I then specify the Title Field in the View Settings, and check the `Show Title in LInk Fields` option. This mostly hides the autonumber name from the user and lets the user only see the not-so-confusing name specified in the `Title Field` (sometimes I create a custom field to concatenate values - since the `Title Field` cannot take multiple fields at once afaik.)
+
+## Steps for adding a new doctype:
+  - Make sure the doctype name is pre-pended with `Church `
+  - Add a doctype description on the settings tab
+  - Add fields for the doctype (if necessary add field descriptions).
+  - Add permissions for the new doctype to the `Church User` and `Church Admin` roles.
+    - After adding permisssions, export the permissions by going to the DocType and chosing ... > Customize > Action > Export Customizations. Select the `Church` module and check both the 'Sync on Migrate' and `Export Custom Permissions` options and lick 'Submit'.
+  - Add the doctype to the relevant workspace.
+  - If necessary, add an onboarding step & form tour to explain specific fields.
+  - If any default records for this doctype should be shipped with the app, add fixtures for them in `hooks.py`.
 
 ## Pre-Commit
 
