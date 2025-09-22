@@ -114,6 +114,10 @@ fixtures = [
 		],
 	},
 	{
+		"dt": "Custom DocPerm",
+		"filters": [["role", "like", "Church%"]],
+	},
+	{
 		"dt": "Dashboard Chart",
 		"filters": [["module", "like", "church"]],
 	},
@@ -135,7 +139,7 @@ fixtures = [
 	},
 	{
 		"dt": "Role",
-		"filters": [["Name", "in", ["Church Manager", "Church User"]]],
+		"filters": [["Name", "like", "Church%"]],
 	},
 	{
 		"dt": "Role Profile",
@@ -158,7 +162,7 @@ fixtures = [
 # 		"logo": "/assets/church/logo.png",
 # 		"title": "Church",
 # 		"route": "/church",
-# 		"has_permission": "church.api.permission.has_app_permission"
+# 		"has_permission": "church.api.permission.has_app_permission",
 # 	}
 # ]
 
