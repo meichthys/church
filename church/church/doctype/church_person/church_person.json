@@ -259,9 +259,9 @@
   },
   {
    "fieldname": "gender",
-   "fieldtype": "Link",
+   "fieldtype": "Select",
    "label": "Gender",
-   "options": "Gender",
+   "options": "Female\nMale\nUnknown",
    "reqd": 1
   }
  ],
@@ -274,7 +274,7 @@
    "link_fieldname": "related_person"
   }
  ],
- "modified": "2025-09-14 23:08:07.204902",
+ "modified": "2025-09-15 23:42:56.216145",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church Person",
