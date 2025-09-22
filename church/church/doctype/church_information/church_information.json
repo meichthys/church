@@ -8,10 +8,11 @@
  "field_order": [
   "legal_name",
   "founding_date",
-  "about",
   "column_break_rmsm",
   "address",
-  "mission_statement"
+  "mission_statement",
+  "section_break_nxne",
+  "about"
  ],
  "fields": [
   {
@@ -42,15 +43,19 @@
   {
    "description": "A short description of the church. By default, this is used on the 'About Us' webpage.",
    "fieldname": "about",
-   "fieldtype": "Small Text",
+   "fieldtype": "Text Editor",
    "label": "About"
+  },
+  {
+   "fieldname": "section_break_nxne",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-09-17 21:21:41.363009",
+ "modified": "2025-09-17 23:32:19.143025",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church Information",
