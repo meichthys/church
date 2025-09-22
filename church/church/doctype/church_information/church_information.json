@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-17 21:10:06.782386",
+ "description": "Static Information related to the church",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "legal_name",
+  "founding_date",
+  "about",
+  "column_break_rmsm",
+  "address",
+  "mission_statement"
+ ],
+ "fields": [
+  {
+   "fieldname": "legal_name",
+   "fieldtype": "Data",
+   "label": "Legal Name"
+  },
+  {
+   "fieldname": "founding_date",
+   "fieldtype": "Date",
+   "label": "Founding Date"
+  },
+  {
+   "fieldname": "column_break_rmsm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "mission_statement",
+   "fieldtype": "Small Text",
+   "label": "Mission Statement"
+  },
+  {
+   "description": "A short description of the church. By default, this is used on the 'About Us' webpage.",
+   "fieldname": "about",
+   "fieldtype": "Small Text",
+   "label": "About"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-09-17 21:21:41.363009",
+ "modified_by": "Administrator",
+ "module": "Church",
+ "name": "Church Information",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
