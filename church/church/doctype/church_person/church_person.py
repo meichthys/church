@@ -46,7 +46,7 @@ class ChurchPerson(Document):
 					f"{self.full_name} 👩‍❤️‍👨 {spouse.full_name}"
 				)
 		else:
-			if self._doc_before_save.spouse:
+			if self._doc_before_save and self._doc_before_save.spouse:
 				spouse = frappe.get_doc("Church Person", self._doc_before_save.spouse)
 				frappe.db.set_value("Church Person", spouse.name, "is_married", False)
 				frappe.db.set_value("Church Person", spouse.name, "spouse", None)
