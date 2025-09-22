@@ -10,12 +10,15 @@
  "documentation_url": "https://github.com/meichthys/church",
  "idx": 0,
  "is_complete": 0,
- "modified": "2025-09-13 01:21:17.537153",
+ "modified": "2025-09-18 00:48:20.337101",
  "modified_by": "Administrator",
  "module": "Church",
  "name": "Church",
  "owner": "Administrator",
  "steps": [
+  {
+   "step": "Church Information"
+  },
   {
    "step": "Church Person"
   },

@@ -8,13 +8,13 @@
  "is_complete": 0,
  "is_single": 0,
  "is_skipped": 0,
- "modified": "2025-09-13 01:20:43.693886",
+ "modified": "2025-09-13 01:21:56.200304",
  "modified_by": "Administrator",
  "name": "Church Prayer Request",
  "owner": "Administrator",
  "reference_document": "Church Prayer Request",
  "show_form_tour": 0,
  "show_full_form": 1,
- "title": "Add prayer requests",
+ "title": "Add prayer requests.",
  "validate_action": 1
 }
