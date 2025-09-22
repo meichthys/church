@@ -1,0 +1,109 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"Kwawi9Etd-\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"So whether you eat or drink or whatever you do, do it all to the glory of God.\\\"</i>\",\"col\":12}},{\"id\":\"TDh-inBJuc\",\"type\":\"card\",\"data\":{\"card_name\":\"Event Documents\",\"col\":6}},{\"id\":\"Rbw38py5Jn\",\"type\":\"card\",\"data\":{\"card_name\":\"Event Reports\",\"col\":6}}]",
+ "creation": "2025-09-14 22:36:40.737780",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "tag",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Ministries",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Event Reports",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Church Attendance",
+   "link_count": 0,
+   "link_to": "Church Attendance",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Church Event",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Church Event Count by Type",
+   "link_count": 0,
+   "link_to": "Church Event Count by Type",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Church Event Attendance",
+   "link_count": 0,
+   "link_to": "Church Event Attendance",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Event Documents",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Church Event",
+   "link_count": 0,
+   "link_to": "Church Event",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Church Event Type",
+   "link_count": 0,
+   "link_to": "Church Event Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Church Event Attendance Type",
+   "link_count": 0,
+   "link_to": "Church Event Attendance Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-09-21 22:51:37.462941",
+ "modified_by": "Administrator",
+ "module": "Church Ministries",
+ "name": "Ministries",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Church",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 25.0,
+ "shortcuts": [],
+ "title": "Ministries"
+}

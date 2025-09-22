@@ -1,0 +1,29 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-08-28 01:11:57.491505",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 2,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[[\"Church Person\",\"birthday\",\"Timespan\",\"this week\",false]],\"fields\":[[\"name\",\"Church Person\"],[\"birthday\",\"Church Person\"]],\"order_by\":\"`tabChurch Person`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"birthday\":120},\"group_by\":null}",
+ "letterhead": null,
+ "modified": "2025-09-21 22:47:58.498524",
+ "modified_by": "Administrator",
+ "module": "Church People",
+ "name": "Church Person Birthdays (This Week)",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Church Person",
+ "report_name": "Church Person Birthdays (This Week)",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}
