@@ -11,6 +11,8 @@ A fully open-source church management app built on the [Frappe Framework](https:
 
 The following features have been implemented in this app (see the [🗺️ Roadmap](#🗺️-roadmap) below for future plans):
 
+- Portal for users with a login:
+  - Prayer request submission & viewing
 - `Church Person` tracking
   - Define and track `Church Person Relation`ships
     - Define `Church Person Relation Type`s
@@ -26,6 +28,9 @@ The following features have been implemented in this app (see the [🗺️ Roadm
 - Collection/donation tracking
   - Donation entry with collection totals & split check support
   - Bank reconciliation report
+- Church Belief tracking
+- Basic Church Website
+  - About Page
 
 ## 📥 Installing Frappe
 
@@ -71,7 +76,6 @@ Hopefully this roadmap will help avoid too much scope creep and provide a sense 
 - Fund Tracking
   - Update fund balance after collection submission
 - Add standard church website pages:
-  - About Us
   - Home/Welcome
   - Missions
   - Beliefs/Statement of Faith
@@ -79,13 +83,12 @@ Hopefully this roadmap will help avoid too much scope creep and provide a sense 
   - Contact Us
 - Collection Improvements
   - Make collections submittable(?)
-- Add portal for `Church Person`s
+- Additional portal pages
   - Show tracked giving
   - Show tracked attendance
     - Allow updating attendance status(?)
 - Event templating/recurrence
   - Templating via `Church Event Type` default values table(?)
-- Add table to `Church Family` form to show current members
 - Add Onboarding Tours
   - Add 'Tutorial' button to each doctype form
 
