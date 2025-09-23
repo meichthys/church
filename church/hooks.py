@@ -227,8 +227,8 @@ app_include_icons = ["church/icons/custom_icons.svg"]
 # Installation
 # ------------
 
-before_install = "install.before_install"
-after_install = "install.after_install"
+before_install = "church.install.before_install"
+after_install = "church.install.after_install"
 
 # Uninstallation
 # ------------
