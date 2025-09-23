@@ -1,5 +1,6 @@
 [
  {
+  "label": "bob",
   "action": "Create Entry",
   "action_label": "Add Church Person",
   "callback_message": null,
