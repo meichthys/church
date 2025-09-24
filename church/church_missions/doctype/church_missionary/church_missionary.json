@@ -1,25 +1,122 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{title}",
  "creation": "2025-09-18 22:33:05.489158",
+ "description": "Missionaries of the church.",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_ddv4"
+  "title",
+  "agency",
+  "photo",
+  "data_btqw",
+  "website",
+  "column_break_vedu",
+  "country",
+  "mailing_address",
+  "physical_address",
+  "notes",
+  "section_break_qxbh",
+  "letters",
+  "related_documents"
  ],
  "fields": [
   {
-   "fieldname": "section_break_ddv4",
+   "fieldname": "agency",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Agency"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "mailing_address",
+   "fieldtype": "Link",
+   "label": "Mailing Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "physical_address",
+   "fieldtype": "Link",
+   "label": "Physical Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "column_break_vedu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qxbh",
    "fieldtype": "Section Break"
+  },
+  {
+   "description": "Link related documents here (i.e. `Church Person`s, `Church Event`s, `Church Collection`s, etc.)",
+   "fieldname": "related_documents",
+   "fieldtype": "Table",
+   "label": "Related Documents",
+   "options": "Dynamic Link"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "data_btqw",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website",
+   "options": "URL"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "letters",
+   "fieldtype": "Table",
+   "label": "Letters to the Church",
+   "options": "Church Letter"
   }
  ],
  "grid_page_length": 50,
+ "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-18 22:33:05.489158",
+ "modified": "2025-09-23 22:20:41.577985",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Church Missionary",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -38,5 +135,6 @@
  "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }
