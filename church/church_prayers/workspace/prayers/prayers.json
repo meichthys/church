@@ -25,6 +25,35 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Prayer Request Reports",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Recently Created",
+   "link_count": 0,
+   "link_to": "Church Prayer Requests: Recently Created",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Recently Answered",
+   "link_count": 0,
+   "link_to": "Church Prayer Requests: Recently Answered",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Prayer Request Documents",
    "link_count": 3,
    "link_type": "DocType",
@@ -34,7 +63,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Prayer Request",
+   "label": "Requests",
    "link_count": 0,
    "link_to": "Church Prayer Request",
    "link_type": "DocType",
@@ -44,7 +73,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Prayer Request Status",
+   "label": "Request Statuses",
    "link_count": 0,
    "link_to": "Church Prayer Request Status",
    "link_type": "DocType",
@@ -54,34 +83,15 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Prayer Request Type",
+   "label": "Request Types",
    "link_count": 0,
    "link_to": "Church Prayer Request Type",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Prayer Request Reports",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Prayer Requests: Recently Created",
-   "link_count": 0,
-   "link_to": "Church Prayer Requests: Recently Created",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
   }
  ],
- "modified": "2025-09-25 22:44:04.729837",
+ "modified": "2025-09-25 23:02:54.667929",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Prayers",

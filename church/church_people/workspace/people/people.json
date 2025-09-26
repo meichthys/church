@@ -23,66 +23,6 @@
  "label": "People",
  "links": [
   {
-   "description": "Click on shortcuts below to see full lists.",
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Person Documents",
-   "link_count": 5,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Person",
-   "link_count": 0,
-   "link_to": "Church Person",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Family",
-   "link_count": 0,
-   "link_to": "Church Family",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Person Relation Type",
-   "link_count": 0,
-   "link_to": "Church Person Relation Type",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Member Status Type",
-   "link_count": 0,
-   "link_to": "Church Member Status",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Role Type",
-   "link_count": 0,
-   "link_to": "Church Role Type",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
    "description": "These are some pre-prepared reports. You can always create your own reports by going to `[Document] Report`, filtering the report, then choosing `save as` in the `...` menu.",
    "hidden": 0,
    "is_query_report": 0,
@@ -95,7 +35,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Current Person Roles",
+   "label": "Current Roles",
    "link_count": 0,
    "link_to": "Current Church Person Roles",
    "link_type": "Report",
@@ -117,7 +57,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Person Roles Ending This Month",
+   "label": "Roles Ending This Month",
    "link_count": 0,
    "link_to": "Church Person Roles Ending This Month",
    "link_type": "Report",
@@ -128,15 +68,75 @@
   {
    "hidden": 0,
    "is_query_report": 1,
-   "label": "Person Letters",
+   "label": "Letters",
    "link_count": 0,
    "link_to": "Church Person Letters",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "description": "Click on shortcuts below to see full lists.",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Person Documents",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "People",
+   "link_count": 0,
+   "link_to": "Church Person",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Families",
+   "link_count": 0,
+   "link_to": "Church Family",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Relation Types",
+   "link_count": 0,
+   "link_to": "Church Person Relation Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Member Status Types",
+   "link_count": 0,
+   "link_to": "Church Member Status",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Role Types",
+   "link_count": 0,
+   "link_to": "Church Role Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-09-25 22:36:07.650417",
+ "modified": "2025-09-25 23:03:45.168893",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "People",

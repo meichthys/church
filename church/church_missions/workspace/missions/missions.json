@@ -16,25 +16,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Church Missionary Reports",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Church Missionary Letters",
-   "link_count": 0,
-   "link_to": "Church Missionary Letters",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Missions Documents",
    "link_count": 1,
    "link_type": "DocType",
@@ -44,7 +25,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Missionary",
+   "label": "Missionaries",
    "link_count": 0,
    "link_to": "Church Missionary",
    "link_type": "DocType",
@@ -63,7 +44,7 @@
   {
    "hidden": 0,
    "is_query_report": 1,
-   "label": "Missionary Letters",
+   "label": "Letters",
    "link_count": 0,
    "link_to": "Church Missionary Letters",
    "link_type": "Report",
@@ -71,7 +52,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-09-25 22:36:57.559318",
+ "modified": "2025-09-25 23:04:07.592076",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Missions",

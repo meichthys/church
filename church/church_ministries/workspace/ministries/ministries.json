@@ -25,7 +25,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Event",
+   "label": "Events",
    "link_count": 0,
    "link_to": "Church Event",
    "link_type": "DocType",
@@ -35,7 +35,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Event Type",
+   "label": "Event Types",
    "link_count": 0,
    "link_to": "Church Event Type",
    "link_type": "DocType",
@@ -45,7 +45,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Event Attendance Type",
+   "label": "Event Attendance Types",
    "link_count": 0,
    "link_to": "Church Event Attendance Type",
    "link_type": "DocType",
@@ -64,12 +64,22 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Attendance",
+   "label": "Attendance: All",
    "link_count": 0,
    "link_to": "Church Attendance",
    "link_type": "Report",
    "onboard": 0,
    "report_ref_doctype": "Church Event",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Attendance by Event",
+   "link_count": 0,
+   "link_to": "Church Event Attendance",
+   "link_type": "Report",
+   "onboard": 0,
    "type": "Link"
   },
   {
@@ -81,19 +91,9 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Event Attendance",
-   "link_count": 0,
-   "link_to": "Church Event Attendance",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
   }
  ],
- "modified": "2025-09-25 22:37:33.632945",
+ "modified": "2025-09-25 23:11:31.704033",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Ministries",
