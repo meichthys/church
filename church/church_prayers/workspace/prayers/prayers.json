@@ -9,7 +9,7 @@
    "label": "Answered Prayers"
   }
  ],
- "content": "[{\"id\":\"T2NecsUQOb\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"Rejoice always. Pray without ceasing.\\\"</i>\",\"col\":12}},{\"id\":\"7xxtlFoDVX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Prayer Requests\",\"col\":4}},{\"id\":\"OAUM9QI_Ol\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Answered Prayers\",\"col\":4}},{\"id\":\"4iwgo8N4pj\",\"type\":\"spacer\",\"data\":{\"col\":4}},{\"id\":\"DJWYwyHnvf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Active Prayer Request Count\",\"col\":6}},{\"id\":\"Dd1PoGtYXd\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Answered Prayers\",\"col\":6}},{\"id\":\"Nx2vS9lnXp\",\"type\":\"card\",\"data\":{\"card_name\":\"Prayer Request Documents\",\"col\":4}}]",
+ "content": "[{\"id\":\"T2NecsUQOb\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"Rejoice always. Pray without ceasing.\\\"</i>\",\"col\":12}},{\"id\":\"7xxtlFoDVX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Prayer Requests\",\"col\":6}},{\"id\":\"OAUM9QI_Ol\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Answered Prayers\",\"col\":6}},{\"id\":\"DJWYwyHnvf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Active Prayer Request Count\",\"col\":6}},{\"id\":\"Dd1PoGtYXd\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Answered Prayers\",\"col\":6}},{\"id\":\"Nx2vS9lnXp\",\"type\":\"card\",\"data\":{\"card_name\":\"Prayer Request Documents\",\"col\":4}},{\"id\":\"lvZAf1_FTo\",\"type\":\"card\",\"data\":{\"card_name\":\"Prayer Request Reports\",\"col\":4}}]",
  "creation": "2025-09-14 22:19:57.991467",
  "custom_blocks": [],
  "docstatus": 0,
@@ -34,7 +34,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Church Prayer Request",
+   "label": "Prayer Request",
    "link_count": 0,
    "link_to": "Church Prayer Request",
    "link_type": "DocType",
@@ -44,7 +44,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Church Prayer Request Status",
+   "label": "Prayer Request Status",
    "link_count": 0,
    "link_to": "Church Prayer Request Status",
    "link_type": "DocType",
@@ -54,15 +54,34 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Church Prayer Request Type",
+   "label": "Prayer Request Type",
    "link_count": 0,
    "link_to": "Church Prayer Request Type",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Prayer Request Reports",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Prayer Requests: Recently Created",
+   "link_count": 0,
+   "link_to": "Church Prayer Requests: Recently Created",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-09-21 22:51:45.052319",
+ "modified": "2025-09-25 22:44:04.729837",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Prayers",

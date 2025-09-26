@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"OGTcXJ9p_P\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"All Scripture is God-breathed and is useful for instruction, for conviction, for correction, and for training in righteousness,\\nso that the man of God may be complete, fully equipped for every good work.\\\"</i>\",\"col\":12}},{\"id\":\"nN5R0rrK8W\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"OfmuFWcqcK\",\"type\":\"card\",\"data\":{\"card_name\":\"Documents\",\"col\":4}}]",
+ "content": "[{\"id\":\"OGTcXJ9p_P\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"All Scripture is God-breathed and is useful for instruction, for conviction, for correction, and for training in righteousness,\\nso that the man of God may be complete, fully equipped for every good work.\\\"</i>\",\"col\":12}},{\"id\":\"nN5R0rrK8W\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"OfmuFWcqcK\",\"type\":\"card\",\"data\":{\"card_name\":\"Study Documents\",\"col\":4}}]",
  "creation": "2025-09-18 00:30:32.961356",
  "custom_blocks": [],
  "docstatus": 0,
@@ -16,7 +16,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Documents",
+   "label": "Study Documents",
    "link_count": 2,
    "link_type": "DocType",
    "onboard": 0,
@@ -25,7 +25,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Church Bible Book",
+   "label": "Bible Book",
    "link_count": 0,
    "link_to": "Church Bible Book",
    "link_type": "DocType",
@@ -35,7 +35,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Church Bible Translation",
+   "label": "Bible Translation",
    "link_count": 0,
    "link_to": "Church Bible Translation",
    "link_type": "DocType",
@@ -43,7 +43,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-09-21 22:51:19.750238",
+ "modified": "2025-09-25 22:38:41.682268",
  "modified_by": "Administrator",
  "module": "Church Study",
  "name": "Study",
