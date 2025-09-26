@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"T2NecsUQOb\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"Go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit,\\nand teaching them to obey all that I have commanded you.\\\"</i>\",\"col\":12}},{\"id\":\"YWaCShFabd\",\"type\":\"card\",\"data\":{\"card_name\":\"Church Missions Documents\",\"col\":4}},{\"id\":\"iUdtHBDilm\",\"type\":\"card\",\"data\":{\"card_name\":\"Church Missionary Reports\",\"col\":4}}]",
+ "content": "[{\"id\":\"T2NecsUQOb\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"Go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit,\\nand teaching them to obey all that I have commanded you.\\\"</i>\",\"col\":12}},{\"id\":\"YWaCShFabd\",\"type\":\"card\",\"data\":{\"card_name\":\"Missions Documents\",\"col\":4}},{\"id\":\"iUdtHBDilm\",\"type\":\"card\",\"data\":{\"card_name\":\"Missionary Reports\",\"col\":4}}]",
  "creation": "2025-09-21 22:14:24.423520",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,25 +13,6 @@
  "is_hidden": 0,
  "label": "Missions",
  "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Church Missions Documents",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Church Missionary",
-   "link_count": 0,
-   "link_to": "Church Missionary",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
   {
    "hidden": 0,
    "is_query_report": 0,
@@ -50,9 +31,47 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Missions Documents",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Missionary",
+   "link_count": 0,
+   "link_to": "Church Missionary",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Missionary Reports",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Missionary Letters",
+   "link_count": 0,
+   "link_to": "Church Missionary Letters",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-09-24 00:02:07.315513",
+ "modified": "2025-09-25 22:36:57.559318",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Missions",

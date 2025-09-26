@@ -16,6 +16,45 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Event Documents",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Event",
+   "link_count": 0,
+   "link_to": "Church Event",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Event Type",
+   "link_count": 0,
+   "link_to": "Church Event Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Event Attendance Type",
+   "link_count": 0,
+   "link_to": "Church Event Attendance Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Event Reports",
    "link_count": 3,
    "link_type": "DocType",
@@ -25,7 +64,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Church Attendance",
+   "label": "Attendance",
    "link_count": 0,
    "link_to": "Church Attendance",
    "link_type": "Report",
@@ -36,7 +75,7 @@
   {
    "hidden": 0,
    "is_query_report": 1,
-   "label": "Church Event Count by Type",
+   "label": "Event Count by Type",
    "link_count": 0,
    "link_to": "Church Event Count by Type",
    "link_type": "Report",
@@ -46,54 +85,15 @@
   {
    "hidden": 0,
    "is_query_report": 1,
-   "label": "Church Event Attendance",
+   "label": "Event Attendance",
    "link_count": 0,
    "link_to": "Church Event Attendance",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Event Documents",
-   "link_count": 3,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Church Event",
-   "link_count": 0,
-   "link_to": "Church Event",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Church Event Type",
-   "link_count": 0,
-   "link_to": "Church Event Type",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Church Event Attendance Type",
-   "link_count": 0,
-   "link_to": "Church Event Attendance Type",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
   }
  ],
- "modified": "2025-09-21 22:51:37.462941",
+ "modified": "2025-09-25 22:37:33.632945",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Ministries",
