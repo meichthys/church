@@ -21,45 +21,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Collection Documents",
-   "link_count": 3,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Collection",
-   "link_count": 0,
-   "link_to": "Church Collection",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Fund",
-   "link_count": 0,
-   "link_to": "Church Fund",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Payment Type",
-   "link_count": 0,
-   "link_to": "Church Payment Type",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Collection Reports",
    "link_count": 3,
    "link_type": "DocType",
@@ -97,9 +58,48 @@
    "onboard": 0,
    "report_ref_doctype": "Church Collection",
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Collection Documents",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Collections",
+   "link_count": 0,
+   "link_to": "Church Collection",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Funds",
+   "link_count": 0,
+   "link_to": "Church Fund",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Types",
+   "link_count": 0,
+   "link_to": "Church Payment Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-09-25 22:38:18.675001",
+ "modified": "2025-09-25 23:12:50.561032",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Finances",
