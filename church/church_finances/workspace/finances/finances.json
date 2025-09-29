@@ -99,17 +99,17 @@
    "type": "Link"
   }
  ],
- "modified": "2025-09-25 23:12:50.561032",
+ "modified": "2025-09-28 23:15:54.369943",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Finances",
  "number_cards": [],
  "owner": "Administrator",
- "parent_page": "Church",
+ "parent_page": "",
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 26.0,
+ "sequence_id": 6.0,
  "shortcuts": [],
  "title": "Finances"
 }

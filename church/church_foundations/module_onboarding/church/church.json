@@ -16,7 +16,7 @@
  "documentation_url": "https://github.com/meichthys/church",
  "idx": 0,
  "is_complete": 0,
- "modified": "2025-09-28 22:45:55.701028",
+ "modified": "2025-09-28 22:48:47.382670",
  "modified_by": "Administrator",
  "module": "Church Foundations",
  "name": "Church",
@@ -38,7 +38,7 @@
    "step": "Church Prayer Request"
   }
  ],
- "subtitle": "People, Families, Events, Ministries, and more...",
+ "subtitle": "People, Families, Events, Ministries, Collections, and more...",
  "success_message": "Your Church is setup! \ud83c\udf89 May God grow your ministry \ud83d\ude4f",
  "title": "\u26ea Let's Set Up Your Church."
 }

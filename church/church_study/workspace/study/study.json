@@ -43,17 +43,17 @@
    "type": "Link"
   }
  ],
- "modified": "2025-09-25 23:13:00.638300",
+ "modified": "2025-09-28 23:15:54.406433",
  "modified_by": "Administrator",
  "module": "Church Study",
  "name": "Study",
  "number_cards": [],
  "owner": "Administrator",
- "parent_page": "Church",
+ "parent_page": "",
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 27.0,
+ "sequence_id": 7.0,
  "shortcuts": [],
  "title": "Study"
 }
