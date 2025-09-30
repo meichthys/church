@@ -101,7 +101,7 @@ fixtures = [
 	},
 	{
 		"dt": "Church Prayer Request Status",
-		"filters": [["status", "in", ("Answered", "Intercession", "Requested")]],
+		"filters": [["status", "in", ("Answered", "Being Prayed For", "Requested")]],
 	},
 	{
 		"dt": "Church Prayer Request Type",
@@ -109,9 +109,7 @@ fixtures = [
 	},
 	{
 		"dt": "Church Role Type",
-		"filters": [
-			["role", "in", ("Deacon", "Elder", "Pastor", "Secretary", "Treasurer")]
-		],
+		"filters": [["role", "in", ("Deacon", "Elder", "Pastor", "Secretary", "Treasurer")]],
 	},
 	{
 		"dt": "Custom DocPerm",
@@ -119,7 +117,7 @@ fixtures = [
 	},
 	{
 		"dt": "Dashboard Chart",
-		"filters": [["module", "like", "church"]],
+		"filters": [["module", "like", "Church"]],
 	},
 	{
 		"dt": "Form Tour",
@@ -127,7 +125,7 @@ fixtures = [
 	},
 	{
 		"dt": "Module Onboarding",
-		"filters": [["Name", "like", "church"]],
+		"filters": [["Name", "like", "Church"]],
 	},
 	{
 		"dt": "Module Profile",
@@ -143,7 +141,7 @@ fixtures = [
 	},
 	{
 		"dt": "Role Profile",
-		"filters": [["Name", "in", ["Church Manager", "Church User"]]],
+		"filters": [["Name", "like", "Church%"]],
 	},
 	{
 		"dt": "Web Page",
@@ -227,8 +225,8 @@ app_include_icons = ["church/icons/custom_icons.svg"]
 # Installation
 # ------------
 
-#before_install = "install.before_install"
-#after_install = "install.after_install"
+# before_install = "install.before_install"
+# after_install = "install.after_install"
 
 # Uninstallation
 # ------------
