@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "autoname": "autoincrement",
  "creation": "2025-09-13 00:16:52.698863",
  "description": "A request for prayer from (or for) a `Church Person`.",
@@ -81,9 +82,8 @@
   }
  ],
  "grid_page_length": 50,
- "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-25 22:47:04.584440",
+ "modified": "2025-09-29 23:30:23.363479",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Church Prayer Request",
