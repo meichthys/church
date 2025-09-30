@@ -9,9 +9,10 @@
  "engine": "InnoDB",
  "field_order": [
   "date",
-  "column_break_zdbp",
   "is_private",
-  "read_to_church",
+  "column_break_zdbp",
+  "share_with_church",
+  "shared_date",
   "section_break_qmpt",
   "file",
   "content"
@@ -29,7 +30,7 @@
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "Date",
+   "label": "Date Received",
    "reqd": 1
   },
   {
@@ -56,17 +57,6 @@
    "label": "Content"
   },
   {
-   "allow_in_quick_entry": 1,
-   "default": "0",
-   "fieldname": "read_to_church",
-   "fieldtype": "Check",
-   "in_filter": 1,
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
-   "label": "Read to Church?"
-  },
-  {
    "default": "0",
    "description": "Check this to prevent the letter from being displayed publicly (i.e. on the website).",
    "fieldname": "is_private",
@@ -76,13 +66,31 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Is Private?"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "description": "If this letter should be shared with the church.",
+   "fieldname": "share_with_church",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Share With Church?"
+  },
+  {
+   "description": "The date the letter was shared to the church.",
+   "fieldname": "shared_date",
+   "fieldtype": "Date",
+   "label": "Shared Date"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-09-23 22:41:59.658717",
+ "modified": "2025-09-29 23:55:37.070600",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Letter",
