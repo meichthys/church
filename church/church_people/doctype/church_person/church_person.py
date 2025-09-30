@@ -14,6 +14,10 @@ class ChurchPerson(Document):
 		self.full_name = f"{self.first_name}" + ((" " + self.last_name) if self.last_name else "")
 
 	def validate(self):
+		# Remove head of household status when family is removed
+		if not self.family and self.is_head_of_household:
+			self.set("is_head_of_household", False)
+		# Remove old head of household when new one is assigned - Also rename family
 		if self.is_head_of_household:
 			old_heads_of_household = frappe.db.get_all(
 				doctype="Church Person",
@@ -24,6 +28,7 @@ class ChurchPerson(Document):
 				],
 			)
 			if old_heads_of_household:
+				# There should only be one head of household, but just in case we loop through all of them.
 				for head in old_heads_of_household:
 					head_doc = frappe.get_doc("Church Person", head["name"])
 					frappe.msgprint(
@@ -31,6 +36,14 @@ class ChurchPerson(Document):
 					)
 					head_doc.is_head_of_household = False
 					head_doc.save()
+				# Rename family with new head of household
+				family_doc = frappe.get_doc("Church Family", self.family)
+				dashes = family_doc.family_name.rfind("-")
+				if dashes == -1:  # If no dashes found, add one
+					family_doc.family_name = f"{self.family} - {self.first_name}"
+				else:
+					family_doc.family_name = f"{family_doc.family_name[: dashes + 1]} {self.first_name}"
+				family_doc.save()
 
 		# Sync spouses
 		if self.spouse and self.is_married:
@@ -58,9 +71,10 @@ class ChurchPerson(Document):
 	@frappe.whitelist()
 	def new_family_from_person(self):
 		doc = frappe.new_doc("Church Family")
-		doc.family_name = self.last_name
+		doc.family_name = f"{self.last_name} - {self.first_name}"
 		doc.save()
 		self.set("family", doc)
+		self.set("is_head_of_household", True)
 		self.save()
 		self.reload()
 		frappe.msgprint(f"New family created: {doc.family_name}")
