@@ -188,12 +188,6 @@
     "parenttype": "Module Profile"
    },
    {
-    "module": "Website",
-    "parent": "Church",
-    "parentfield": "block_modules",
-    "parenttype": "Module Profile"
-   },
-   {
     "module": "Core",
     "parent": "Church",
     "parentfield": "block_modules",
@@ -202,7 +196,7 @@
   ],
   "docstatus": 0,
   "doctype": "Module Profile",
-  "modified": "2025-09-28 23:41:01.988904",
+  "modified": "2025-09-29 23:11:31.779249",
   "module_profile_name": "Church",
   "name": "Church"
  }
