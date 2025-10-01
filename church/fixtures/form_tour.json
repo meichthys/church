@@ -7,7 +7,7 @@
   "include_name_field": 0,
   "is_standard": 1,
   "list_name": "List",
-  "modified": "2025-09-06 02:00:55.841681",
+  "modified": "2025-09-30 21:54:12.850006",
   "module": "Desk",
   "name": "Church Person",
   "new_document_form": 0,
@@ -181,7 +181,7 @@
    },
    {
     "child_doctype": null,
-    "description": "You can define `Church Role`s that this person had been or is currently assigned.\nGo ahead and assign this person a 'Secretary' role starting today.",
+    "description": "You can define `Church Role`s that this person had been or is currently assigned.\nGo ahead and assign this person a 'Secretary' role starting today by clicking on the `Add Row` button below.",
     "element_selector": null,
     "fieldname": "church_roles",
     "fieldtype": "Table",
