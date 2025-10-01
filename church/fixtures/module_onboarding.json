@@ -24,10 +24,16 @@
   "doctype": "Module Onboarding",
   "documentation_url": "https://github.com/meichthys/church",
   "is_complete": 0,
-  "modified": "2025-09-28 22:48:47.382670",
+  "modified": "2025-09-30 21:21:52.088048",
   "module": "Church Foundations",
   "name": "Church",
   "steps": [
+   {
+    "parent": "Church",
+    "parentfield": "steps",
+    "parenttype": "Module Onboarding",
+    "step": "Church Manager"
+   },
    {
     "parent": "Church",
     "parentfield": "steps",
