@@ -16,12 +16,15 @@
  "documentation_url": "https://github.com/meichthys/church",
  "idx": 0,
  "is_complete": 0,
- "modified": "2025-09-28 22:48:47.382670",
+ "modified": "2025-09-30 21:21:52.088048",
  "modified_by": "Administrator",
  "module": "Church Foundations",
  "name": "Church",
  "owner": "Administrator",
  "steps": [
+  {
+   "step": "Church Manager"
+  },
   {
    "step": "Church Information"
   },
