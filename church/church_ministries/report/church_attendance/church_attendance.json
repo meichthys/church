@@ -11,7 +11,7 @@
  "is_standard": "Yes",
  "json": "{\"filters\":[[\"Church Event Attendance\",\"person\",\"is\",\"set\",false],[\"Church Event Attendance\",\"attendance_type\",\"in\",[\"Confirmed\",\"Assumed\"],false]],\"fields\":[[\"person\",\"Church Event Attendance\"],[\"event_name\",\"Church Event\"],[\"type\",\"Church Event\"],[\"attendance_type\",\"Church Event Attendance\"],[\"name\",\"Church Event\"]],\"order_by\":\"`tabChurch Event`.`modified` desc\",\"page_length\":20,\"column_widths\":{\"Church Event Attendance:person\":120,\"event_name\":120,\"type\":182,\"Church Event Attendance:attendance_type\":120,\"name\":361},\"group_by\":null}",
  "letterhead": null,
- "modified": "2025-09-21 22:47:13.526081",
+ "modified": "2025-10-02 01:12:41.676774",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Church Attendance",
@@ -23,6 +23,12 @@
  "roles": [
   {
    "role": "System Manager"
+  },
+  {
+   "role": "Church Manager"
+  },
+  {
+   "role": "Church User"
   }
  ],
  "timeout": 0

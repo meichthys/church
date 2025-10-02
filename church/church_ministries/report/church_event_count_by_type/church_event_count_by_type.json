@@ -28,7 +28,7 @@
  "is_standard": "Yes",
  "json": "{\"columns\":[{\"label\":\"Type\",\"fieldname\":\"type\",\"id\":\"type\",\"name\":\"Type\",\"width\":null,\"editable\":false,\"compareValue\":null},{\"label\":\"Count\",\"fieldname\":\"count\",\"id\":\"count\",\"name\":\"Count\",\"width\":null,\"editable\":false,\"compareValue\":null}],\"filters\":{\"start\":\"2025-06-01\",\"end\":\"2025-09-04\"}}",
  "letterhead": null,
- "modified": "2025-09-21 22:47:13.683013",
+ "modified": "2025-10-02 01:11:36.534790",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Church Event Count by Type",
@@ -42,6 +42,12 @@
  "roles": [
   {
    "role": "System Manager"
+  },
+  {
+   "role": "Church Manager"
+  },
+  {
+   "role": "Church User"
   }
  ],
  "timeout": 0
