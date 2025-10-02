@@ -11,7 +11,7 @@
  "is_standard": "Yes",
  "json": "{\"filters\":[],\"fields\":[[\"name\",\"Church Collection\"],[\"event\",\"Church Collection\"],[\"fund\",\"Church Donation\"],[\"person\",\"Church Donation\"],[\"payment_type\",\"Church Donation\"],[\"check_number\",\"Church Donation\"],[\"amount\",\"Church Donation\"]],\"order_by\":\"`tabChurch Collection`.`modified` desc\",\"page_length\":20,\"column_widths\":{\"name\":120,\"event\":120,\"Church Donation:fund\":120,\"Church Donation:person\":120,\"Church Donation:payment_type\":120,\"Church Donation:check_number\":120,\"Church Donation:amount\":120},\"group_by\":null}",
  "letterhead": null,
- "modified": "2025-09-21 22:47:37.149849",
+ "modified": "2025-10-02 01:10:11.876159",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Donations",
@@ -23,6 +23,9 @@
  "roles": [
   {
    "role": "System Manager"
+  },
+  {
+   "role": "Church Manager"
   }
  ],
  "timeout": 0

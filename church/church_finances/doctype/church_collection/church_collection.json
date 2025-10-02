@@ -11,6 +11,7 @@
   "event",
   "column_break_ijpy",
   "total_amount",
+  "fund_totals",
   "section_break_izta",
   "donations"
  ],
@@ -53,14 +54,22 @@
    "fieldname": "total_amount",
    "fieldtype": "Currency",
    "in_list_view": 1,
+   "in_preview": 1,
    "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fund_totals",
+   "fieldtype": "Table",
+   "label": "Fund Totals",
+   "options": "Church Collection Fund Total",
    "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-04 23:45:50.511534",
+ "modified": "2025-10-01 22:52:37.422727",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Collection",

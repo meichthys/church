@@ -11,7 +11,10 @@
   "description",
   "column_break_ojjy",
   "start_date",
-  "end_date"
+  "end_date",
+  "balance",
+  "section_break_xcgh",
+  "transactions"
  ],
  "fields": [
   {
@@ -42,6 +45,21 @@
    "fieldname": "end_date",
    "fieldtype": "Date",
    "label": "End Date"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Currency",
+   "label": "Balance"
+  },
+  {
+   "fieldname": "section_break_xcgh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "transactions",
+   "fieldtype": "Table",
+   "label": "Transactions",
+   "options": "Church Financial Transaction"
   }
  ],
  "grid_page_length": 50,
@@ -53,7 +71,7 @@
    "table_fieldname": "donations"
   }
  ],
- "modified": "2025-09-08 23:10:00.488734",
+ "modified": "2025-10-01 23:11:07.400554",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Fund",

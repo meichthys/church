@@ -1,11 +1,15 @@
 {
  "charts": [
   {
+   "chart_name": "Church Fund Balances",
+   "label": "Church Fund Balances"
+  },
+  {
    "chart_name": "Church Collections Sum",
    "label": "Collections"
   }
  ],
- "content": "[{\"id\":\"mncYXd3Fp_\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"Which of you, wishing to build a tower, does not first sit down and \\ncount the cost to see if he has the resources to complete it?\\\"</i>\",\"col\":12}},{\"id\":\"MmG7zVkZbr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Collections\",\"col\":12}},{\"id\":\"nN5R0rrK8W\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Xwvf2HyJiA\",\"type\":\"card\",\"data\":{\"card_name\":\"Collection Documents\",\"col\":4}},{\"id\":\"m34hRRgTkK\",\"type\":\"card\",\"data\":{\"card_name\":\"Collection Reports\",\"col\":4}},{\"id\":\"l_H4g7YzJQ\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "content": "[{\"id\":\"mncYXd3Fp_\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"Which of you, wishing to build a tower, does not first sit down and \\ncount the cost to see if he has the resources to complete it?\\\"</i>\",\"col\":12}},{\"id\":\"MmG7zVkZbr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Collections\",\"col\":6}},{\"id\":\"K7pkEdUhpZ\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Church Fund Balances\",\"col\":6}},{\"id\":\"nN5R0rrK8W\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Xwvf2HyJiA\",\"type\":\"card\",\"data\":{\"card_name\":\"Collection Documents\",\"col\":4}},{\"id\":\"m34hRRgTkK\",\"type\":\"card\",\"data\":{\"card_name\":\"Collection Reports\",\"col\":4}},{\"id\":\"lFJ3k1PnBW\",\"type\":\"card\",\"data\":{\"card_name\":\"Fund Reports\",\"col\":4}},{\"id\":\"l_H4g7YzJQ\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
  "creation": "2025-09-14 22:29:59.428671",
  "custom_blocks": [],
  "docstatus": 0,
@@ -97,9 +101,28 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fund Reports",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Church Fund Balances",
+   "link_count": 0,
+   "link_to": "Church Fund Balances",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-09-28 23:15:54.369943",
+ "modified": "2025-10-02 01:26:46.381167",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Finances",
