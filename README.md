@@ -28,6 +28,8 @@ The following features have been implemented in this app (see the [🗺️ Roadm
 - Collection/donation tracking
   - Donation entry with collection totals & split check support
   - Bank reconciliation report
+- Fund balance tracking
+  - Collections automatically update funds when saved
 - Church Belief tracking
 - Basic Church Website
   - About Page
@@ -95,8 +97,6 @@ Hopefully this roadmap will help avoid too much scope creep and provide a sense 
 
 - Sermon Doctype
 - Ministry tracking
-- Fund Tracking
-  - Update fund balance after collection submission
 - Add standard church website pages:
   - Home/Welcome
   - Missions
