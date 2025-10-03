@@ -1,0 +1,50 @@
+[
+ {
+  "description": "Support is sent once per year",
+  "docstatus": 0,
+  "doctype": "Church Missionary Support Frequency",
+  "frequency": "Yearly",
+  "modified": "2025-10-02 22:01:07.476782",
+  "name": "Yearly"
+ },
+ {
+  "description": "Support is sent 4 times per year",
+  "docstatus": 0,
+  "doctype": "Church Missionary Support Frequency",
+  "frequency": "Quarterly",
+  "modified": "2025-10-02 22:01:31.042863",
+  "name": "Quarterly"
+ },
+ {
+  "description": "Support is sent every two months",
+  "docstatus": 0,
+  "doctype": "Church Missionary Support Frequency",
+  "frequency": "Bi-Monthly",
+  "modified": "2025-10-02 22:01:48.560028",
+  "name": "Bi-Monthly"
+ },
+ {
+  "description": "Support is sent once per month",
+  "docstatus": 0,
+  "doctype": "Church Missionary Support Frequency",
+  "frequency": "Monthly",
+  "modified": "2025-10-02 22:02:02.944446",
+  "name": "Monthly"
+ },
+ {
+  "description": "Support is sent every two weeks",
+  "docstatus": 0,
+  "doctype": "Church Missionary Support Frequency",
+  "frequency": "Bi-Weekly",
+  "modified": "2025-10-02 22:02:38.770235",
+  "name": "Bi-Weekly"
+ },
+ {
+  "description": "Support is sent every week",
+  "docstatus": 0,
+  "doctype": "Church Missionary Support Frequency",
+  "frequency": "Weekly",
+  "modified": "2025-10-02 22:02:49.588365",
+  "name": "Weekly"
+ }
+]
