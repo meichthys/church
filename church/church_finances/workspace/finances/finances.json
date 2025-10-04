@@ -25,47 +25,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Collection Reports",
-   "link_count": 3,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Donations",
-   "link_count": 0,
-   "link_to": "Church Donations",
-   "link_type": "Report",
-   "onboard": 0,
-   "report_ref_doctype": "Church Collection",
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Collection Bank Reconciliation",
-   "link_count": 0,
-   "link_to": "Church Collection Bank Reconciliation",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Donations by Person (This Year)",
-   "link_count": 0,
-   "link_to": "Church Donations by Person",
-   "link_type": "Report",
-   "onboard": 0,
-   "report_ref_doctype": "Church Collection",
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Collection Documents",
    "link_count": 3,
    "link_type": "DocType",
@@ -120,9 +79,50 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Collection Reports",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Donations",
+   "link_count": 0,
+   "link_to": "Church Donations",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Church Collection",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Collection Bank Reconciliation",
+   "link_count": 0,
+   "link_to": "Church Collection Bank Reconciliation",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Donations Totals by Person (This Year)",
+   "link_count": 0,
+   "link_to": "Church Donations by Person",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Church Collection",
+   "type": "Link"
   }
  ],
- "modified": "2025-10-03 23:11:34.850597",
+ "modified": "2025-10-04 01:05:15.885894",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Finances",
