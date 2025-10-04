@@ -22,6 +22,7 @@ The following features have been implemented in this app (see the [🗺️ Roadm
 - `Church Prayer Request` tracking
   - Authenticated or Anonymous web-form submissions
   - Authenticated users can manage their own prayer requests
+- `Church Missionary` & `Church Missionary Agency` tracking
 - Church module desk workspace with guided setup steps
 - Event tracking
   - Event types, details, basic attendance tracking & reporting
