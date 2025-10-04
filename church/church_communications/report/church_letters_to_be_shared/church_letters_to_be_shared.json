@@ -1,0 +1,72 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [
+  {
+   "fieldname": "parenttype",
+   "fieldtype": "Link",
+   "label": "Type",
+   "options": "Doctype",
+   "width": 0
+  },
+  {
+   "fieldname": "parent",
+   "fieldtype": "Dynamic Link",
+   "label": "From",
+   "options": "parenttype",
+   "width": 0
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Received",
+   "width": 0
+  },
+  {
+   "fieldname": "is_private",
+   "fieldtype": "Check",
+   "label": "Private?",
+   "width": 0
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Data",
+   "label": "File",
+   "options": "URL",
+   "width": 200
+  },
+  {
+   "fieldname": "content",
+   "fieldtype": "Data",
+   "label": "Content",
+   "width": 0
+  }
+ ],
+ "creation": "2025-10-03 23:57:52.706273",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2025-10-04 00:57:20.117288",
+ "modified_by": "Administrator",
+ "module": "Church Communications",
+ "name": "Church Letters To Be Shared",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT parenttype, parent, date, is_private, COALESCE(file, \" \"), content, name \nFROM `tabChurch Letter`   \nWHERE share_with_church = True\n    AND shared_date IS NULL;",
+ "ref_doctype": "Church Person",
+ "report_name": "Church Letters To Be Shared",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Church Manager"
+  },
+  {
+   "role": "Church User"
+  }
+ ],
+ "timeout": 0
+}

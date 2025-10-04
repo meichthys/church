@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"nnvMTG5Sl5\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"Let no unwholesome talk come out of your mouths, but only what is helpful for building up the one in need and bringing grace to those who listen.\\\"/</i>\",\"col\":12}},{\"id\":\"ybuIQ-BIW-\",\"type\":\"card\",\"data\":{\"card_name\":\"Communication Reports\",\"col\":4}}]",
+ "content": "[{\"id\":\"nnvMTG5Sl5\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"Let no unwholesome talk come out of your mouths, but only what is helpful for building up the one in need and bringing grace to those who listen.\\\"/</i>\",\"col\":12}},{\"id\":\"ybuIQ-BIW-\",\"type\":\"card\",\"data\":{\"card_name\":\"Communication Reports\",\"col\":5}}]",
  "creation": "2025-10-03 23:10:33.370229",
  "custom_blocks": [],
  "docstatus": 0,
@@ -17,7 +17,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Communication Reports",
-   "link_count": 2,
+   "link_count": 3,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -25,7 +25,7 @@
   {
    "hidden": 0,
    "is_query_report": 1,
-   "label": "Church Missionary Letters",
+   "label": "Missionary Letters",
    "link_count": 0,
    "link_to": "Church Missionary Letters",
    "link_type": "Report",
@@ -35,15 +35,25 @@
   {
    "hidden": 0,
    "is_query_report": 1,
-   "label": "Church Person Letters",
+   "label": "Person Letters",
    "link_count": 0,
    "link_to": "Church Person Letters",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Letters Not Yet Shared With Curch",
+   "link_count": 0,
+   "link_to": "Church Letters To Be Shared",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-10-03 23:28:18.162236",
+ "modified": "2025-10-04 01:01:26.799817",
  "modified_by": "Administrator",
  "module": "Church Communications",
  "name": "Communications",
