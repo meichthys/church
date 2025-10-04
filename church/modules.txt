@@ -6,3 +6,4 @@ Church Prayers
 Church Foundations
 Church Study
 Church Customizations
+Church Communications
