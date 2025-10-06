@@ -11,7 +11,7 @@
  "is_standard": "Yes",
  "json": "{\"filters\":[[\"Church Person\",\"birthday\",\"Timespan\",\"this week\",false]],\"fields\":[[\"name\",\"Church Person\"],[\"birthday\",\"Church Person\"]],\"order_by\":\"`tabChurch Person`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"birthday\":120},\"group_by\":null}",
  "letterhead": null,
- "modified": "2025-09-21 22:47:58.498524",
+ "modified": "2025-10-02 01:14:54.138648",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Person Birthdays (This Week)",
@@ -23,6 +23,12 @@
  "roles": [
   {
    "role": "System Manager"
+  },
+  {
+   "role": "Church Manager"
+  },
+  {
+   "role": "Church User"
   }
  ],
  "timeout": 0

@@ -6,7 +6,7 @@
  "allow_multiple": 0,
  "allow_print": 0,
  "anonymous": 0,
- "apply_document_permissions": 1,
+ "apply_document_permissions": 0,
  "button_label": "Save",
  "condition_json": "[[\"Church Prayer Request\",\"status\",\"!=\",\"Answered\",false],[\"Church Prayer Request\",\"owner\",\"in\",[\"User\",null],false]]",
  "creation": "2025-09-13 22:28:01.939717",
@@ -56,7 +56,7 @@
  "list_title": "Your Prayer Requests",
  "login_required": 1,
  "max_attachment_size": 0,
- "modified": "2025-09-21 22:49:35.504853",
+ "modified": "2025-10-03 22:41:24.052519",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "prayer-request",
@@ -69,7 +69,7 @@
  "title": "Prayer Request ",
  "web_form_fields": [
   {
-   "allow_read_on_all_link_options": 0,
+   "allow_read_on_all_link_options": 1,
    "default": "Requested",
    "fieldname": "status",
    "fieldtype": "Link",
@@ -84,7 +84,7 @@
    "show_in_filter": 0
   },
   {
-   "allow_read_on_all_link_options": 0,
+   "allow_read_on_all_link_options": 1,
    "default": "",
    "fieldname": "type",
    "fieldtype": "Link",
@@ -112,7 +112,7 @@
    "show_in_filter": 0
   },
   {
-   "allow_read_on_all_link_options": 0,
+   "allow_read_on_all_link_options": 1,
    "default": "",
    "depends_on": "eval:frappe.session.user!='Guest';",
    "description": "If this request is for a specific person and the person is in this list, please select the person.",

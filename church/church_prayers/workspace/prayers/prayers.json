@@ -91,7 +91,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-09-25 23:02:54.667929",
+ "modified": "2025-10-03 23:11:35.193488",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Prayers",
@@ -106,11 +106,11 @@
   }
  ],
  "owner": "Administrator",
- "parent_page": "Church",
+ "parent_page": "",
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 24.0,
+ "sequence_id": 7.0,
  "shortcuts": [],
  "title": "Prayers"
 }

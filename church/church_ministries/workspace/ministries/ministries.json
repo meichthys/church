@@ -93,17 +93,17 @@
    "type": "Link"
   }
  ],
- "modified": "2025-09-25 23:11:31.704033",
+ "modified": "2025-10-03 23:11:34.945302",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Ministries",
  "number_cards": [],
  "owner": "Administrator",
- "parent_page": "Church",
+ "parent_page": "",
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 25.0,
+ "sequence_id": 4.0,
  "shortcuts": [],
  "title": "Ministries"
 }

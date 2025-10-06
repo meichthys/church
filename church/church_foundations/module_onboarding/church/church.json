@@ -2,20 +2,29 @@
  "allow_roles": [
   {
    "role": "Administrator"
+  },
+  {
+   "role": "Church Manager"
+  },
+  {
+   "role": "Church User"
   }
  ],
- "creation": "2025-09-07 00:14:45.033193",
+ "creation": "2025-09-26 23:06:43.733904",
  "docstatus": 0,
  "doctype": "Module Onboarding",
  "documentation_url": "https://github.com/meichthys/church",
  "idx": 0,
  "is_complete": 0,
- "modified": "2025-09-21 22:43:07.160106",
+ "modified": "2025-09-30 21:21:52.088048",
  "modified_by": "Administrator",
  "module": "Church Foundations",
  "name": "Church",
  "owner": "Administrator",
  "steps": [
+  {
+   "step": "Church Manager"
+  },
   {
    "step": "Church Information"
   },
@@ -32,7 +41,7 @@
    "step": "Church Prayer Request"
   }
  ],
- "subtitle": "People, Families, Events, Ministries, and more...",
+ "subtitle": "People, Families, Events, Ministries, Collections, and more...",
  "success_message": "Your Church is setup! \ud83c\udf89 May God grow your ministry \ud83d\ude4f",
  "title": "\u26ea Let's Set Up Your Church."
 }

@@ -12,6 +12,8 @@
   "photo",
   "data_btqw",
   "website",
+  "support_amount",
+  "support_frequency",
   "column_break_vedu",
   "country",
   "mailing_address",
@@ -24,12 +26,13 @@
  "fields": [
   {
    "fieldname": "agency",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_filter": 1,
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "Agency"
+   "label": "Agency",
+   "options": "Church Missionary Agency"
   },
   {
    "fieldname": "country",
@@ -106,13 +109,26 @@
    "fieldtype": "Table",
    "label": "Letters to the Church",
    "options": "Church Letter"
+  },
+  {
+   "fieldname": "support_amount",
+   "fieldtype": "Currency",
+   "label": "Support Amount",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "support_frequency",
+   "fieldtype": "Link",
+   "label": "Support Frequency",
+   "mandatory_depends_on": "eval: doc.support_amount>0;",
+   "options": "Church Missionary Support Frequency"
   }
  ],
  "grid_page_length": 50,
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-23 22:20:41.577985",
+ "modified": "2025-10-02 22:27:52.752228",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Church Missionary",

@@ -1,0 +1,76 @@
+{
+ "add_total_row": 1,
+ "add_translate_data": 0,
+ "columns": [
+  {
+   "fieldname": "fund",
+   "fieldtype": "Link",
+   "label": "Fund",
+   "options": "Church Fund",
+   "width": 0
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "width": 0
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Data",
+   "label": "Notes",
+   "width": 0
+  },
+  {
+   "fieldname": "creation",
+   "fieldtype": "Datetime",
+   "label": "Date",
+   "width": 0
+  }
+ ],
+ "creation": "2025-10-02 00:47:04.809206",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "default": "",
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "mandatory": 1,
+   "options": "",
+   "wildcard_filter": 0
+  },
+  {
+   "default": "",
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2025-10-02 00:47:04.809206",
+ "modified_by": "Administrator",
+ "module": "Church Finances",
+ "name": "Church Fund Transactions By Date",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT   \n    cf.fund,  \n    ft.amount,  \n    ft.notes,  \n    ft.creation\nFROM   \n    `tabChurch Fund` cf  \nINNER JOIN   \n    `tabChurch Financial Transaction` ft ON ft.parent = cf.name  \nWHERE   \n    ft.parenttype = 'Church Fund'\n    AND (%(from_date)s IS NULL OR DATE(ft.creation) >= %(from_date)s)  \n    AND (%(to_date)s IS NULL OR DATE(ft.creation) <= %(to_date)s) \nORDER BY\n  cf.fund, ft.creation DESC",
+ "ref_doctype": "Church Fund",
+ "report_name": "Church Fund Transactions By Date",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Church User"
+  },
+  {
+   "role": "Church Manager"
+  }
+ ],
+ "timeout": 0
+}

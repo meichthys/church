@@ -11,7 +11,7 @@
  "is_standard": "Yes",
  "json": "{\"filters\":[[\"Church Role\",\"end_date\",\"Timespan\",\"this month\",false]],\"fields\":[[\"name\",\"Church Person\"],[\"role\",\"Church Role\"],[\"start_date\",\"Church Role\"],[\"end_date\",\"Church Role\"],[\"notes\",\"Church Role\"]],\"order_by\":\"`tabChurch Person`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"Church Role:role\":120,\"Church Role:start_date\":120,\"Church Role:end_date\":120,\"Church Role:notes\":120},\"group_by\":null}",
  "letterhead": null,
- "modified": "2025-09-21 22:47:58.412154",
+ "modified": "2025-10-02 01:15:17.185570",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Person Roles Ending This Month",
@@ -23,6 +23,12 @@
  "roles": [
   {
    "role": "System Manager"
+  },
+  {
+   "role": "Church Manager"
+  },
+  {
+   "role": "Church User"
   }
  ],
  "timeout": 0

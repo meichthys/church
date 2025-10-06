@@ -22,12 +22,15 @@ The following features have been implemented in this app (see the [🗺️ Roadm
 - `Church Prayer Request` tracking
   - Authenticated or Anonymous web-form submissions
   - Authenticated users can manage their own prayer requests
+- `Church Missionary` & `Church Missionary Agency` tracking
 - Church module desk workspace with guided setup steps
 - Event tracking
   - Event types, details, basic attendance tracking & reporting
 - Collection/donation tracking
   - Donation entry with collection totals & split check support
   - Bank reconciliation report
+- Fund balance tracking
+  - Collections automatically update funds when saved
 - Church Belief tracking
 - Basic Church Website
   - About Page
@@ -35,40 +38,59 @@ The following features have been implemented in this app (see the [🗺️ Roadm
 
 ## 📥 Installing Frappe
 
-To use this app, you must have a working Frappe environment. There are a variety of ways to install a Frappe instance. The recommended ways for this project are:
+To use the 'Church' app, you must have a working Frappe environment first. There are a variety of ways to install a Frappe instance. The recommended ways for this project are:
 
 ### ☁️ In the Cloud
 The easiest (but not free) way to get a working Frappe environment is to use [Frappe Cloud](https://frappe.io/cloud). For a few dollars per month you can run an instance in the cloud. You get your choice of support options and shouldn't need to worry about data loss yourself.
+Note: Wit this option, the money you pay to FrappeCloud is not received by maintainers of this 'Church' app. - We offer the 'Church' software for free, but you pay for the cloud hosting through Frappe.
 
 ### 💪 Self-Host
-If you're the more technical or frugal type, you can self-host an instance on a home pc or server. [Frappe Manager](https://github.com/rtcamp/frappe-manager) can be used to quickly setup a local frappe instance. The general steps are:
+If you're the more technical and/or frugal type, you can self-host an instance on a home pc or server. [Frappe Manager](https://github.com/rtcamp/frappe-manager) can be used to quickly setup a local frappe instance. It's not as easy as a simple .exe file install, but we think you can do it (Please ask us for help if you can't)! The general steps are:
 
-1. Find a machine onto which you can install Frappe (A dedicated linux-based machine is best. Windows is not recommended as it requires the use of [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).)
+1. Find a machine onto which you can install Frappe (A dedicated linux-based machine is best. Windows is possible, but is not recommended as it requires some extra steps and the use of [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).)
 2. Run the [frappe-manager install script](https://github.com/rtCamp/Frappe-Manager/tree/develop/scripts)
-3. Create a new site using frappe-manager: `fm create -e prod your_site.com`.
+3. Create a new site using frappe-manager: `fm create -e prod <church.your_site.com>`.
 4. Update DNS records to point to your new site. This is a bit outside the scope of this project, but basically you need to either update your hosts file to map your site url (used in the above command) to the ip address of the machine hosting the frappe instance. Alternatively, you can update your DNS server on your router to point to your new site. If you need help with this, you can file an issue and I'd be glad to schedule a call to try to help you set it up.
 
-Making a local instance of frappe accessible from outside of your network is currently out of the scope of this project, but with some persistence and some technical expertise, it can be achieved. If you are uncomfortable with this, it may be best to use the Frappe Cloud option above.
+Making a local instance of frappe accessible from outside of your network is currently out of the scope of this project, but with some persistence and some technical expertise, it can be achieved. If you are completely lost or uncomfortable with this, it may be best to use the Frappe Cloud option above, or contact us for help. We'd be glad to help where we can.
 
 ## ⛪ Installing this Church app
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+To install this app on your frappe instance:
 
-If self-hosting, you can use bench by activating the bench environment with `fm shell`.
+- If hosting on Frappe Cloud, you should be able to log into your Frappe Cloud dashboard, select your site, and install the app from the list of apps.
+- If you are self-hosting, you can use bench by activating the [bench](https://github.com/frappe/bench) environment with `fm shell` and then running the following
 
-To install Church:
-```bash
-# First we need to download the app:
-bench get-app https://github.com/meichthys/church
-## Or if you want to try the latest development version:
-bench get-app https://github.com/meichthys/church --branch develop
+  ```bash
+  # Set the bench command to use your site (Replace `<church.your_site.com>` with your actual site name):
+  bench use <church.your_site.com>
 
-# Then we can install the app:
-bench install-app church
-```
+  # Download the app:
+  bench get-app https://github.com/meichthys/church
+  ## Or if you want to try the latest development version:
+  bench get-app https://github.com/meichthys/church --branch develop
+
+  # Install the app:
+  bench install-app church
+
+  # Migrate the app for good measure:
+  bench migrate
+
+  # In the future, to update the app to the latest version, log into the host server and run:
+  fm shell
+  bench update
+  bench migrate
+  ```
 
 After the above installation you should be able to access the web interface using the URL you defined in the `bench create` command above. You should see the `Church` app installed when you view `Help > About`.
 
-Before you start using the app, it is a good idea to setup a new `User` in the system with the `Church Admin` Role Profile and `Church Admin` Module Profile. This user will be able to manage all aspects of the church (the `Administrator` user should be reserved for system wide maintenance or troubleshooting). Additionally, if you want to delegate some responsibilities to other people, you can create additional `User`s with the `Church User` Role Profile and `Church User` Module Profiles. Thise types of users will be able to read and update most information, but not critical information. To see a list of permissions you can open the `Role Permissions Manager` and select the `Church Admin` or `Church User` roles to see what permissions these users roles have.
+Before you start using the app be sure to:
+
+1. Change the `Administrator` users's password (the default is `admin`). This user should only be used by the site administrator - and should not be used on a daily basis.
+2. Setup a new user in the system by typing `New User` in the searchbar. Under the "Roles & Permissions" tab, Give this user the `Church Manager` Role Profile and `Church` Module Profile.
+   This user will be able to manage all aspects of the church.
+3. If you want more than one user on the system, or if you want to delegate some responsibilities to other people, you can create additional users with the `Church User` Role Profile and `Church` Module Profiles.
+   These types of users will be able to read and update most information, but not certain critical information.
+   - To see a list of permissions you can open the `Role Permissions Manager` and select the `Church Manager` or `Church User` roles to see what permissions these users roles have.
 
 ## 🗺️ Feature Roadmap
 
@@ -76,8 +98,6 @@ Hopefully this roadmap will help avoid too much scope creep and provide a sense 
 
 - Sermon Doctype
 - Ministry tracking
-- Fund Tracking
-  - Update fund balance after collection submission
 - Add standard church website pages:
   - Home/Welcome
   - Missions

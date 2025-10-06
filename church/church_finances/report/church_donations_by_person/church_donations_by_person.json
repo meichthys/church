@@ -11,7 +11,7 @@
  "is_standard": "Yes",
  "json": "{\"filters\":[[\"Church Collection\",\"date\",\"Timespan\",\"this year\",false]],\"fields\":[[\"person\",\"Church Donation\"],[\"_aggregate_column\",\"Church Donation\"]],\"order_by\":\"`tabChurch Collection`.`modified` desc\",\"add_totals_row\":true,\"page_length\":20,\"column_widths\":{\"Church Donation:person\":120,\"_aggregate_column\":200},\"group_by\":{\"group_by\":\"`tabChurch Donation`.`person`\",\"aggregate_function\":\"sum\",\"aggregate_on\":\"`tabChurch Donation`.`amount`\"}}",
  "letterhead": null,
- "modified": "2025-09-21 22:47:37.187395",
+ "modified": "2025-10-02 01:09:55.346449",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Donations by Person",
@@ -23,6 +23,9 @@
  "roles": [
   {
    "role": "System Manager"
+  },
+  {
+   "role": "Church Manager"
   }
  ],
  "timeout": 0

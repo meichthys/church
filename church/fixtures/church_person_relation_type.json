@@ -171,14 +171,6 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Church Person Relation Type",
-  "modified": "2025-08-26 01:30:00.557230",
-  "name": "Brother",
-  "relation_type": "Brother"
- },
- {
-  "description": null,
-  "docstatus": 0,
-  "doctype": "Church Person Relation Type",
   "modified": "2025-08-26 01:24:08.640635",
   "name": "Wife",
   "relation_type": "Wife"
@@ -190,5 +182,13 @@
   "modified": "2025-08-26 01:24:08.691750",
   "name": "Husband",
   "relation_type": "Husband"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Person Relation Type",
+  "modified": "2025-08-26 01:30:00.557230",
+  "name": "Brother",
+  "relation_type": "Brother"
  }
 ]

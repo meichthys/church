@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "autoname": "autoincrement",
  "creation": "2025-09-13 00:16:52.698863",
  "description": "A request for prayer from (or for) a `Church Person`.",
@@ -42,7 +43,8 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Related Person",
-   "options": "Church Person"
+   "options": "Church Person",
+   "search_index": 1
   },
   {
    "fieldname": "section_break_usaz",
@@ -57,7 +59,7 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Request",
-   "reqd": 1
+   "mandatory_depends_on": "eval: doc.type!=\"Unspoken\";"
   },
   {
    "allow_in_quick_entry": 1,
@@ -81,9 +83,8 @@
   }
  ],
  "grid_page_length": 50,
- "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-25 22:47:04.584440",
+ "modified": "2025-09-29 23:50:36.602523",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Church Prayer Request",

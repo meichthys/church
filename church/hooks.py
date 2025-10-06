@@ -14,7 +14,18 @@ fixtures = [
 	},
 	{
 		"dt": "Church Event Attendance Type",
-		"filters": [["type", "in", ("Absent", "Assumed", "Confirmed", "Unknown")]],
+		"filters": [
+			[
+				"type",
+				"in",
+				(
+					"Absent",
+					"Assumed",
+					"Confirmed",
+					"Unknown",
+				),
+			]
+		],
 	},
 	{
 		"dt": "Church Event Type",
@@ -33,16 +44,20 @@ fixtures = [
 			]
 		],
 	},
+	# `Church Fund` fixtures are manually created since we don't want to export test data
 	{
-		"dt": "Church Fund",
+		"dt": "Church Missionary Support Frequency",
 		"filters": [
 			[
-				"fund",
+				"frequency",
 				"in",
 				(
-					"Building",
-					"General",
-					"Missions",
+					"Weekly",
+					"Bi-Weekly",
+					"Monthly",
+					"Bi-Monthly",
+					"Quarterly",
+					"Yearly",
 				),
 			]
 		],
@@ -97,20 +112,60 @@ fixtures = [
 	},
 	{
 		"dt": "Church Member Status",
-		"filters": [["status", "in", ("Inactive", "Active")]],
+		"filters": [
+			[
+				"status",
+				"in",
+				(
+					"Inactive",
+					"Active",
+				),
+			]
+		],
 	},
 	{
 		"dt": "Church Prayer Request Status",
-		"filters": [["status", "in", ("Answered", "Intercession", "Requested")]],
+		"filters": [
+			[
+				"status",
+				"in",
+				(
+					"Answered",
+					"Being Prayed For",
+					"Requested",
+				),
+			]
+		],
 	},
 	{
 		"dt": "Church Prayer Request Type",
-		"filters": [["type", "in", ("Health", "Praise", "Salvation", "Unspoken")]],
+		"filters": [
+			[
+				"type",
+				"in",
+				(
+					"Health",
+					"Praise",
+					"Salvation",
+					"Unspoken",
+				),
+			]
+		],
 	},
 	{
 		"dt": "Church Role Type",
 		"filters": [
-			["role", "in", ("Deacon", "Elder", "Pastor", "Secretary", "Treasurer")]
+			[
+				"role",
+				"in",
+				(
+					"Deacon",
+					"Elder",
+					"Pastor",
+					"Secretary",
+					"Treasurer",
+				),
+			]
 		],
 	},
 	{
@@ -119,23 +174,23 @@ fixtures = [
 	},
 	{
 		"dt": "Dashboard Chart",
-		"filters": [["module", "like", "church"]],
+		"filters": [["module", "like", "Church%"]],
 	},
 	{
 		"dt": "Form Tour",
-		"filters": [["Name", "in", ["Church Person"]]],
+		"filters": [["Name", "like", "Church%"]],
 	},
 	{
 		"dt": "Module Onboarding",
-		"filters": [["Name", "like", "church"]],
+		"filters": [["Name", "like", "Church%"]],
 	},
 	{
 		"dt": "Module Profile",
-		"filters": [["Name", "in", ("Church")]],
+		"filters": [["Name", "like", "Church%"]],
 	},
 	{
 		"dt": "Onboarding Step",
-		"filters": [["Name", "in", ["Church Person"]]],
+		"filters": [["Name", "like", "Church%"]],
 	},
 	{
 		"dt": "Role",
@@ -143,11 +198,20 @@ fixtures = [
 	},
 	{
 		"dt": "Role Profile",
-		"filters": [["Name", "in", ["Church Manager", "Church User"]]],
+		"filters": [["Name", "like", "Church%"]],
 	},
 	{
 		"dt": "Web Page",
-		"filters": [["Name", "in", ["About Us", "Our Beliefs"]]],
+		"filters": [
+			[
+				"Name",
+				"in",
+				[
+					"About Us",
+					"Our Beliefs",
+				],
+			]
+		],
 	},
 ]
 # Apps
@@ -227,8 +291,8 @@ app_include_icons = ["church/icons/custom_icons.svg"]
 # Installation
 # ------------
 
-#before_install = "install.before_install"
-#after_install = "install.after_install"
+# before_install = "install.before_install"
+# after_install = "install.after_install"
 
 # Uninstallation
 # ------------

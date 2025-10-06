@@ -11,18 +11,22 @@
  "dynamic_filters_json": "[]",
  "filters_json": "[]",
  "group_by_type": "Count",
- "idx": 2,
+ "idx": 3,
  "is_public": 0,
  "is_standard": 1,
- "last_synced_on": "2025-09-21 22:10:31.079736",
- "modified": "2025-09-21 22:40:42.003149",
+ "last_synced_on": "2025-10-03 22:59:38.179280",
+ "modified": "2025-10-03 23:00:21.417449",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Collections Sum",
  "number_of_groups": 0,
  "owner": "Administrator",
  "parent_document_type": "Church Collection",
- "roles": [],
+ "roles": [
+  {
+   "role": "Church Manager"
+  }
+ ],
  "show_values_over_chart": 1,
  "source": "",
  "time_interval": "Weekly",
