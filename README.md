@@ -5,7 +5,9 @@
 
 A fully open-source church management app built on the [Frappe Framework](https://frappe.io/framework).
 
-![onboarding screenshot](screenshots/Onboarding.png "Onboarding")
+Prayers                   |       People              | Finances
+:-------------------------:|:-------------------------: |:-----:
+![](./screenshots/prayers.png)  |  ![](./screenshots/people.png) | ![](./screenshots/finances.png)
 
 ## ✨ Features
 
@@ -25,7 +27,7 @@ The following features have been implemented in this app (see the [🗺️ Roadm
 - `Church Missionary` & `Church Missionary Agency` tracking
 - Church module desk workspace with guided setup steps
 - Event tracking
-  - Event types, details, basic attendance tracking & reporting
+  - Event types, details, basic attendance tracking & reporting & templating
 - Collection/donation tracking
   - Donation entry with collection totals & split check support
   - Bank reconciliation report
@@ -111,8 +113,6 @@ Hopefully this roadmap will help avoid too much scope creep and provide a sense 
   - Show tracked giving
   - Show tracked attendance
     - Allow updating attendance status(?)
-- Event templating/recurrence
-  - Templating via `Church Event Type` default values table(?)
 - Add Onboarding Tours
   - Add 'Tutorial' button to each doctype form
   - [Email setup](https://github.com/meichthys/church/issues/32)
