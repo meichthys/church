@@ -18,6 +18,8 @@
   "attendance_total",
   "address",
   "description",
+  "section_break_bkwy",
+  "schedule",
   "section_break_dlpa",
   "attendance"
  ],
@@ -111,12 +113,22 @@
    "fieldtype": "Int",
    "label": "Attendance Total",
    "read_only": 1
+  },
+  {
+   "fieldname": "section_break_bkwy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "schedule",
+   "fieldtype": "Table",
+   "label": "Schedule",
+   "options": "Church Event Schedule"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-10-07 23:45:56.379848",
+ "modified": "2025-10-08 01:01:03.335833",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Church Event",
