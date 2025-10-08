@@ -8,6 +8,9 @@
  "engine": "InnoDB",
  "field_order": [
   "type",
+  "column_break_pgdp",
+  "template_event",
+  "section_break_pepr",
   "description"
  ],
  "fields": [
@@ -26,6 +29,21 @@
    "label": "Type of Event",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "column_break_pgdp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Select an existing event here to use it as a template for creating future events of the same type.",
+   "fieldname": "template_event",
+   "fieldtype": "Link",
+   "label": "Template Event",
+   "options": "Church Event"
+  },
+  {
+   "fieldname": "section_break_pepr",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
@@ -36,7 +54,7 @@
    "link_fieldname": "type"
   }
  ],
- "modified": "2025-09-08 23:01:03.227258",
+ "modified": "2025-10-07 22:26:25.870247",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Church Event Type",

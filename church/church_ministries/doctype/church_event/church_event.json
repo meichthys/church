@@ -7,8 +7,8 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "event_name",
   "type",
+  "event_name",
   "all_day",
   "start_date",
   "start_time",
@@ -116,7 +116,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-29 23:46:26.798142",
+ "modified": "2025-10-07 23:45:56.379848",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Church Event",
@@ -136,7 +136,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
