@@ -9,7 +9,7 @@
    "label": "Collections"
   }
  ],
- "content": "[{\"id\":\"mncYXd3Fp_\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"Which of you, wishing to build a tower, does not first sit down and \\ncount the cost to see if he has the resources to complete it?\\\"</i>\",\"col\":12}},{\"id\":\"MmG7zVkZbr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Collections\",\"col\":6}},{\"id\":\"K7pkEdUhpZ\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Church Fund Balances\",\"col\":6}},{\"id\":\"nN5R0rrK8W\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Xwvf2HyJiA\",\"type\":\"card\",\"data\":{\"card_name\":\"Collection Documents\",\"col\":4}},{\"id\":\"m34hRRgTkK\",\"type\":\"card\",\"data\":{\"card_name\":\"Collection Reports\",\"col\":4}},{\"id\":\"lFJ3k1PnBW\",\"type\":\"card\",\"data\":{\"card_name\":\"Fund Reports\",\"col\":4}},{\"id\":\"l_H4g7YzJQ\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "content": "[{\"id\":\"mncYXd3Fp_\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"Which of you, wishing to build a tower, does not first sit down and \\ncount the cost to see if he has the resources to complete it?\\\"</i>\",\"col\":12}},{\"id\":\"MmG7zVkZbr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Collections\",\"col\":6}},{\"id\":\"K7pkEdUhpZ\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Church Fund Balances\",\"col\":6}},{\"id\":\"nN5R0rrK8W\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Xwvf2HyJiA\",\"type\":\"card\",\"data\":{\"card_name\":\"Collection Documents\",\"col\":4}},{\"id\":\"m34hRRgTkK\",\"type\":\"card\",\"data\":{\"card_name\":\"Collection Reports\",\"col\":4}},{\"id\":\"lFJ3k1PnBW\",\"type\":\"card\",\"data\":{\"card_name\":\"Fund Reports\",\"col\":4}},{\"id\":\"hN4s7iuMS3\",\"type\":\"card\",\"data\":{\"card_name\":\"Expense Documents\",\"col\":4}},{\"id\":\"l_H4g7YzJQ\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
  "creation": "2025-09-14 22:29:59.428671",
  "custom_blocks": [],
  "docstatus": 0,
@@ -22,45 +22,6 @@
  "is_hidden": 0,
  "label": "Finances",
  "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Collection Documents",
-   "link_count": 3,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Collections",
-   "link_count": 0,
-   "link_to": "Church Collection",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Funds",
-   "link_count": 0,
-   "link_to": "Church Fund",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Payment Types",
-   "link_count": 0,
-   "link_to": "Church Payment Type",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
   {
    "hidden": 0,
    "is_query_report": 0,
@@ -120,9 +81,77 @@
    "onboard": 0,
    "report_ref_doctype": "Church Collection",
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Collection Documents",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Collections",
+   "link_count": 0,
+   "link_to": "Church Collection",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Funds",
+   "link_count": 0,
+   "link_to": "Church Fund",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Types",
+   "link_count": 0,
+   "link_to": "Church Payment Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Expense Documents",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Expenses",
+   "link_count": 0,
+   "link_to": "Church Expense",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Expense Types",
+   "link_count": 0,
+   "link_to": "Church Expense Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-10-04 01:05:15.885894",
+ "modified": "2025-10-09 02:42:35.620998",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Finances",
