@@ -41,8 +41,13 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-09-17 22:37:30.632486",
+ "links": [
+  {
+   "link_doctype": "Church Bible Reference",
+   "link_fieldname": "book"
+  }
+ ],
+ "modified": "2025-10-08 23:25:55.315934",
  "modified_by": "Administrator",
  "module": "Church Study",
  "name": "Church Bible Book",
