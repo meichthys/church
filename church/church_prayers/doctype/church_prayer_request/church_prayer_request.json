@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_import": 1,
- "autoname": "autoincrement",
+ "autoname": "format:Prayer Request {######}",
  "creation": "2025-09-13 00:16:52.698863",
  "description": "A request for prayer from (or for) a `Church Person`.",
  "doctype": "DocType",
@@ -83,12 +83,18 @@
   }
  ],
  "grid_page_length": 50,
- "links": [],
- "modified": "2025-09-29 23:50:36.602523",
+ "links": [
+  {
+   "link_doctype": "Church Prayer",
+   "link_fieldname": "topic",
+   "table_fieldname": "topics"
+  }
+ ],
+ "modified": "2025-10-08 23:22:32.976757",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Church Prayer Request",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -106,9 +112,11 @@
  ],
  "quick_entry": 1,
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "request",
  "track_changes": 1,
  "track_seen": 1,
  "track_views": 1

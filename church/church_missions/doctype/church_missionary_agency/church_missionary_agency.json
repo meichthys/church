@@ -77,8 +77,13 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-10-02 22:28:28.306082",
+ "links": [
+  {
+   "link_doctype": "Church Missionary",
+   "link_fieldname": "agency"
+  }
+ ],
+ "modified": "2025-10-08 23:23:43.351442",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Church Missionary Agency",

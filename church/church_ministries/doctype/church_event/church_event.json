@@ -127,8 +127,13 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-10-08 01:01:03.335833",
+ "links": [
+  {
+   "link_doctype": "Church Collection",
+   "link_fieldname": "event"
+  }
+ ],
+ "modified": "2025-10-08 23:02:44.654729",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Church Event",

@@ -55,7 +55,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Prayer Request Documents",
-   "link_count": 3,
+   "link_count": 4,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -89,9 +89,19 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Prayers",
+   "link_count": 0,
+   "link_to": "Church Prayer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-10-03 23:11:35.193488",
+ "modified": "2025-10-08 23:56:20.099820",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Prayers",
