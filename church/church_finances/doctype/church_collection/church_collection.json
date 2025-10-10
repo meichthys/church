@@ -9,11 +9,13 @@
  "field_order": [
   "date",
   "event",
+  "notes",
   "column_break_ijpy",
   "total_amount",
   "fund_totals",
   "section_break_izta",
-  "donations"
+  "donations",
+  "amended_from"
  ],
  "fields": [
   {
@@ -23,7 +25,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Event",
-   "options": "Church Event"
+   "options": "Church Event",
+   "search_index": 1
   },
   {
    "default": "now",
@@ -64,12 +67,28 @@
    "label": "Fund Totals",
    "options": "Church Collection Fund Total",
    "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Church Collection",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-10-01 22:52:37.422727",
+ "modified": "2025-10-09 22:56:43.397335",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Collection",
