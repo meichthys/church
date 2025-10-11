@@ -40,7 +40,7 @@ class ChurchCollection(Document):
 						"amount": fund_total,
 						"source_type": "Church Collection",
 						"source": self.name,
-						"date": frappe.utils.nowdate(),
+						"date": frappe.utils.now(),
 					},
 				)
 				fund_doc.balance = (fund_doc.balance or 0) + fund_total

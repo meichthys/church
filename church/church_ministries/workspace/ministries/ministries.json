@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"Kwawi9Etd-\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"So whether you eat or drink or whatever you do, do it all to the glory of God.\\\"</i>\",\"col\":12}},{\"id\":\"TDh-inBJuc\",\"type\":\"card\",\"data\":{\"card_name\":\"Event Documents\",\"col\":6}},{\"id\":\"Rbw38py5Jn\",\"type\":\"card\",\"data\":{\"card_name\":\"Event Reports\",\"col\":6}}]",
+ "content": "[{\"id\":\"Kwawi9Etd-\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"So whether you eat or drink or whatever you do, do it all to the glory of God.\\\"</i>\",\"col\":12}},{\"id\":\"TDh-inBJuc\",\"type\":\"card\",\"data\":{\"card_name\":\"Event Documents\",\"col\":3}},{\"id\":\"Sr-qVFGTSJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Song Documents\",\"col\":8}},{\"id\":\"Rbw38py5Jn\",\"type\":\"card\",\"data\":{\"card_name\":\"Event Reports\",\"col\":3}}]",
  "creation": "2025-09-14 22:36:40.737780",
  "custom_blocks": [],
  "docstatus": 0,
@@ -91,9 +91,28 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Song Documents",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Songs",
+   "link_count": 0,
+   "link_to": "Church Song",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-10-03 23:11:34.945302",
+ "modified": "2025-10-10 23:03:25.100584",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Ministries",

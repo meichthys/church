@@ -1,0 +1,29 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-10-10 22:24:01.259125",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"Church Expense\"],[\"docstatus\",\"Church Expense\"],[\"type\",\"Church Expense\"],[\"notes\",\"Church Expense\"],[\"date\",\"Church Expense\"],[\"amount\",\"Church Expense\"]],\"order_by\":\"`tabChurch Expense`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":238,\"docstatus\":120,\"type\":120,\"notes\":120,\"date\":120,\"amount\":120},\"group_by\":null,\"chart_args\":{\"chart_type\":\"pie\",\"x_axis\":\"type\",\"y_axes\":[\"amount\"]}}",
+ "letterhead": null,
+ "modified": "2025-10-10 22:26:37.688841",
+ "modified_by": "Administrator",
+ "module": "Church Finances",
+ "name": "Church Expenses",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Church Expense",
+ "report_name": "Church Expenses",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}
