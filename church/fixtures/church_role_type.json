@@ -32,10 +32,10 @@
   "role": "Secretary"
  },
  {
-  "description": "A deacon of the church",
+  "description": "",
   "docstatus": 0,
   "doctype": "Church Role Type",
-  "modified": "2025-08-26 23:13:58.946830",
+  "modified": "2025-10-10 22:35:39.135319",
   "name": "Deacon - 00003",
   "role": "Deacon"
  }
