@@ -153,25 +153,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Expense Reports",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Expenses",
-   "link_count": 0,
-   "link_to": "Church Expense",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Fund Reports",
    "link_count": 1,
    "link_type": "DocType",
@@ -187,9 +168,29 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Expense Reports",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Expenses",
+   "link_count": 0,
+   "link_to": "Church Expenses",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Church Expense",
+   "type": "Link"
   }
  ],
- "modified": "2025-10-10 00:19:21.846035",
+ "modified": "2025-10-10 22:24:23.072221",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Finances",
