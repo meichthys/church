@@ -149,8 +149,8 @@ Pre-commit is configured to use the following tools for checking and formatting 
 - prettier
 - pyupgrade
 
-# 🔑 License
+# 🔑 License: MIT
 
-MIT
+>You can copy, translate, modify, and distribute this resource, without restriction, and without needing to ask permission. This resource is freely given (Matt 10:8) for the sake of the gospel.
 
 ![Freely given](church/public/media/freely_given.svg)
