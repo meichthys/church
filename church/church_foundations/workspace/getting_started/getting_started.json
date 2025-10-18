@@ -4,7 +4,7 @@
  "creation": "2025-08-22 00:39:02.127277",
  "custom_blocks": [
   {
-   "custom_block_name": "Workspace Cover Photo",
+   "custom_block_name": "Church Cover Photo",
    "label": "Workspace Cover Photo"
   }
  ],
@@ -18,7 +18,7 @@
  "is_hidden": 0,
  "label": "Getting Started",
  "links": [],
- "modified": "2025-10-17 22:22:48.358253",
+ "modified": "2025-10-17 22:27:35.400181",
  "modified_by": "Administrator",
  "module": "Church Foundations",
  "name": "Getting Started",
