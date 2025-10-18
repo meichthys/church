@@ -173,6 +173,10 @@ fixtures = [
 		"filters": [["role", "like", "Church%"]],
 	},
 	{
+		"dt": "Custom HTML Block",
+		"filters": [["name", "like", "Church%"]],
+	},
+	{
 		"dt": "Dashboard Chart",
 		"filters": [["module", "like", "Church%"]],
 	},
