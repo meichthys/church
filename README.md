@@ -1,3 +1,5 @@
+![Matrix](https://img.shields.io/matrix/the-church-app%3Amatrix.org?label=Matrix%20Chat) ![GitHub License](https://img.shields.io/github/license/meichthys/church) ![GitHub contributors](https://img.shields.io/github/contributors/meichthys/church) ![GitHub last commit](https://img.shields.io/github/last-commit/meichthys/church)
+
 > [!WARNING]
 > This app is not ready for production. Large changes should be expected until a 1.0.0 version is released.
 
@@ -117,6 +119,9 @@ Hopefully this roadmap will help avoid too much scope creep and provide a sense 
   - Add 'Tutorial' button to each doctype form
   - [Email setup](https://github.com/meichthys/church/issues/32)
 
+# 🆘 Support
+If you need help setting up the app or configuring it, you can reach out in our [Matrix Chat](https://matrix.to/#/#the-church-app:matrix.org).
+
 # 🤝 Contributing
 
 Contributions are very welcome! If you plan any large contributions, please let me know first so we can coordinate and make the chances of a merged pull-request more likely.
@@ -132,22 +137,6 @@ Contributions are very welcome! If you plan any large contributions, please let 
   - Add the doctype to the relevant workspace. (not necessary for child tables)
   - If necessary, add an onboarding step & form tour to explain specific fields.
   - If any default records for this doctype should be shipped with the app, add fixtures for them in `hooks.py`.
-
-## Pre-Commit
-
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
-
-```bash
-cd apps/church
-pre-commit install
-```
-
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
 
 # 🔑 License: MIT
 
