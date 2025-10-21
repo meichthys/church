@@ -1,0 +1,69 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"nnvMTG5Sl5\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h1\\\">\u2709\ufe0fCommunications Manual</span>\",\"col\":12}},{\"id\":\"B-CtTCmVDX\",\"type\":\"paragraph\",\"data\":{\"text\":\"The communications module contains features related to personal interactions within (and without) the church.\",\"col\":12}},{\"id\":\"w8oEjl0tNc\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h2\\\">\ud83d\udcddLetters</span>\",\"col\":12}},{\"id\":\"3Bta1pYT8D\",\"type\":\"paragraph\",\"data\":{\"text\":\"Letters received by the church can be entered in the app for archival or reference purposes.<br>Example Workflow:<br>1. Missionary Mike sends a prayer letter that he would like read to the church.<br>2. The Church Secretary receives the letter, navigates to `Missions &gt; Missionaries &gt; Missionary Mike &gt; Letters to the Church` and adds the letter to the Missionary Mike document making note that the letter should be read to the church.<br>3. Before the next church service, the Pastor runs the `Missions &gt; Letters` report and filters by 'Share w/ Church` to see which letters need to be read.<br>4. The letters are added to the `Church Event Schedule` for the next `Church Event` (Service).<br>5. Missionary Mike's `Missionary` document can be updated with a date to show that the letter was read to the church.\",\"col\":12}}]",
+ "creation": "2025-10-20 23:16:06.520964",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "mail",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Manual: Communications",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Letter Reports",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Missionary Letters",
+   "link_count": 0,
+   "link_to": "Church Missionary Letters",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Person Letters",
+   "link_count": 0,
+   "link_to": "Church Person Letters",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Letters Not Yet Shared With Curch",
+   "link_count": 0,
+   "link_to": "Church Letters To Be Shared",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-10-21 01:00:40.456443",
+ "modified_by": "Administrator",
+ "module": "Church Communications",
+ "name": "Manual: Communications",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Communications",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 5.0,
+ "shortcuts": [],
+ "title": "Manual: Communications"
+}

@@ -16,9 +16,9 @@
    "width": 0
   },
   {
-   "fieldname": "read_to_church",
+   "fieldname": "share_with_church",
    "fieldtype": "Check",
-   "label": "Read to Church?",
+   "label": "Share w/ Church?",
    "width": 0
   },
   {
@@ -39,6 +39,12 @@
    "fieldtype": "Data",
    "label": "Content",
    "width": 0
+  },
+  {
+   "fieldname": "shared_date",
+   "fieldtype": "Date",
+   "label": "Shared Date",
+   "width": 0
   }
  ],
  "creation": "2025-09-24 00:00:27.738959",
@@ -53,19 +59,19 @@
    "label": "Church Missionary",
    "mandatory": 1,
    "options": "Church Missionary",
-   "wildcard_filter": 0
+   "wildcard_filter": 1
   }
  ],
  "idx": 0,
  "is_standard": "Yes",
  "letterhead": null,
- "modified": "2025-09-24 00:01:07.037178",
+ "modified": "2025-10-21 00:56:06.643688",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Church Missionary Letters",
  "owner": "Administrator",
  "prepared_report": 0,
- "query": "SELECT parent, date, read_to_church, is_private, file, content\nFROM `tabChurch Letter`\nWHERE parent = %(missionary)s\nORDER BY parent",
+ "query": "SELECT parent, date, share_with_church, shared_date, is_private, file, content  \nFROM `tabChurch Letter`  \nWHERE parent = %(missionary)s \nORDER BY parent",
  "ref_doctype": "Church Missionary",
  "report_name": "Church Missionary Letters",
  "report_type": "Query Report",
