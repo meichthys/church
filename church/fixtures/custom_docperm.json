@@ -288,8 +288,8 @@
   "write": 1
  },
  {
-  "amend": 0,
-  "cancel": 0,
+  "amend": 1,
+  "cancel": 1,
   "create": 1,
   "delete": 1,
   "docstatus": 0,
@@ -308,7 +308,7 @@
   "role": "Church Manager",
   "select": 1,
   "share": 1,
-  "submit": 0,
+  "submit": 1,
   "write": 1
  },
  {
