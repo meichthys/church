@@ -7,7 +7,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name1",
+  "agency_name",
   "image_hhbv",
   "notes",
   "column_break_qofu",
@@ -17,17 +17,6 @@
   "website"
  ],
  "fields": [
-  {
-   "allow_in_quick_entry": 1,
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "in_filter": 1,
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
-   "label": "Agency Name",
-   "reqd": 1
-  },
   {
    "allow_in_quick_entry": 1,
    "fieldname": "mailing_address",
@@ -73,6 +62,17 @@
    "fieldname": "image_hhbv",
    "fieldtype": "Attach Image",
    "label": "Logo"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "agency_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Agency Name",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
@@ -83,7 +83,7 @@
    "link_fieldname": "agency"
   }
  ],
- "modified": "2025-10-08 23:23:43.351442",
+ "modified": "2025-10-22 23:54:43.654970",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Church Missionary Agency",
