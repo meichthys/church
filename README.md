@@ -22,6 +22,7 @@ If you would like to test out the current state of the application, you can try 
 > Username: demo@demo.com
 > Password: Matthew10:8b
 > ```
+> ⚠️ The demo instance is reset every Midnight (EST)
 
 ## ✨ Features
 
