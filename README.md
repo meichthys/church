@@ -1,4 +1,4 @@
-[![Matrix](https://img.shields.io/matrix/the-church-app%3Amatrix.org?label=Matrix%20Chat)](https://matrix.to/#/#the-church-app:matrix.org) [![GitHub License](https://img.shields.io/github/license/meichthys/church)](https://github.com/meichthys/church?tab=readme-ov-file#-license-mit) ![GitHub contributors](https://img.shields.io/github/contributors/meichthys/church) ![GitHub last commit](https://img.shields.io/github/last-commit/meichthys/church)
+[![Matrix](https://img.shields.io/matrix/the-church-app%3Amatrix.org?label=Matrix%20Chat)](https://matrix.to/#/#the-church-app:matrix.org) [![GitHub License](https://img.shields.io/github/license/meichthys/church)](https://github.com/meichthys/church?tab=readme-ov-file#-license-mit) ![GitHub contributors](https://img.shields.io/github/contributors/meichthys/church) ![GitHub last commit](https://img.shields.io/github/last-commit/meichthys/church) [![Static Badge](https://img.shields.io/badge/Demo%20-%20User%3A%20demo%40demo.com%20%7C%20Pass%3A%20Matthew10%3A8b%20-%20black?style=flat)](https://church.meichthys.com)
 
 > [!WARNING]
 > This app is not ready for production. Large changes should be expected until a 1.0.0 version is released.
@@ -10,6 +10,18 @@ A fully open-source church management app built on the [Frappe Framework](https:
 Prayers                   |       People              | Finances
 :-------------------------:|:-------------------------: |:-----:
 ![](./screenshots/prayers.png)  |  ![](./screenshots/people.png) | ![](./screenshots/finances.png)
+
+## 🧪 Demo
+
+If you would like to test out the current state of the application, you can try our Demo instance. Please keep in mind that this project is under active development and that there will likely be rough edges, bugs, and incomplete features. If you come across any of these, feel free to report them on our [issue tracker](https://github.com/meichthys/church/issues).
+
+![Demo](../church/church/public/media/demo_button.png)
+
+> When logging in, use the following credentials:
+> ```
+> Username: demo@demo.com
+> Password: Matthew10:8b
+> ```
 
 ## ✨ Features
 
