@@ -15,7 +15,7 @@ Prayers                   |       People              | Finances
 
 If you would like to test out the current state of the application, you can try our Demo instance. Please keep in mind that this project is under active development and that there will likely be rough edges, bugs, and incomplete features. If you come across any of these, feel free to report them on our [issue tracker](https://github.com/meichthys/church/issues).
 
-![Demo](../church/church/public/media/demo_button.png)
+![](../church/church/public/media/demo_button.png)
 
 > When logging in, use the following credentials:
 > ```
