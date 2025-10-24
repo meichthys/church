@@ -217,6 +217,7 @@ fixtures = [
 			]
 		],
 	},
+	{"dt": "Website Settings"},
 ]
 # Apps
 # ------------------
