@@ -4,6 +4,8 @@ app_publisher = "meichthys"
 app_description = "A church management app."
 app_email = "church@meichthys.com"
 app_license = "mit"
+app_logo_url = "/assets/church/media/church_logo.png"
+develop_version = "develop"
 
 fixtures = [
 	{
@@ -173,6 +175,10 @@ fixtures = [
 		"filters": [["role", "like", "Church%"]],
 	},
 	{
+		"dt": "Custom HTML Block",
+		"filters": [["name", "like", "Church%"]],
+	},
+	{
 		"dt": "Dashboard Chart",
 		"filters": [["module", "like", "Church%"]],
 	},
@@ -213,6 +219,7 @@ fixtures = [
 			]
 		],
 	},
+	{"dt": "Website Settings"},
 ]
 # Apps
 # ------------------

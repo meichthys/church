@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<div style=\"text-align: center;\">\n  <img src=\"/assets/church/media/church_photo.jpg\" alt=\"Church Photo\" style=\"max-width: 100%; border-radius: 8px;\">\n</div>\n",
+  "modified": "2025-10-17 22:20:47.199689",
+  "name": "Church Cover Photo",
+  "private": 0,
+  "roles": [],
+  "script": null,
+  "style": null
+ }
+]

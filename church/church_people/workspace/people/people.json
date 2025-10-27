@@ -136,7 +136,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-10-03 23:11:35.091797",
+ "modified": "2025-10-22 23:37:07.895733",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "People",
@@ -159,7 +159,7 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 6.0,
+ "sequence_id": 10.0,
  "shortcuts": [],
  "title": "People"
 }

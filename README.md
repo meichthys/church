@@ -1,3 +1,5 @@
+[![Matrix](https://img.shields.io/matrix/the-church-app%3Amatrix.org?label=Matrix%20Chat)](https://matrix.to/#/#the-church-app:matrix.org) [![GitHub License](https://img.shields.io/github/license/meichthys/church)](https://github.com/meichthys/church?tab=readme-ov-file#-license-mit) ![GitHub contributors](https://img.shields.io/github/contributors/meichthys/church) ![GitHub last commit](https://img.shields.io/github/last-commit/meichthys/church) [![Static Badge](https://img.shields.io/badge/Demo%20-%20User%3A%20demo%40demo.com%20%7C%20Pass%3A%20Matthew10%3A8b%20-%20black?style=flat)](https://church.meichthys.com)
+
 > [!WARNING]
 > This app is not ready for production. Large changes should be expected until a 1.0.0 version is released.
 
@@ -8,6 +10,19 @@ A fully open-source church management app built on the [Frappe Framework](https:
 Prayers                   |       People              | Finances
 :-------------------------:|:-------------------------: |:-----:
 ![](./screenshots/prayers.png)  |  ![](./screenshots/people.png) | ![](./screenshots/finances.png)
+
+## 🧪 Demo
+
+If you would like to test out the current state of the application, you can try our Demo instance. Please keep in mind that this project is under active development and that there will likely be rough edges, bugs, and incomplete features. If you come across any of these, feel free to report them on our [issue tracker](https://github.com/meichthys/church/issues).
+
+[![Demo](./church/public/media/demo_button.png)](https://church.meichthys.com)
+
+> When logging in, use the following credentials:
+> ```
+> Username: demo@demo.com
+> Password: Matthew10:8b
+> ```
+> ⚠️ The demo instance is reset every Midnight (EST)
 
 ## ✨ Features
 
@@ -117,6 +132,9 @@ Hopefully this roadmap will help avoid too much scope creep and provide a sense 
   - Add 'Tutorial' button to each doctype form
   - [Email setup](https://github.com/meichthys/church/issues/32)
 
+# 🆘 Support
+If you need help setting up the app or configuring it, you can reach out in our [Matrix Chat](https://matrix.to/#/#the-church-app:matrix.org).
+
 # 🤝 Contributing
 
 Contributions are very welcome! If you plan any large contributions, please let me know first so we can coordinate and make the chances of a merged pull-request more likely.
@@ -133,22 +151,8 @@ Contributions are very welcome! If you plan any large contributions, please let 
   - If necessary, add an onboarding step & form tour to explain specific fields.
   - If any default records for this doctype should be shipped with the app, add fixtures for them in `hooks.py`.
 
-## Pre-Commit
+# 🔑 License: MIT
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+>You can copy, translate, modify, and distribute this resource, without restriction, and without needing to ask permission. This resource is freely given (Matt 10:8) for the sake of the gospel.
 
-```bash
-cd apps/church
-pre-commit install
-```
-
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
-# 🔑 License
-
-MIT
+![Freely given](church/public/media/freely_given.svg)
