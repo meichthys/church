@@ -1,7 +1,7 @@
 [
  {
   "address": null,
-  "app_logo": "",
+  "app_logo": "/files/church_logo.png",
   "app_name": "Church",
   "auto_account_deletion": 72,
   "banner_html": null,
@@ -26,10 +26,10 @@
   "head_html": null,
   "hide_footer_signup": 0,
   "hide_login": 0,
-  "home_page": "app/welcome",
+  "home_page": "",
   "indexing_authorization_code": null,
   "indexing_refresh_token": null,
-  "modified": "2025-10-24 00:03:04.495034",
+  "modified": "2025-10-24 00:15:21.027630",
   "name": "Website Settings",
   "navbar_search": 0,
   "navbar_template": null,

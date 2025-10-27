@@ -7,7 +7,7 @@
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
- "icon": "mail",
+ "icon": "help",
  "idx": 0,
  "indicator_color": "",
  "is_hidden": 0,
@@ -53,7 +53,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-10-22 23:37:07.784329",
+ "modified": "2025-10-26 22:35:11.826985",
  "modified_by": "Administrator",
  "module": "Church Communications",
  "name": "Manual: Communications",
