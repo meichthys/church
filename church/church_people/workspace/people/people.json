@@ -87,7 +87,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Person Reports",
-   "link_count": 4,
+   "link_count": 5,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -134,9 +134,19 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Person Letters Not Yet Read",
+   "link_count": 0,
+   "link_to": "Church People Letters Not Yet Read",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-10-27 22:19:57.003936",
+ "modified": "2025-10-27 22:23:54.118093",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "People",
