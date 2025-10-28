@@ -267,7 +267,7 @@ fixtures = [
 # Svg Icons
 # ------------------
 # include app icons in desk
-app_include_icons = ["church/icons/custom_icons.svg"]
+app_include_icons = ["church/icons/church.svg"]
 
 # Home Pages
 # ----------
