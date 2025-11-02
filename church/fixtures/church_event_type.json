@@ -21,9 +21,9 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Church Event Type",
-  "modified": "2025-09-01 01:00:31.063673",
+  "modified": "2025-11-02 01:14:42.819861",
   "name": "Baptism",
-  "template_event": null,
+  "template_event": "2025-10-10 (Baptism) - Johnny's Baptism",
   "type": "Baptism"
  },
  {

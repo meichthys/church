@@ -3,7 +3,7 @@
   "abbreviation": "KJV",
   "docstatus": 0,
   "doctype": "Church Bible Translation",
-  "modified": "2025-09-17 23:23:25.764733",
+  "modified": "2025-10-28 01:34:26.039349",
   "name": "King James Version",
   "translation": "King James Version"
  },
@@ -232,10 +232,10 @@
   "translation": "The Voice"
  },
  {
-  "abbreviation": "WEB ",
+  "abbreviation": "WEB",
   "docstatus": 0,
   "doctype": "Church Bible Translation",
-  "modified": "2025-09-17 23:23:26.084840",
+  "modified": "2025-10-29 22:34:57.443008",
   "name": "World English Bible",
   "translation": "World English Bible"
  }
