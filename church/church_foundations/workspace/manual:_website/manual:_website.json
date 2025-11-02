@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"nnvMTG5Sl5\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h1\\\">\ud83c\udf10Website&nbsp;Manual</span>\",\"col\":12}},{\"id\":\"B-CtTCmVDX\",\"type\":\"paragraph\",\"data\":{\"text\":\"The website module manages and configures a public facing website for the church using data from other modules (i.e. Foundations, Missions, Ministries, etc).\",\"col\":12}}]",
+ "content": "[{\"id\":\"nnvMTG5Sl5\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h1\\\" style=\\\"font-weight: normal;\\\">\ud83c\udf10Website&nbsp;Manual</span>\",\"col\":12}},{\"id\":\"B-CtTCmVDX\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span style=\\\"font-weight: normal;\\\">The website module manages and configures a public facing website for the church using data from other modules (i.e. Foundations, Missions, Ministries, etc).</span>\",\"col\":12}},{\"id\":\"8qBfIl0adi\",\"type\":\"paragraph\",\"data\":{\"text\":\"Various information in the system (i.e. Beliefs, Missionaries, Ministries, etc), may be used to populate the public facing website.\",\"col\":12}},{\"id\":\"kHbqzTGDhX\",\"type\":\"paragraph\",\"data\":{\"text\":\"The website 'feature' has not been fully developed but is on the <a href=\\\"https://github.com/meichthys/church#%EF%B8%8F-feature-roadmap\\\">roadmap</a>.\",\"col\":12}}]",
  "creation": "2025-10-26 22:57:00.373845",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Manual: Website",
  "links": [],
- "modified": "2025-10-26 23:03:50.848415",
+ "modified": "2025-11-02 01:31:42.840957",
  "modified_by": "Administrator",
  "module": "Church Foundations",
  "name": "Manual: Website",

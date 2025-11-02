@@ -17,7 +17,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Study Documents",
-   "link_count": 2,
+   "link_count": 4,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -41,9 +41,29 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bible Verses",
+   "link_count": 0,
+   "link_to": "Church Bible Verse",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bible References",
+   "link_count": 0,
+   "link_to": "Church Bible Reference",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-10-22 23:37:07.943398",
+ "modified": "2025-11-02 01:04:38.180451",
  "modified_by": "Administrator",
  "module": "Church Study",
  "name": "Study",

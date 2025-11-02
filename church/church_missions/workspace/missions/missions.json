@@ -16,25 +16,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Missions Documents",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Missionaries",
-   "link_count": 0,
-   "link_to": "Church Missionary",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Missionary Reports",
    "link_count": 2,
    "link_type": "DocType",
@@ -60,9 +41,38 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Missions Documents",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Missionaries",
+   "link_count": 0,
+   "link_to": "Church Missionary",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Missionary Agencies",
+   "link_count": 0,
+   "link_to": "Church Missionary Agency",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2025-10-26 23:42:49.866928",
+ "modified": "2025-11-02 01:27:01.834182",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Missions",
