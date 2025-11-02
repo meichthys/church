@@ -28,6 +28,7 @@ If you would like to test out the current state of the application, you can try 
 
 The following features have been implemented in this app (see the [🗺️ Roadmap](#🗺️-roadmap) below for future plans):
 
+- Built-in Documentation for each module
 - Portal for users with a login:
   - Prayer request submission & viewing
 - `Church Person` tracking
@@ -52,6 +53,8 @@ The following features have been implemented in this app (see the [🗺️ Roadm
 - Basic Church Website
   - About Page
 - Church Letter tracking (from people & missionaries)
+- Bible Vers & Reference entry
+  - Fetch Bible text from bible-api.com
 
 ## 📥 Installing Frappe
 

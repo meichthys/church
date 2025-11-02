@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"nnvMTG5Sl5\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h1\\\">\ud83d\udcc3Foundations Manual</span>\",\"col\":12}},{\"id\":\"B-CtTCmVDX\",\"type\":\"paragraph\",\"data\":{\"text\":\"The foundations module contains features related to founding and core beliefs/principles of the church.\",\"col\":12}},{\"id\":\"w8oEjl0tNc\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h2\\\">\ud83d\udcd4Beliefs</span>\",\"col\":12}}]",
+ "content": "[{\"id\":\"nnvMTG5Sl5\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h1\\\" style=\\\"font-weight: normal;\\\">\ud83d\udcc3Foundations Manual</span>\",\"col\":12}},{\"id\":\"B-CtTCmVDX\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span style=\\\"font-weight: normal;\\\">The foundations module contains features related to founding and core beliefs/principles of the church.</span>\",\"col\":12}},{\"id\":\"gWj0UvVJC8\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h2\\\">\u2139\ufe0fInformation</span>\",\"col\":12}},{\"id\":\"on10zXJdTa\",\"type\":\"paragraph\",\"data\":{\"text\":\"The <a href=\\\"/app/church-information\\\">Church Information</a>&nbsp;page contains foundational information for the church.\",\"col\":12}},{\"id\":\"i1lPTPnBNf\",\"type\":\"paragraph\",\"data\":{\"text\":\"When adding <a href=\\\"/app/church-information\\\">church information</a>, note the following:<br>- This information may be displayed on the public website (i.e in the footer, or on the 'about' page).\",\"col\":12}},{\"id\":\"w8oEjl0tNc\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h2\\\" style=\\\"font-weight: normal;\\\">\ud83d\udcd4Beliefs</span>\",\"col\":12}},{\"id\":\"rx8sNKF0oc\",\"type\":\"paragraph\",\"data\":{\"text\":\"Beliefs are the foundational principles the church stands for.\",\"col\":12}},{\"id\":\"nVhOr1yDL4\",\"type\":\"paragraph\",\"data\":{\"text\":\"When adding <a href=\\\"/app/church-belief\\\">church beliefs</a>, note the following:<br>- For each belief, supporting&nbsp;<a href=\\\"/app/church-bible-reference\\\">Bible references</a> can be added.\",\"col\":12}}]",
  "creation": "2025-10-26 22:35:59.512658",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Manual: Foundations",
  "links": [],
- "modified": "2025-10-26 23:04:45.523604",
+ "modified": "2025-11-02 01:05:43.669975",
  "modified_by": "Administrator",
  "module": "Church Foundations",
  "name": "Manual: Foundations",

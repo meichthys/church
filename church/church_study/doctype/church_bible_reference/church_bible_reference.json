@@ -1,54 +1,46 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{book} {chapter}:{verse} ({translation})",
- "creation": "2025-09-17 21:42:32.438305",
- "description": "A Bible reference (i.e John 3:16)",
+ "creation": "2025-10-27 22:53:12.954122",
+ "description": "A Bible reverence to a single verse or range of verses along with optional Translation and verse text. i.e. Matthew 10:18 (BSB)",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "book",
-  "chapter",
-  "verse",
-  "translation"
+  "start_verse",
+  "end_verse",
+  "column_break_fdwn",
+  "translation",
+  "import_reference_text",
+  "reference_text_section",
+  "reference_text"
  ],
  "fields": [
   {
-   "allow_in_quick_entry": 1,
-   "fieldname": "book",
+   "fieldname": "start_verse",
    "fieldtype": "Link",
    "in_filter": 1,
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "Book",
-   "options": "Church Bible Book",
-   "reqd": 1,
-   "search_index": 1
+   "label": "Start Verse",
+   "options": "Church Bible Verse",
+   "reqd": 1
   },
   {
-   "allow_in_quick_entry": 1,
-   "fieldname": "chapter",
-   "fieldtype": "Int",
+   "fieldname": "end_verse",
+   "fieldtype": "Link",
    "in_filter": 1,
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "Chapter"
+   "label": "End Verse",
+   "options": "Church Bible Verse"
   },
   {
-   "allow_in_quick_entry": 1,
-   "fieldname": "verse",
-   "fieldtype": "Int",
-   "in_filter": 1,
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
-   "label": "Verse"
+   "fieldname": "column_break_fdwn",
+   "fieldtype": "Column Break"
   },
   {
-   "allow_in_quick_entry": 1,
    "fieldname": "translation",
    "fieldtype": "Link",
    "in_filter": 1,
@@ -57,16 +49,31 @@
    "in_standard_filter": 1,
    "label": "Translation",
    "options": "Church Bible Translation"
+  },
+  {
+   "fieldname": "import_reference_text",
+   "fieldtype": "Button",
+   "label": "Import Reference Text"
+  },
+  {
+   "fieldname": "reference_text_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reference_text",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Reference Text"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-10-08 23:32:28.440642",
+ "modified": "2025-10-28 00:38:57.907452",
  "modified_by": "Administrator",
  "module": "Church Study",
  "name": "Church Bible Reference",
- "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -85,6 +92,5 @@
  "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "track_views": 1
+ "states": []
 }
