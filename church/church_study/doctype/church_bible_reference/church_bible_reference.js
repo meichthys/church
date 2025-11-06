@@ -65,7 +65,12 @@ async function fetch_bible_text(frm) {
 
             versesText.push(...filtered.map(v => `${v.number}. ${v.text}`));
         }
-
+        if (versesText.length === 0) {
+            frappe.msgprint(`⚠️ No text found in ${translation_id} for the specified verse range.
+                <br>Please ensure your verses are valid and in the same book.
+                <br>Note: Fetching verses in different books is not supported.`);
+            return;
+        }
         frm.set_value("reference_text", versesText.join(" ").trim());
         frappe.show_alert({ message: `📖 ${translation_id} Bible passage fetched!`, indicator: "green" }, 3);
 
