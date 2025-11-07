@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{date} - {#####}",
+ "autoname": "format:Letter {#}",
  "creation": "2025-09-23 21:49:59.122163",
  "description": "A letter sent to the church.",
  "doctype": "DocType",
@@ -94,7 +94,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-10-03 23:08:55.266412",
+ "modified": "2025-11-06 23:17:32.698232",
  "modified_by": "Administrator",
  "module": "Church Communications",
  "name": "Church Letter",

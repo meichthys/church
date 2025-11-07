@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{title}",
+ "autoname": "format:Belief {#}",
  "creation": "2025-09-17 21:36:27.516552",
  "description": "Specific beliefs of the church",
  "doctype": "DocType",
@@ -41,7 +41,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-10-08 23:50:02.373662",
+ "modified": "2025-11-07 00:54:50.636078",
  "modified_by": "Administrator",
  "module": "Church Foundations",
  "name": "Church Belief",
@@ -62,8 +62,10 @@
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "title",
  "track_changes": 1
 }

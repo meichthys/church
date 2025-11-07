@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{title} - {####}",
+ "autoname": "format:Song {#}",
  "creation": "2025-10-10 22:36:42.168218",
  "description": "A song sung by the Church as part of worship or a `Church Event`",
  "doctype": "DocType",
@@ -56,7 +56,7 @@
    "link_fieldname": "item"
   }
  ],
- "modified": "2025-10-10 23:01:57.771243",
+ "modified": "2025-11-06 23:18:30.771665",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Church Song",
@@ -77,9 +77,11 @@
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "title",
  "track_changes": 1,
  "track_views": 1
 }

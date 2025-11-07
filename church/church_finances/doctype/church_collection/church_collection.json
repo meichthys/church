@@ -23,6 +23,7 @@
    "fieldname": "event",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Event",
    "options": "Church Event",
@@ -71,6 +72,7 @@
   {
    "fieldname": "notes",
    "fieldtype": "Small Text",
+   "in_preview": 1,
    "label": "Notes"
   },
   {
@@ -88,7 +90,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-10-09 22:56:43.397335",
+ "modified": "2025-11-07 00:59:47.190898",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Collection",
@@ -109,6 +111,7 @@
   }
  ],
  "row_format": "Dynamic",
+ "show_preview_popup": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
