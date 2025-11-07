@@ -9,9 +9,7 @@
  "engine": "InnoDB",
  "field_order": [
   "book",
-  "abbreviation",
-  "number_of_chapters",
-  "usfm"
+  "abbreviation"
  ],
  "fields": [
   {
@@ -32,18 +30,6 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Abbreviation"
-  },
-  {
-   "fieldname": "number_of_chapters",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Number of Chapters"
-  },
-  {
-   "description": "Required for fetching references from Bible API",
-   "fieldname": "usfm",
-   "fieldtype": "Data",
-   "label": "Unified Standard Format Marker (USFM)"
   }
  ],
  "grid_page_length": 50,
@@ -54,7 +40,7 @@
    "link_fieldname": "book"
   }
  ],
- "modified": "2025-10-28 00:52:53.324021",
+ "modified": "2025-11-06 22:50:10.882499",
  "modified_by": "Administrator",
  "module": "Church Study",
  "name": "Church Bible Book",
