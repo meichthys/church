@@ -18,15 +18,6 @@
   "type": "Prayer Meeting"
  },
  {
-  "description": null,
-  "docstatus": 0,
-  "doctype": "Church Event Type",
-  "modified": "2025-11-02 01:14:42.819861",
-  "name": "Baptism",
-  "template_event": "2025-10-10 (Baptism) - Johnny's Baptism",
-  "type": "Baptism"
- },
- {
   "description": "",
   "docstatus": 0,
   "doctype": "Church Event Type",
@@ -52,5 +43,14 @@
   "name": "Communion",
   "template_event": null,
   "type": "Communion"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Church Event Type",
+  "modified": "2025-11-07 01:09:09.288659",
+  "name": "Baptism",
+  "template_event": "",
+  "type": "Baptism"
  }
 ]
