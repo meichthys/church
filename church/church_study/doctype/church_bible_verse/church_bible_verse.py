@@ -8,17 +8,19 @@ from frappe.model.document import Document
 class ChurchBibleVerse(Document):
 	pass
 
-	@frappe.whitelist()
-	def rename_verse(self):
-		"""
-		Rename Church Bible Verse document to 'Book Chapter:Verse'.
-		Returns the new name.
-		"""
-		doc = frappe.get_doc("Church Bible Verse", self.name)
-		new_name = f"{doc.book} {doc.chapter}:{doc.verse}"
+	def autoname(self):
+		name = self.get_name()
+		if not frappe.db.exists("Church Bible Verse", self.name):
+			self.name = name
+			return
+		else:
+			if self.name != self.get_name():
+				frappe.rename_doc("Church Bible Verse", self.name, name)
 
-		# Only rename if different
-		if doc.name != new_name:
-			frappe.rename_doc("Church Bible Verse", doc.name, new_name)
+	def get_name(self):
+		"""Constructs the document name"""
+		return f"{self.book} {self.chapter}:{self.verse}"
 
-		return new_name
+	def on_update(self):
+		# Rename document when updating
+		self.autoname()
