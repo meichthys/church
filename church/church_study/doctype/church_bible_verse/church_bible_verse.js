@@ -2,21 +2,6 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Church Bible Verse', {
-    // Automatically rename the document before saving
-    after_save: async function(frm) {
-        try {
-            // Call backend to rename the document
-            const new_name = await frm.call("rename_verse");
-
-            if (new_name.message && new_name.message !== frm.doc.name) {
-                // Navigate to the new form
-                frappe.set_route("Form", "Church Bible Verse", new_name.message);
-            }
-
-        } catch (err) {
-            frappe.msgprint(`❌ Error renaming verse: ${err.message}`);
-        }
-    },
     // Dynamically set select values for chapter and verse fields
     // Alternatively, we could store the number of chapters and verses for each book/chatper
     book: async function(frm) {
