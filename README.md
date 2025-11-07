@@ -26,7 +26,7 @@ If you would like to test out the current state of the application, you can try 
 
 ## ✨ Features
 
-The following features have been implemented in this app (see the [🗺️ Roadmap](#🗺️-feature-roadmap) below for future plans):
+The following features have been implemented in this app (see the [🗺️ Roadmap](#-feature-roadmap) below for future plans):
 
 - Built-in Documentation for each module
 - Portal for users with a login:
