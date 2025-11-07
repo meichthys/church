@@ -3,11 +3,27 @@
 
 import frappe
 from frappe.model.document import Document
-from frappe.model.mapper import get_mapped_doc
 
 
 class ChurchEvent(Document):
 	pass
+
+	def autoname(self):
+		name = self.get_name()
+		if not frappe.db.exists("Church Event", self.name):
+			self.name = name
+			return
+		else:
+			if self.name != self.get_name():
+				frappe.rename_doc("Church Event", self.name, name)
+
+	def get_name(self):
+		"""Constructs the document name"""
+		return f"{self.start_date} ({self.type}) - {self.event_name}"
+
+	def on_update(self):
+		# Rename document when updating
+		self.autoname()
 
 
 @frappe.whitelist()
