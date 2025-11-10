@@ -68,6 +68,7 @@
    "fieldtype": "Data",
    "in_preview": 1,
    "label": "Full Name",
+   "print_hide": 1,
    "read_only": 1
   },
   {
@@ -144,6 +145,7 @@
    "in_preview": 1,
    "label": "Family",
    "options": "Church Family",
+   "print_hide": 1,
    "search_index": 1
   },
   {
@@ -154,7 +156,8 @@
    "fieldname": "is_head_of_household",
    "fieldtype": "Check",
    "in_list_view": 1,
-   "label": "Is Head of Household"
+   "label": "Is Head of Household",
+   "print_hide": 1
   },
   {
    "fieldname": "photo",
@@ -169,7 +172,8 @@
   {
    "fieldname": "alergies",
    "fieldtype": "Data",
-   "label": "Alergies"
+   "label": "Alergies",
+   "print_hide": 1
   },
   {
    "fieldname": "church_records_section",
@@ -226,7 +230,8 @@
    "default": "0",
    "fieldname": "is_married",
    "fieldtype": "Check",
-   "label": "Is Married"
+   "label": "Is Married",
+   "print_hide": 1
   },
   {
    "depends_on": "eval:doc.is_married;",
@@ -256,7 +261,8 @@
   {
    "fieldname": "notes",
    "fieldtype": "Text Editor",
-   "label": "Notes"
+   "label": "Notes",
+   "print_hide": 1
   },
   {
    "allow_in_quick_entry": 1,
@@ -264,7 +270,8 @@
    "fieldname": "relationships",
    "fieldtype": "Table",
    "label": "Notable Relationships",
-   "options": "Church Person Relation"
+   "options": "Church Person Relation",
+   "print_hide": 1
   },
   {
    "allow_in_quick_entry": 1,
@@ -272,7 +279,8 @@
    "fieldname": "gender",
    "fieldtype": "Select",
    "label": "Gender",
-   "options": "Female\nMale\nUnknown"
+   "options": "Female\nMale\nUnknown",
+   "print_hide": 1
   },
   {
    "fieldname": "section_break_eqre",
@@ -282,7 +290,8 @@
    "fieldname": "letters",
    "fieldtype": "Table",
    "label": "Letters to the Church",
-   "options": "Church Letter"
+   "options": "Church Letter",
+   "print_hide": 1
   }
  ],
  "grid_page_length": 50,
@@ -306,7 +315,7 @@
    "link_fieldname": "person"
   }
  ],
- "modified": "2025-11-07 00:11:42.775879",
+ "modified": "2025-11-10 01:00:18.921799",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Person",
