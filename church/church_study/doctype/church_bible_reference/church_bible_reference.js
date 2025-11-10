@@ -1,6 +1,38 @@
 frappe.ui.form.on("Church Bible Reference", {
     import_reference_text: frm => {
         fetch_bible_text(frm);
+    },
+    refresh: async function(frm) {
+        frm.add_custom_button('Open in AndBible', async function() {
+            const start_verse = await frappe.get_doc("Church Bible Verse", frm.doc.start_verse);
+            if (!start_verse.book || !start_verse.chapter || !start_verse.verse) {
+                frappe.msgprint(__('Please make sure reference Start Verse has a Chapter and Verse.'));
+                return;
+            }
+
+            try {
+                // Fetch abbreviation from linked Church Bible Book record
+                const book = await frappe.db.get_doc('Church Bible Book', start_verse.book);
+                const abbreviation = book.abbreviation;
+
+                if (!abbreviation) {
+                    frappe.msgprint(__(`No abbreviation found for Book: ${book}.`));
+                    return;
+                }
+
+                // Construct OSIS reference (e.g., Gen.1.1)
+                const osisRef = `${abbreviation}.${start_verse.chapter}.${start_verse.verse}`;
+
+                // Build AndBible deep link
+                const url = `https://read.andbible.org/${osisRef}`;
+
+                // Open the link (will launch AndBible if installed)
+                window.open(url, '_blank');
+            } catch (error) {
+                frappe.msgprint(__('Failed to open verse in AndBible.'));
+                console.error(error);
+            }
+        });
     }
 });
 
