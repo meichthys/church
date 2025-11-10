@@ -1,633 +1,499 @@
 [
  {
-  "abbreviation": null,
+  "abbreviation": "REV",
   "book": "Revelation",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.005093",
-  "name": "Revelation",
-  "number_of_chapters": 22,
-  "usfm": "REV"
+  "modified": "2025-11-06 00:18:37.435866",
+  "name": "Revelation"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "JUD",
   "book": "Jude",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.022387",
-  "name": "Jude",
-  "number_of_chapters": 1,
-  "usfm": "JUD"
+  "modified": "2025-11-06 00:18:37.428128",
+  "name": "Jude"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "3JN",
   "book": "3 John",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.027400",
-  "name": "3 John",
-  "number_of_chapters": 1,
-  "usfm": "3JN"
+  "modified": "2025-11-06 00:18:37.420494",
+  "name": "3 John"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "2JN",
   "book": "2 John",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.031912",
-  "name": "2 John",
-  "number_of_chapters": 1,
-  "usfm": "2JN"
+  "modified": "2025-11-06 00:18:37.412496",
+  "name": "2 John"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "1JN",
   "book": "1 John",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.035483",
-  "name": "1 John",
-  "number_of_chapters": 5,
-  "usfm": "1JN"
+  "modified": "2025-11-06 00:18:37.405366",
+  "name": "1 John"
  },
  {
-  "abbreviation": null,
-  "book": "2 Peter",
-  "docstatus": 0,
-  "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.039363",
-  "name": "2 Peter",
-  "number_of_chapters": 3,
-  "usfm": "2PE"
- },
- {
-  "abbreviation": null,
+  "abbreviation": "1PE",
   "book": "1 Peter",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.043974",
-  "name": "1 Peter",
-  "number_of_chapters": 5,
-  "usfm": "1PE"
+  "modified": "2025-11-06 00:18:37.390842",
+  "name": "1 Peter"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "JAS",
   "book": "James",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.047946",
-  "name": "James",
-  "number_of_chapters": 5,
-  "usfm": "JAS"
+  "modified": "2025-11-06 00:18:37.384283",
+  "name": "James"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "HEB",
   "book": "Hebrews",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.051270",
-  "name": "Hebrews",
-  "number_of_chapters": 13,
-  "usfm": "HEB"
+  "modified": "2025-11-06 00:18:37.377081",
+  "name": "Hebrews"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "PHM",
   "book": "Philemon",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.054974",
-  "name": "Philemon",
-  "number_of_chapters": 1,
-  "usfm": "PHM"
+  "modified": "2025-11-06 00:18:37.370557",
+  "name": "Philemon"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "TIT",
   "book": "Titus",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.059344",
-  "name": "Titus",
-  "number_of_chapters": 3,
-  "usfm": "TIT"
+  "modified": "2025-11-06 00:18:37.362941",
+  "name": "Titus"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "2TI",
   "book": "2 Timothy",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.063017",
-  "name": "2 Timothy",
-  "number_of_chapters": 4,
-  "usfm": "2TI"
+  "modified": "2025-11-06 00:18:37.355408",
+  "name": "2 Timothy"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "1TI",
   "book": "1 Timothy",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.066412",
-  "name": "1 Timothy",
-  "number_of_chapters": 6,
-  "usfm": "1TI"
+  "modified": "2025-11-06 00:18:37.349289",
+  "name": "1 Timothy"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "2TH",
   "book": "2 Thessalonians",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.069697",
-  "name": "2 Thessalonians",
-  "number_of_chapters": 3,
-  "usfm": "2TH"
+  "modified": "2025-11-06 00:18:37.342430",
+  "name": "2 Thessalonians"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "1TH",
   "book": "1 Thessalonians",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.073734",
-  "name": "1 Thessalonians",
-  "number_of_chapters": 5,
-  "usfm": "1TH"
+  "modified": "2025-11-06 00:18:37.335349",
+  "name": "1 Thessalonians"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "COL",
   "book": "Colossians",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.077688",
-  "name": "Colossians",
-  "number_of_chapters": 4,
-  "usfm": "COL"
+  "modified": "2025-11-06 00:18:37.328412",
+  "name": "Colossians"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "PHP",
   "book": "Philippians",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.081725",
-  "name": "Philippians",
-  "number_of_chapters": 4,
-  "usfm": "PHP"
+  "modified": "2025-11-06 00:18:37.320853",
+  "name": "Philippians"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "EPH",
   "book": "Ephesians",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.085298",
-  "name": "Ephesians",
-  "number_of_chapters": 6,
-  "usfm": "EPH"
+  "modified": "2025-11-06 00:18:37.314584",
+  "name": "Ephesians"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "GAL",
   "book": "Galatians",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.089146",
-  "name": "Galatians",
-  "number_of_chapters": 6,
-  "usfm": "GAL"
+  "modified": "2025-11-06 00:18:37.308299",
+  "name": "Galatians"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "2CO",
   "book": "2 Corinthians",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.092966",
-  "name": "2 Corinthians",
-  "number_of_chapters": 13,
-  "usfm": "2CO"
+  "modified": "2025-11-06 00:18:37.301972",
+  "name": "2 Corinthians"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "1CO",
   "book": "1 Corinthians",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.096632",
-  "name": "1 Corinthians",
-  "number_of_chapters": 16,
-  "usfm": "1CO"
+  "modified": "2025-11-06 00:18:37.295341",
+  "name": "1 Corinthians"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "ROM",
   "book": "Romans",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.100109",
-  "name": "Romans",
-  "number_of_chapters": 16,
-  "usfm": "ROM"
+  "modified": "2025-11-06 00:18:37.289020",
+  "name": "Romans"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "ACT",
   "book": "Acts",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.103749",
-  "name": "Acts",
-  "number_of_chapters": 28,
-  "usfm": "ACT"
+  "modified": "2025-11-06 00:18:37.282971",
+  "name": "Acts"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "JHN",
   "book": "John",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.107598",
-  "name": "John",
-  "number_of_chapters": 21,
-  "usfm": "JHN"
+  "modified": "2025-11-06 00:18:37.276501",
+  "name": "John"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "LUK",
   "book": "Luke",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.111279",
-  "name": "Luke",
-  "number_of_chapters": 24,
-  "usfm": "LUK"
+  "modified": "2025-11-06 00:18:37.269597",
+  "name": "Luke"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "MRK",
   "book": "Mark",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.114618",
-  "name": "Mark",
-  "number_of_chapters": 16,
-  "usfm": "MRK"
+  "modified": "2025-11-06 00:18:37.262903",
+  "name": "Mark"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "MAT",
   "book": "Matthew",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.118000",
-  "name": "Matthew",
-  "number_of_chapters": 28,
-  "usfm": "MAT"
+  "modified": "2025-11-06 00:18:37.256820",
+  "name": "Matthew"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "MAL",
   "book": "Malachi",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.121650",
-  "name": "Malachi",
-  "number_of_chapters": 4,
-  "usfm": "MAL"
+  "modified": "2025-11-06 00:18:37.250840",
+  "name": "Malachi"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "ZEC",
   "book": "Zechariah",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.127697",
-  "name": "Zechariah",
-  "number_of_chapters": 14,
-  "usfm": "ZEC"
+  "modified": "2025-11-06 00:18:37.244547",
+  "name": "Zechariah"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "HAG",
   "book": "Haggai",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.131545",
-  "name": "Haggai",
-  "number_of_chapters": 2,
-  "usfm": "HAG"
+  "modified": "2025-11-06 00:18:37.238069",
+  "name": "Haggai"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "ZEP",
   "book": "Zephaniah",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.135441",
-  "name": "Zephaniah",
-  "number_of_chapters": 3,
-  "usfm": "ZEP"
+  "modified": "2025-11-06 00:18:37.231855",
+  "name": "Zephaniah"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "HAB",
   "book": "Habakkuk",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.139685",
-  "name": "Habakkuk",
-  "number_of_chapters": 3,
-  "usfm": "HAB"
+  "modified": "2025-11-06 00:18:37.225111",
+  "name": "Habakkuk"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "NAM",
   "book": "Nahum",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.144832",
-  "name": "Nahum",
-  "number_of_chapters": 3,
-  "usfm": "NAM"
+  "modified": "2025-11-06 00:18:37.218905",
+  "name": "Nahum"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "MIC",
   "book": "Micah",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.148345",
-  "name": "Micah",
-  "number_of_chapters": 7,
-  "usfm": "MIC"
+  "modified": "2025-11-06 00:18:37.212258",
+  "name": "Micah"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "JON",
   "book": "Jonah",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.151746",
-  "name": "Jonah",
-  "number_of_chapters": 4,
-  "usfm": "JON"
+  "modified": "2025-11-06 00:18:37.205891",
+  "name": "Jonah"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "OBA",
   "book": "Obadiah",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.155784",
-  "name": "Obadiah",
-  "number_of_chapters": 1,
-  "usfm": "OBA"
+  "modified": "2025-11-06 00:18:37.198866",
+  "name": "Obadiah"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "AMO",
   "book": "Amos",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.159740",
-  "name": "Amos",
-  "number_of_chapters": 9,
-  "usfm": "AMO"
+  "modified": "2025-11-06 00:18:37.189189",
+  "name": "Amos"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "JOL",
   "book": "Joel",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.163515",
-  "name": "Joel",
-  "number_of_chapters": 3,
-  "usfm": "JOL"
+  "modified": "2025-11-06 00:18:37.179795",
+  "name": "Joel"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "HOS",
   "book": "Hosea",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.167017",
-  "name": "Hosea",
-  "number_of_chapters": 14,
-  "usfm": "HOS"
+  "modified": "2025-11-06 00:18:37.171495",
+  "name": "Hosea"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "DAN",
   "book": "Daniel",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.171046",
-  "name": "Daniel",
-  "number_of_chapters": 12,
-  "usfm": "DAN"
+  "modified": "2025-11-09 23:46:05.085800",
+  "name": "Daniel"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "EZK",
   "book": "Ezekiel",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.174840",
-  "name": "Ezekiel",
-  "number_of_chapters": 48,
-  "usfm": "EZK"
+  "modified": "2025-11-06 00:18:37.160649",
+  "name": "Ezekiel"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "LAM",
   "book": "Lamentations",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.178365",
-  "name": "Lamentations",
-  "number_of_chapters": 5,
-  "usfm": "LAM"
+  "modified": "2025-11-06 00:18:37.153440",
+  "name": "Lamentations"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "JER",
   "book": "Jeremiah",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.181891",
-  "name": "Jeremiah",
-  "number_of_chapters": 52,
-  "usfm": "JER"
+  "modified": "2025-11-06 00:18:37.145342",
+  "name": "Jeremiah"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "ISA",
   "book": "Isaiah",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.185328",
-  "name": "Isaiah",
-  "number_of_chapters": 66,
-  "usfm": "ISA"
+  "modified": "2025-11-06 00:18:37.138046",
+  "name": "Isaiah"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "SNG",
   "book": "Song of Solomon",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.189096",
-  "name": "Song of Solomon",
-  "number_of_chapters": 8,
-  "usfm": "SNG"
+  "modified": "2025-11-09 23:45:49.079240",
+  "name": "Song of Solomon"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "ECC",
   "book": "Ecclesiastes",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.192880",
-  "name": "Ecclesiastes",
-  "number_of_chapters": 12,
-  "usfm": "ECC"
+  "modified": "2025-11-06 00:18:37.128109",
+  "name": "Ecclesiastes"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "PRO",
   "book": "Proverbs",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.196438",
-  "name": "Proverbs",
-  "number_of_chapters": 31,
-  "usfm": "PRO"
+  "modified": "2025-11-06 00:18:37.120397",
+  "name": "Proverbs"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "PSA",
   "book": "Psalms",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.199896",
-  "name": "Psalms",
-  "number_of_chapters": 150,
-  "usfm": "PSA"
+  "modified": "2025-11-06 00:18:37.111998",
+  "name": "Psalms"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "JOB",
   "book": "Job",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.203868",
-  "name": "Job",
-  "number_of_chapters": 42,
-  "usfm": "JOB"
+  "modified": "2025-11-06 00:18:37.105039",
+  "name": "Job"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "EST",
   "book": "Esther",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.208132",
-  "name": "Esther",
-  "number_of_chapters": 10,
-  "usfm": "EST"
+  "modified": "2025-11-09 23:45:23.124686",
+  "name": "Esther"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "NEH",
   "book": "Nehemiah",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.211661",
-  "name": "Nehemiah",
-  "number_of_chapters": 13,
-  "usfm": "NEH"
+  "modified": "2025-11-06 00:18:37.093714",
+  "name": "Nehemiah"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "EZR",
   "book": "Ezra",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.215169",
-  "name": "Ezra",
-  "number_of_chapters": 10,
-  "usfm": "EZR"
+  "modified": "2025-11-06 00:18:37.085685",
+  "name": "Ezra"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "2CH",
   "book": "2 Chronicles",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.218758",
-  "name": "2 Chronicles",
-  "number_of_chapters": 36,
-  "usfm": "2CH"
+  "modified": "2025-11-06 00:18:37.077295",
+  "name": "2 Chronicles"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "1CH",
   "book": "1 Chronicles",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.222507",
-  "name": "1 Chronicles",
-  "number_of_chapters": 29,
-  "usfm": "1CH"
+  "modified": "2025-11-06 00:18:37.068925",
+  "name": "1 Chronicles"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "2KI",
   "book": "2 Kings",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.226203",
-  "name": "2 Kings",
-  "number_of_chapters": 25,
-  "usfm": "2KI"
+  "modified": "2025-11-06 00:18:37.061525",
+  "name": "2 Kings"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "1KI",
   "book": "1 Kings",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.229714",
-  "name": "1 Kings",
-  "number_of_chapters": 22,
-  "usfm": "1KI"
+  "modified": "2025-11-06 00:18:37.054355",
+  "name": "1 Kings"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "2SA",
   "book": "2 Samuel",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.233102",
-  "name": "2 Samuel",
-  "number_of_chapters": 24,
-  "usfm": "2SA"
+  "modified": "2025-11-06 00:18:37.047023",
+  "name": "2 Samuel"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "RUT",
   "book": "Ruth",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.240286",
-  "name": "Ruth",
-  "number_of_chapters": 4,
-  "usfm": "RUT"
+  "modified": "2025-11-06 00:18:37.032809",
+  "name": "Ruth"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "JDG",
   "book": "Judges",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.243628",
-  "name": "Judges",
-  "number_of_chapters": 21,
-  "usfm": "JDG"
+  "modified": "2025-11-06 00:18:37.024608",
+  "name": "Judges"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "JOS",
   "book": "Joshua",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.247265",
-  "name": "Joshua",
-  "number_of_chapters": 24,
-  "usfm": "JOS"
+  "modified": "2025-11-06 00:18:37.017796",
+  "name": "Joshua"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "DEU",
   "book": "Deuteronomy",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.250603",
-  "name": "Deuteronomy",
-  "number_of_chapters": 34,
-  "usfm": "DEU"
+  "modified": "2025-11-06 00:18:37.009611",
+  "name": "Deuteronomy"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "NUM",
   "book": "Numbers",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.254469",
-  "name": "Numbers",
-  "number_of_chapters": 36,
-  "usfm": "NUM"
+  "modified": "2025-11-06 00:18:37.002849",
+  "name": "Numbers"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "LEV",
   "book": "Leviticus",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.258255",
-  "name": "Leviticus",
-  "number_of_chapters": 27,
-  "usfm": "LEV"
+  "modified": "2025-11-06 00:18:36.994681",
+  "name": "Leviticus"
  },
  {
   "abbreviation": "EXO",
@@ -635,28 +501,30 @@
   "docstatus": 0,
   "doctype": "Church Bible Book",
   "modified": "2025-10-30 00:29:35.421522",
-  "name": "Exodus",
-  "number_of_chapters": 40,
-  "usfm": "EXO"
+  "name": "Exodus"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "GEN",
   "book": "Genesis",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.265079",
-  "name": "Genesis",
-  "number_of_chapters": 50,
-  "usfm": "GEN"
+  "modified": "2025-11-06 00:18:36.963115",
+  "name": "Genesis"
  },
  {
-  "abbreviation": null,
+  "abbreviation": "2PE",
+  "book": "2 Peter",
+  "docstatus": 0,
+  "doctype": "Church Bible Book",
+  "modified": "2025-11-06 00:18:37.398271",
+  "name": "2 Peter"
+ },
+ {
+  "abbreviation": "1SA",
   "book": "1 Samuel",
   "docstatus": 0,
   "doctype": "Church Bible Book",
-  "modified": "2025-10-28 01:07:03.236580",
-  "name": "1 Samuel",
-  "number_of_chapters": 31,
-  "usfm": "1SA"
+  "modified": "2025-11-06 00:18:37.039529",
+  "name": "1 Samuel"
  }
 ]
