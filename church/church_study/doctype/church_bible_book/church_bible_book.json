@@ -40,7 +40,7 @@
    "link_fieldname": "book"
   }
  ],
- "modified": "2025-11-06 23:24:23.105266",
+ "modified": "2025-11-09 23:44:09.631642",
  "modified_by": "Administrator",
  "module": "Church Study",
  "name": "Church Bible Book",
@@ -61,7 +61,7 @@
   }
  ],
  "row_format": "Dynamic",
- "sort_field": "modified",
+ "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],
  "track_changes": 1
