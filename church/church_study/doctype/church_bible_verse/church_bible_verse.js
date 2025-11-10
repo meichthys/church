@@ -2,22 +2,52 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Church Bible Verse', {
-    // Dynamically set select values for chapter and verse fields
-    // Alternatively, we could store the number of chapters and verses for each book/chatper
+    after_save: function(frm) {
+        // If document was renamed, reload to new URL
+        const expected_name = `${frm.doc.book} ${frm.doc.chapter}:${frm.doc.verse}`;
+        if (frm.doc.name !== expected_name) {
+            frappe.set_route('Form', frm.doctype, expected_name);
+        }
+    },
+
+    refresh: async function(frm) {
+        // Set chapter options when form loads
+        if (frm.doc.book) {
+            try {
+                let chapters = await get_chapter_count(frm.doc.book);
+                let options = Array.from({ length: chapters }, (_, i) => i + 1).join('\n');
+                frm.set_df_property('chapter', 'options', options);
+            } catch (e) {
+                frm.set_df_property('chapter', 'options', Array.from({ length: 150}, (_, i) => i + 1).join('\n'));
+            }
+        }
+        // Set verse options when form loads
+        if (frm.doc.book && frm.doc.chapter) {
+            try {
+                let verses = await get_verse_count(frm.doc.book, frm.doc.chapter);
+                let options = Array.from({ length: verses }, (_, i) => i + 1).join('\n');
+                frm.set_df_property('verse', 'options', options);
+            } catch (e) {
+                frm.set_df_property('verse', 'options', Array.from({ length: 176 }, (_, i) => i + 1).join('\n'));
+            }
+        }
+    },
+
     book: async function(frm) {
-        // Set options for chapter field
-        try{
-            let chapters = await get_chapter_count(frm.doc.book)
+        // Set options for chapter field when book changes
+        try {
+            let chapters = await get_chapter_count(frm.doc.book);
             let options = Array.from({ length: chapters }, (_, i) => i + 1).join('\n');
             frm.set_df_property('chapter', 'options', options);
         } catch (e) {
-        frm.set_df_property('chapter', 'options', Array.from({ length: 150}, (_, i) => i + 1).join('\n'));
+            frm.set_df_property('chapter', 'options', Array.from({ length: 150}, (_, i) => i + 1).join('\n'));
         }
     },
+
     chapter: async function(frm) {
-        // Set options for verse field
+        // Set options for verse field when chapter changes
         try {
-            let verses = await get_verse_count(frm.doc.book, frm.doc.chapter)
+            let verses = await get_verse_count(frm.doc.book, frm.doc.chapter);
             let options = Array.from({ length: verses }, (_, i) => i + 1).join('\n');
             frm.set_df_property('verse', 'options', options);
         } catch (e) {
@@ -26,8 +56,8 @@ frappe.ui.form.on('Church Bible Verse', {
     }
 });
 
-
 async function get_chapter_count(book) {
+    // Get the number of chapters in a book
     const book_doc = await frappe.db.get_doc("Church Bible Book", book);
     let book_abbreviation = book_doc.abbreviation
     const url = `https://bible-api.com/data/kjv/${book_abbreviation}`;
@@ -44,6 +74,7 @@ async function get_chapter_count(book) {
 }
 
 async function get_verse_count(book, chapter) {
+    // Get the number of verses in a chapter of a book
     const book_doc = await frappe.db.get_doc("Church Bible Book", book);
     let book_abbreviation = book_doc.abbreviation
     const url = `https://bible-api.com/data/kjv/${book_abbreviation}/${chapter}`;
