@@ -55,7 +55,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-09-17 23:32:19.143025",
+ "modified": "2025-11-11 00:18:40.476128",
  "modified_by": "Administrator",
  "module": "Church Foundations",
  "name": "Church Information",
@@ -70,6 +70,22 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Church Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "print": 1,
+   "read": 1,
+   "role": "Church User"
   }
  ],
  "row_format": "Dynamic",

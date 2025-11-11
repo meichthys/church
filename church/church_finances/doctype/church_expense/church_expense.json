@@ -68,7 +68,7 @@
    "link_fieldname": "source"
   }
  ],
- "modified": "2025-10-09 23:46:57.471825",
+ "modified": "2025-11-11 00:21:26.216705",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Expense",
@@ -86,6 +86,24 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "Church User"
   }
  ],
  "row_format": "Dynamic",

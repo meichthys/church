@@ -16,14 +16,6 @@
   "name": "Jude"
  },
  {
-  "abbreviation": "3JN",
-  "book": "3 John",
-  "docstatus": 0,
-  "doctype": "Church Bible Book",
-  "modified": "2025-11-06 00:18:37.420494",
-  "name": "3 John"
- },
- {
   "abbreviation": "2JN",
   "book": "2 John",
   "docstatus": 0,
@@ -510,6 +502,14 @@
   "doctype": "Church Bible Book",
   "modified": "2025-11-06 00:18:36.963115",
   "name": "Genesis"
+ },
+ {
+  "abbreviation": "3JN",
+  "book": "3 John",
+  "docstatus": 0,
+  "doctype": "Church Bible Book",
+  "modified": "2025-11-06 00:18:37.420494",
+  "name": "3 John"
  },
  {
   "abbreviation": "2PE",

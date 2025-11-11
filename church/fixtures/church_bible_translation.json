@@ -1,9 +1,9 @@
 [
  {
-  "abbreviation": "KJV",
+  "abbreviation": "KJAVs",
   "docstatus": 0,
   "doctype": "Church Bible Translation",
-  "modified": "2025-10-28 01:34:26.039349",
+  "modified": "2025-11-06 00:27:57.936103",
   "name": "King James Version",
   "translation": "King James Version"
  },
@@ -168,28 +168,12 @@
   "translation": "New International Reader's Version"
  },
  {
-  "abbreviation": "BSB",
-  "docstatus": 0,
-  "doctype": "Church Bible Translation",
-  "modified": "2025-09-17 23:23:26.001633",
-  "name": "Berean Standard Bible",
-  "translation": "Berean Standard Bible"
- },
- {
   "abbreviation": "CJB",
   "docstatus": 0,
   "doctype": "Church Bible Translation",
   "modified": "2025-09-17 23:23:26.011591",
   "name": "Complete Jewish Bible",
   "translation": "Complete Jewish Bible"
- },
- {
-  "abbreviation": "BBE",
-  "docstatus": 0,
-  "doctype": "Church Bible Translation",
-  "modified": "2025-09-17 23:23:26.021513",
-  "name": "Bible in Basic English",
-  "translation": "Bible in Basic English"
  },
  {
   "abbreviation": "TPT",
@@ -238,5 +222,21 @@
   "modified": "2025-10-29 22:34:57.443008",
   "name": "World English Bible",
   "translation": "World English Bible"
+ },
+ {
+  "abbreviation": "BSB",
+  "docstatus": 0,
+  "doctype": "Church Bible Translation",
+  "modified": "2025-11-06 01:17:39.595353",
+  "name": "Berean Standard Bible",
+  "translation": "Berean Standard Bible"
+ },
+ {
+  "abbreviation": "BBE",
+  "docstatus": 0,
+  "doctype": "Church Bible Translation",
+  "modified": "2025-09-17 23:23:26.021513",
+  "name": "Bible in Basic English",
+  "translation": "Bible in Basic English"
  }
 ]

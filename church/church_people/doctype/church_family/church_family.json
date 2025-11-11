@@ -63,9 +63,13 @@
   {
    "link_doctype": "Church Person",
    "link_fieldname": "family"
+  },
+  {
+   "link_doctype": "Church Alms Request",
+   "link_fieldname": "recipient"
   }
  ],
- "modified": "2025-11-07 01:05:32.117029",
+ "modified": "2025-11-11 00:02:57.194964",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Family",
@@ -82,6 +86,30 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church User",
    "write": 1
   }
  ],

@@ -93,7 +93,7 @@
    "table_fieldname": "topics"
   }
  ],
- "modified": "2025-11-07 01:03:10.094712",
+ "modified": "2025-11-11 00:30:44.664286",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Church Prayer Request",
@@ -109,6 +109,32 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church User",
+   "select": 1,
    "share": 1,
    "write": 1
   }

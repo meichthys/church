@@ -58,7 +58,7 @@
    "link_fieldname": "item"
   }
  ],
- "modified": "2025-10-08 23:05:58.992282",
+ "modified": "2025-11-11 00:20:47.147389",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Church Prayer",
@@ -76,6 +76,24 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "read": 1,
+   "role": "Church User"
   }
  ],
  "row_format": "Dynamic",

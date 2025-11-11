@@ -75,7 +75,7 @@
    "table_fieldname": "donations"
   }
  ],
- "modified": "2025-11-07 01:04:19.321436",
+ "modified": "2025-11-11 00:09:07.796302",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Fund",
@@ -93,6 +93,25 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church User"
   }
  ],
  "quick_entry": 1,

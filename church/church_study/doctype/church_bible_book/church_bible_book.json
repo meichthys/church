@@ -40,7 +40,7 @@
    "link_fieldname": "book"
   }
  ],
- "modified": "2025-11-09 23:44:09.631642",
+ "modified": "2025-11-11 00:05:29.645664",
  "modified_by": "Administrator",
  "module": "Church Study",
  "name": "Church Bible Book",
@@ -58,6 +58,27 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church User"
   }
  ],
  "row_format": "Dynamic",

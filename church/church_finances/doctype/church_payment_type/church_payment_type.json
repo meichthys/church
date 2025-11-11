@@ -36,7 +36,7 @@
    "table_fieldname": "donations"
   }
  ],
- "modified": "2025-09-08 23:05:24.312342",
+ "modified": "2025-11-11 00:11:18.016937",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Payment Type",
@@ -52,6 +52,19 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }
