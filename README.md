@@ -55,6 +55,7 @@ The following features have been implemented in this app (see the [🗺️ Roadm
 - Church Letter tracking (from people & missionaries)
 - Bible Vers & Reference entry
   - Fetch Bible text from bible-api.com
+- Alms Requests
 
 ## 📥 Installing Frappe
 
@@ -148,8 +149,7 @@ Contributions are very welcome! If you plan any large contributions, please let 
   - Make sure the doctype name is pre-pended with `Church `
   - Add a doctype description on the settings tab
   - Add fields for the doctype (if necessary add field descriptions).
-  - Add permissions for the new doctype to the `Church User` and `Church Admin` roles. (Not necessary for child tables)
-    - After adding permissions, export the permissions by going to the DocType and chosing ... > Customize > Action > Export Customizations. Select the relevant `Church` module and check both the 'Sync on Migrate' and `Export Custom Permissions` options and click 'Submit'.
+  - Add permissions to the doctype for `Church User` and `Church Admin` roles. (Not necessary for child tables)
   - Add the doctype to the relevant workspace. (not necessary for child tables)
   - If necessary, add an onboarding step & form tour to explain specific fields.
   - If any default records for this doctype should be shipped with the app, add fixtures for them in `hooks.py`.
