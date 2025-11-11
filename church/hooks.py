@@ -171,10 +171,6 @@ fixtures = [
 		],
 	},
 	{
-		"dt": "Custom DocPerm",
-		"filters": [["role", "like", "Church%"]],
-	},
-	{
 		"dt": "Custom HTML Block",
 		"filters": [["name", "like", "Church%"]],
 	},
