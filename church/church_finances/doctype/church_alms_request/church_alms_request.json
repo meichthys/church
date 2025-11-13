@@ -12,6 +12,7 @@
   "column_break_ixvv",
   "status",
   "amount",
+  "expense_type",
   "section_break_olzm",
   "description"
  ],
@@ -67,12 +68,19 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "Pending\nDeclined\nApproved\nDistributed"
+  },
+  {
+   "description": "Required to 'Create Expense'. The fund associated with the selected expense will be reduced by the alms 'Amount'.",
+   "fieldname": "expense_type",
+   "fieldtype": "Link",
+   "label": "Expense Type",
+   "options": "Church Expense Type"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-11 00:01:41.374332",
+ "modified": "2025-11-12 22:57:54.155053",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Alms Request",
