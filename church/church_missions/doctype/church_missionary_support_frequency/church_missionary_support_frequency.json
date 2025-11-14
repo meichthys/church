@@ -5,6 +5,7 @@
  "creation": "2025-10-02 21:51:33.814292",
  "description": "How often `Church Missionary` support is given",
  "doctype": "DocType",
+ "documentation": "/app/doctype?module=Church+Missions",
  "engine": "InnoDB",
  "field_order": [
   "frequency",
@@ -35,7 +36,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-11 00:19:38.191420",
+ "modified": "2025-11-13 23:59:48.185963",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Church Missionary Support Frequency",

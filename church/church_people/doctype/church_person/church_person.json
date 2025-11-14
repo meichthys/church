@@ -6,6 +6,7 @@
  "creation": "2025-08-21 01:19:39.714186",
  "description": "A person that has interacted with the church in some way (i.e. attendee, member, visitor, etc).",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-people",
  "engine": "InnoDB",
  "field_order": [
   "personal_information_section",
@@ -319,7 +320,7 @@
    "link_fieldname": "recipient"
   }
  ],
- "modified": "2025-11-11 00:04:29.538895",
+ "modified": "2025-11-14 00:00:12.530250",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Person",

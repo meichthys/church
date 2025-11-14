@@ -5,6 +5,7 @@
  "creation": "2025-09-02 01:03:03.764617",
  "description": "The type of payment used for `Church Donation`s (i.e. Cash, Check, etc)",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-finances",
  "engine": "InnoDB",
  "field_order": [
   "type",
@@ -36,7 +37,7 @@
    "table_fieldname": "donations"
   }
  ],
- "modified": "2025-11-11 00:11:18.016937",
+ "modified": "2025-11-13 23:57:46.638425",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Payment Type",

@@ -5,6 +5,7 @@
  "creation": "2025-08-31 23:41:14.325452",
  "description": "Types of church events (i.e Sunday services, community events, private events, etc)",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-ministries",
  "engine": "InnoDB",
  "field_order": [
   "type",
@@ -54,7 +55,7 @@
    "link_fieldname": "type"
   }
  ],
- "modified": "2025-11-11 00:26:56.110766",
+ "modified": "2025-11-13 23:59:23.467826",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Church Event Type",

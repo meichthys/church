@@ -5,6 +5,7 @@
  "creation": "2025-09-17 21:36:27.516552",
  "description": "Specific beliefs of the church",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-foundations",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
@@ -41,7 +42,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-11 00:28:53.073430",
+ "modified": "2025-11-13 23:58:58.146889",
  "modified_by": "Administrator",
  "module": "Church Foundations",
  "name": "Church Belief",

@@ -5,6 +5,7 @@
  "creation": "2025-08-26 22:57:29.102805",
  "description": "Types of roles that `Church Person`s can fill in the church.",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-people",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
@@ -36,7 +37,7 @@
    "table_fieldname": "church_roles"
   }
  ],
- "modified": "2025-11-11 00:12:14.943365",
+ "modified": "2025-11-14 00:00:11.746942",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Role Type",

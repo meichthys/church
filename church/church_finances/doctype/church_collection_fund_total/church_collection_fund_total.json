@@ -4,6 +4,7 @@
  "creation": "2025-10-01 22:18:39.386224",
  "description": "Total donations for specific `Church Fund`s",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-finances",
  "engine": "InnoDB",
  "field_order": [
   "fund",
@@ -34,7 +35,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-10-02 00:41:27.821263",
+ "modified": "2025-11-13 23:57:45.669918",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Collection Fund Total",

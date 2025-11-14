@@ -4,6 +4,7 @@
  "creation": "2025-08-31 23:40:34.324092",
  "description": "Any kind of church gathering. This includes regular services as well as one-off events.",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-ministries",
  "engine": "InnoDB",
  "field_order": [
   "type",
@@ -134,7 +135,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-11 00:28:14.630511",
+ "modified": "2025-11-13 23:59:23.370338",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Church Event",

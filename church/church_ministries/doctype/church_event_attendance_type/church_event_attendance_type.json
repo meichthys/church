@@ -4,6 +4,7 @@
  "creation": "2025-09-01 00:33:34.102307",
  "description": "Type of `Church Event Attendance` (i.e. Confirmed, Assumed, Unknown, Absent etc.)",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-ministries",
  "engine": "InnoDB",
  "field_order": [
   "type",
@@ -36,7 +37,7 @@
    "table_fieldname": "attendance"
   }
  ],
- "modified": "2025-11-11 00:24:06.720329",
+ "modified": "2025-11-13 23:59:23.271613",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Church Event Attendance Type",

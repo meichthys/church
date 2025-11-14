@@ -4,6 +4,7 @@
  "creation": "2025-08-25 22:44:34.512827",
  "description": "Status type of the `Church Member` as defined by the church.",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-people",
  "engine": "InnoDB",
  "field_order": [
   "status",
@@ -42,7 +43,7 @@
    "link_fieldname": "membership_status"
   }
  ],
- "modified": "2025-11-11 00:10:09.587754",
+ "modified": "2025-11-14 00:00:12.390435",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Member Status",

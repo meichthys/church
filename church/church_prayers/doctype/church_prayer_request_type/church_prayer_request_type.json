@@ -5,6 +5,7 @@
  "creation": "2025-09-13 01:12:32.154287",
  "description": "The kind of prayer request (i.e. Praise, Health, Salvation, etc.)",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-prayers",
  "engine": "InnoDB",
  "field_order": [
   "type",
@@ -32,7 +33,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-11 00:15:38.192179",
+ "modified": "2025-11-14 00:00:37.077322",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Church Prayer Request Type",

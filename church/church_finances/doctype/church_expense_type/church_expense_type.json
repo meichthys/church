@@ -5,6 +5,7 @@
  "creation": "2025-10-09 02:26:38.910872",
  "description": "A type of `Church Expense` (a.k.a. Categories)",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-finances",
  "engine": "InnoDB",
  "field_order": [
   "type",
@@ -105,7 +106,7 @@
    "link_fieldname": "type"
   }
  ],
- "modified": "2025-11-11 00:23:09.451803",
+ "modified": "2025-11-13 23:57:46.458068",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Expense Type",

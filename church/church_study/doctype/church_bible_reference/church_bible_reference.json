@@ -4,6 +4,7 @@
  "creation": "2025-10-27 22:53:12.954122",
  "description": "A Bible reverence to a single verse or range of verses along with optional Translation and verse text. i.e. Matthew 10:18 (BSB)",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-study",
  "engine": "InnoDB",
  "field_order": [
   "start_verse",
@@ -67,7 +68,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-11 00:06:43.066618",
+ "modified": "2025-11-14 00:00:58.139909",
  "modified_by": "Administrator",
  "module": "Church Study",
  "name": "Church Bible Reference",

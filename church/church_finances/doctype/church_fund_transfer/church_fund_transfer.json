@@ -5,6 +5,7 @@
  "creation": "2025-10-09 23:26:05.829776",
  "description": "A financial currency transfer between two `Church Fund`s",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-finances",
  "engine": "InnoDB",
  "field_order": [
   "section_break_ev5b",
@@ -94,7 +95,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-11-11 00:22:12.635610",
+ "modified": "2025-11-13 23:57:45.954418",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Fund Transfer",

@@ -5,6 +5,7 @@
  "creation": "2025-10-10 22:36:42.168218",
  "description": "A song sung by the Church as part of worship or a `Church Event`",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-ministries",
  "engine": "InnoDB",
  "field_order": [
   "title",
@@ -56,7 +57,7 @@
    "link_fieldname": "item"
   }
  ],
- "modified": "2025-11-11 00:25:41.180889",
+ "modified": "2025-11-13 23:59:23.630567",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Church Song",

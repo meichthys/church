@@ -4,6 +4,7 @@
  "creation": "2025-09-17 21:10:06.782386",
  "description": "Static Information related to the church",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-foundations",
  "engine": "InnoDB",
  "field_order": [
   "legal_name",
@@ -62,7 +63,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-11-13 22:57:23.998706",
+ "modified": "2025-11-13 23:58:58.054889",
  "modified_by": "Administrator",
  "module": "Church Foundations",
  "name": "Church Information",

@@ -5,6 +5,7 @@
  "creation": "2025-09-02 00:47:02.825073",
  "description": "A specific collection of `Church Donation`s that are generally from `Church Person`s and associated with a specific `Church Event`s.",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-finances",
  "engine": "InnoDB",
  "field_order": [
   "date",
@@ -90,7 +91,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-11-11 00:30:03.483730",
+ "modified": "2025-11-13 23:57:47.098141",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Collection",

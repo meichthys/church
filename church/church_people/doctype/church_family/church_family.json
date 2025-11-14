@@ -5,6 +5,7 @@
  "creation": "2025-08-22 00:15:20.425153",
  "description": "A family of people ('Church Person's) that are considered to be part of the same household. One 'Church Person' can be set to be the Head of Household for a family. ",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-people",
  "engine": "InnoDB",
  "field_order": [
   "section_break_acrr",
@@ -69,7 +70,7 @@
    "link_fieldname": "recipient"
   }
  ],
- "modified": "2025-11-11 00:02:57.194964",
+ "modified": "2025-11-14 00:00:11.907274",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Family",

@@ -5,6 +5,7 @@
  "creation": "2025-09-18 22:33:05.489158",
  "description": "Missionaries of the church.",
  "doctype": "DocType",
+ "documentation": "/app/doctype?module=Church+Missions",
  "engine": "InnoDB",
  "field_order": [
   "title",
@@ -132,7 +133,7 @@
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-11 00:27:39.302863",
+ "modified": "2025-11-13 23:59:48.323882",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Church Missionary",

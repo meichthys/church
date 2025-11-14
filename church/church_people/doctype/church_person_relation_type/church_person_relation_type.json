@@ -5,6 +5,7 @@
  "creation": "2025-08-25 21:30:15.393857",
  "description": "The type of relationship between two `Church Person`s",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-people",
  "engine": "InnoDB",
  "field_order": [
   "relation_type",
@@ -37,7 +38,7 @@
    "table_fieldname": "relationships"
   }
  ],
- "modified": "2025-11-11 00:13:19.352576",
+ "modified": "2025-11-14 00:00:12.212833",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Person Relation Type",

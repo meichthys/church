@@ -5,6 +5,7 @@
  "creation": "2025-09-02 01:11:30.383380",
  "description": "Financial funds of the church (i.e. General, Trust, etc).",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-finances",
  "engine": "InnoDB",
  "field_order": [
   "fund",
@@ -75,7 +76,7 @@
    "table_fieldname": "donations"
   }
  ],
- "modified": "2025-11-11 00:09:07.796302",
+ "modified": "2025-11-13 23:57:46.807646",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Fund",
