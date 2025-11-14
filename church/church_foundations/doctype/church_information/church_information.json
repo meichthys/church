@@ -8,6 +8,7 @@
  "field_order": [
   "legal_name",
   "founding_date",
+  "default_bible_translation",
   "column_break_rmsm",
   "address",
   "mission_statement",
@@ -49,13 +50,19 @@
   {
    "fieldname": "section_break_nxne",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "default_bible_translation",
+   "fieldtype": "Link",
+   "label": "Default Bible Translation",
+   "options": "Church Bible Translation"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-11-11 00:18:40.476128",
+ "modified": "2025-11-13 22:57:23.998706",
  "modified_by": "Administrator",
  "module": "Church Foundations",
  "name": "Church Information",

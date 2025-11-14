@@ -33,7 +33,14 @@ frappe.ui.form.on("Church Bible Reference", {
                 console.error(error);
             }
         });
-    }
+        // Set default translation if not set
+        frappe.db.get_single_value('Church Information', 'default_bible_translation')
+            .then(function (value) {
+                if (!frm.doc.translation) {
+                    frm.set_value('translation', value);
+                }
+            })
+        }
 });
 
 async function fetch_bible_text(frm) {
