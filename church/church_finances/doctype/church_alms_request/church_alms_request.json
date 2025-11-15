@@ -19,15 +19,6 @@
  ],
  "fields": [
   {
-   "default": "Church Person",
-   "fieldname": "recipient_type",
-   "fieldtype": "Link",
-   "label": "Recipient Type",
-   "link_filters": "[[\"DocType\",\"name\",\"in\",[\"Church Family\",\"Church Person\"]]]",
-   "options": "DocType",
-   "reqd": 1
-  },
-  {
    "fieldname": "recipient",
    "fieldtype": "Dynamic Link",
    "in_list_view": 1,
@@ -71,7 +62,8 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Status",
-   "options": "Pending\nDeclined\nApproved\nDistributed"
+   "options": "Pending\nDeclined\nApproved\nDistributed",
+   "reqd": 1
   },
   {
    "description": "Required to 'Create Expense'. The fund associated with the selected expense will be reduced by the alms 'Amount'.",
@@ -83,12 +75,20 @@
    "in_standard_filter": 1,
    "label": "Expense Type",
    "options": "Church Expense Type"
+  },
+  {
+   "default": "Church Person",
+   "fieldname": "recipient_type",
+   "fieldtype": "Link",
+   "label": "Recipient Type",
+   "link_filters": "[[\"DocType\",\"name\",\"in\",[\"Church Person\",\"Church Family\"]]]",
+   "options": "DocType"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-13 23:57:46.300770",
+ "modified": "2025-11-15 01:28:05.457851",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Alms Request",

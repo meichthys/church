@@ -1,0 +1,132 @@
+{
+ "allow_comments": 0,
+ "allow_delete": 1,
+ "allow_edit": 1,
+ "allow_incomplete": 0,
+ "allow_multiple": 1,
+ "allow_print": 0,
+ "anonymous": 0,
+ "apply_document_permissions": 1,
+ "button_label": "Save",
+ "condition_json": "[]",
+ "creation": "2025-11-15 01:00:46.450984",
+ "doc_type": "Church Alms Request",
+ "docstatus": 0,
+ "doctype": "Web Form",
+ "idx": 0,
+ "introduction_text": "<div class=\"ql-editor read-mode\"><blockquote>Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God.</blockquote><blockquote>~ Philipians 4:6 (BSB)</blockquote></div>",
+ "is_standard": 1,
+ "list_columns": [
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status"
+  },
+  {
+   "fieldname": "recipient_type",
+   "fieldtype": "Link",
+   "label": "Recipient Type"
+  },
+  {
+   "fieldname": "recipient",
+   "fieldtype": "Dynamic Link",
+   "label": "Recipient"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "list_title": "Your Prayer Requests",
+ "login_required": 1,
+ "max_attachment_size": 0,
+ "modified": "2025-11-15 01:31:29.579626",
+ "modified_by": "Administrator",
+ "module": "Church Finances",
+ "name": "alms-request",
+ "owner": "Administrator",
+ "published": 1,
+ "route": "alms-request",
+ "show_attachments": 0,
+ "show_list": 1,
+ "show_sidebar": 1,
+ "title": "Alms Request",
+ "web_form_fields": [
+  {
+   "allow_read_on_all_link_options": 0,
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 0,
+   "label": "Status",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "",
+   "precision": "",
+   "read_only": 1,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "hidden": 0,
+   "label": "Amount",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "0",
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "hidden": 0,
+   "label": "Description",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 0,
+   "reqd": 1,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "default": "Church Person",
+   "fieldname": "recipient_type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Recipient Type",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "",
+   "precision": "",
+   "read_only": 0,
+   "reqd": 1,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "recipient",
+   "fieldtype": "Link",
+   "hidden": 0,
+   "label": "Recipient",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Church Person",
+   "precision": "",
+   "read_only": 0,
+   "reqd": 1,
+   "show_in_filter": 0
+  }
+ ]
+}

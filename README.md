@@ -126,8 +126,6 @@ Hopefully this roadmap will help avoid too much scope creep and provide a sense 
   - Beliefs/Statement of Faith
   - Calendar
   - Contact Us
-- Collection Improvements
-  - Make collections submittable(?)
 - Additional portal pages
   - Show tracked giving
   - Show tracked attendance
