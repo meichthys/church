@@ -3,6 +3,7 @@
  "creation": "2025-08-25 20:53:56.079617",
  "description": "Relationship between two `Church Person`s",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-people",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
@@ -40,7 +41,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-09-05 00:00:45.544253",
+ "modified": "2025-11-14 00:00:11.595410",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Person Relation",

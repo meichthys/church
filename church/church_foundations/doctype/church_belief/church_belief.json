@@ -1,10 +1,11 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{title}",
+ "autoname": "format:Belief {#}",
  "creation": "2025-09-17 21:36:27.516552",
  "description": "Specific beliefs of the church",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-foundations",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
@@ -41,7 +42,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-10-08 23:50:02.373662",
+ "modified": "2025-11-15 22:53:58.845901",
  "modified_by": "Administrator",
  "module": "Church Foundations",
  "name": "Church Belief",
@@ -59,11 +60,26 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "title",
  "track_changes": 1
 }

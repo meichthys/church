@@ -4,6 +4,7 @@
  "creation": "2025-10-27 22:53:12.954122",
  "description": "A Bible reverence to a single verse or range of verses along with optional Translation and verse text. i.e. Matthew 10:18 (BSB)",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-study",
  "engine": "InnoDB",
  "field_order": [
   "start_verse",
@@ -20,7 +21,6 @@
    "fieldtype": "Link",
    "in_filter": 1,
    "in_list_view": 1,
-   "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Start Verse",
    "options": "Church Bible Verse",
@@ -31,7 +31,6 @@
    "fieldtype": "Link",
    "in_filter": 1,
    "in_list_view": 1,
-   "in_preview": 1,
    "in_standard_filter": 1,
    "label": "End Verse",
    "options": "Church Bible Verse"
@@ -45,7 +44,6 @@
    "fieldtype": "Link",
    "in_filter": 1,
    "in_list_view": 1,
-   "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Translation",
    "options": "Church Bible Translation"
@@ -70,10 +68,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-10-28 00:38:57.907452",
+ "modified": "2025-11-15 22:56:34.302563",
  "modified_by": "Administrator",
  "module": "Church Study",
  "name": "Church Bible Reference",
+ "naming_rule": "By script",
  "owner": "Administrator",
  "permissions": [
   {
@@ -87,9 +86,23 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
   }
  ],
  "row_format": "Dynamic",
+ "show_preview_popup": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

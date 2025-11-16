@@ -5,6 +5,7 @@
  "creation": "2025-10-09 02:26:38.910872",
  "description": "A type of `Church Expense` (a.k.a. Categories)",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-finances",
  "engine": "InnoDB",
  "field_order": [
   "type",
@@ -105,7 +106,7 @@
    "link_fieldname": "type"
   }
  ],
- "modified": "2025-10-10 22:21:08.303404",
+ "modified": "2025-11-15 22:52:18.102093",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Expense Type",
@@ -122,6 +123,19 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }

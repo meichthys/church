@@ -171,10 +171,6 @@ fixtures = [
 		],
 	},
 	{
-		"dt": "Custom DocPerm",
-		"filters": [["role", "like", "Church%"]],
-	},
-	{
 		"dt": "Custom HTML Block",
 		"filters": [["name", "like", "Church%"]],
 	},
@@ -242,7 +238,7 @@ fixtures = [
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/church/css/church.css"
-# app_include_js = "/assets/church/js/church.js"
+app_include_js = "/assets/church/js/help_icon_on_form.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/church/css/church.css"

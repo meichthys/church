@@ -5,6 +5,7 @@
  "creation": "2025-08-26 22:57:29.102805",
  "description": "Types of roles that `Church Person`s can fill in the church.",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-people",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
@@ -36,7 +37,7 @@
    "table_fieldname": "church_roles"
   }
  ],
- "modified": "2025-09-08 23:08:20.626294",
+ "modified": "2025-11-15 22:54:52.639182",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Role Type",
@@ -52,6 +53,19 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }

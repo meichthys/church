@@ -5,6 +5,7 @@
  "creation": "2025-10-08 22:02:44.303677",
  "description": "A recorded prayer, written or spoken",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-prayers",
  "engine": "InnoDB",
  "field_order": [
   "person",
@@ -58,7 +59,7 @@
    "link_fieldname": "item"
   }
  ],
- "modified": "2025-10-08 23:05:58.992282",
+ "modified": "2025-11-15 22:56:20.377317",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Church Prayer",
@@ -74,6 +75,19 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }

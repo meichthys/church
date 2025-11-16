@@ -4,10 +4,12 @@
  "creation": "2025-09-17 21:10:06.782386",
  "description": "Static Information related to the church",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-foundations",
  "engine": "InnoDB",
  "field_order": [
   "legal_name",
   "founding_date",
+  "default_bible_translation",
   "column_break_rmsm",
   "address",
   "mission_statement",
@@ -49,13 +51,19 @@
   {
    "fieldname": "section_break_nxne",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "default_bible_translation",
+   "fieldtype": "Link",
+   "label": "Default Bible Translation",
+   "options": "Church Bible Translation"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-09-17 23:32:19.143025",
+ "modified": "2025-11-15 22:53:46.638825",
  "modified_by": "Administrator",
  "module": "Church Foundations",
  "name": "Church Information",
@@ -68,6 +76,17 @@
    "print": 1,
    "read": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Church Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }

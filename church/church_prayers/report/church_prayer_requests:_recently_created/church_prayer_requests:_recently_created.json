@@ -27,6 +27,14 @@
    "fieldname": "request",
    "fieldtype": "Data",
    "label": "Request",
+   "options": "Church Prayer Request",
+   "width": 0
+  },
+  {
+   "fieldname": "name",
+   "fieldtype": "Link",
+   "label": "Link to Request",
+   "options": "Church Prayer Request",
    "width": 0
   }
  ],
@@ -49,13 +57,13 @@
  "is_standard": "Yes",
  "json": "{}",
  "letterhead": null,
- "modified": "2025-09-25 22:54:20.356971",
+ "modified": "2025-11-02 22:00:28.164362",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Church Prayer Requests: Recently Created",
  "owner": "Administrator",
  "prepared_report": 0,
- "query": "SELECT status, type, related_person, request\nFROM `tabChurch Prayer Request`\nWHERE creation > %(request_since)s;",
+ "query": "SELECT status, type, related_person, request, name\nFROM `tabChurch Prayer Request`\nWHERE creation > %(request_since)s;",
  "ref_doctype": "Church Prayer Request",
  "report_name": "Church Prayer Requests: Recently Created",
  "report_type": "Query Report",

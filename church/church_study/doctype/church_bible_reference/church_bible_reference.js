@@ -1,78 +1,175 @@
 frappe.ui.form.on("Church Bible Reference", {
     import_reference_text: frm => {
         fetch_bible_text(frm);
-    }
+    },
+    refresh: async function(frm) {
+        frm.add_custom_button('Open in AndBible', async function() {
+            const start_verse = await frappe.get_doc("Church Bible Verse", frm.doc.start_verse);
+            if (!start_verse.book || !start_verse.chapter || !start_verse.verse) {
+                frappe.msgprint(__('Please make sure reference Start Verse has a Chapter and Verse.'));
+                return;
+            }
+
+            try {
+                // Fetch abbreviation from linked Church Bible Book record
+                const book = await frappe.db.get_doc('Church Bible Book', start_verse.book);
+                const abbreviation = book.abbreviation;
+
+                if (!abbreviation) {
+                    frappe.msgprint(__(`No abbreviation found for Book: ${book}.`));
+                    return;
+                }
+
+                // Construct OSIS reference (e.g., Gen.1.1)
+                const osisRef = `${abbreviation}.${start_verse.chapter}.${start_verse.verse}`;
+
+                // Build AndBible deep link
+                const url = `https://read.andbible.org/${osisRef}`;
+
+                // Open the link (will launch AndBible if installed)
+                window.open(url, '_blank');
+            } catch (error) {
+                frappe.msgprint(__('Failed to open verse in AndBible.'));
+                console.error(error);
+            }
+        });
+        // Set default translation if not set
+        frappe.db.get_single_value('Church Information', 'default_bible_translation')
+            .then(function (value) {
+                if (!frm.doc.translation) {
+                    frm.set_value('translation', value);
+                }
+            })
+        }
 });
 
 async function fetch_bible_text(frm) {
     try {
-        const start_verse = await get_verse_reference(frm.doc.start_verse);
-        const end_verse = frm.doc.end_verse ? await get_verse_reference(frm.doc.end_verse) : null;
-        const translation = await get_translation(frm.doc.translation);
+        // Fetch full translation document from DB
+        const translation_doc = await frappe.db.get_doc("Church Bible Translation", frm.doc.translation);
+        const translationAbbr = translation_doc.abbreviation;
+        const translation_id = await get_translation_id(translationAbbr);
 
-        if (!start_verse || !translation) {
-            frappe.msgprint("Missing start verse or translation information.");
+        if (!translation_id) {
+            frappe.msgprint(`❌ Translation "${translationAbbr}" not found in bible.helloao.org API.`);
             return;
         }
 
-        // Build passage string
-        let passage = `${start_verse.book} ${start_verse.chapter}:${start_verse.verse}`;
-        if (end_verse) {
-            passage += `-${end_verse.chapter}:${end_verse.verse}`;
+        // Fetch start and end verse documents
+        const start_verse_doc = await get_verse_reference(frm.doc.start_verse);
+        const end_verse_doc = frm.doc.end_verse ? await get_verse_reference(frm.doc.end_verse) : null;
+
+        if (!start_verse_doc) {
+            frappe.msgprint("❌ Start verse not found.");
+            return;
         }
 
-        // Check if translation is supported
-        const translationsData = await fetch("https://bible-api.com/data")
-            .then(res => {
-                if (!res.ok) throw new Error(`Failed to fetch translation data (${res.status})`);
-                return res.json();
+        // Fetch book abbreviation for API
+        const start_book_doc = await frappe.db.get_doc("Church Bible Book", start_verse_doc.book);
+        const book_abbrev = await get_book_abbreviation(translation_id, start_book_doc.abbreviation);
+
+        if (!book_abbrev) {
+            frappe.msgprint(`❌ Book abbreviation not found for "${start_book_doc.name}" in translation "${translation_id}".`);
+            return;
+        }
+
+        const start_chapter = parseInt(start_verse_doc.chapter);
+        const end_chapter = end_verse_doc ? parseInt(end_verse_doc.chapter) : start_chapter;
+        const versesText = [];
+
+        for (let ch = start_chapter; ch <= end_chapter; ch++) {
+            const url = `https://bible.helloao.org/api/${encodeURIComponent(translation_id)}/${encodeURIComponent(book_abbrev)}/${ch}.json`;
+            const response = await fetch(url);
+            if (!response.ok) throw new Error(`Failed to fetch chapter ${ch} (${response.status}) from bible.helloao.org`);
+            const data = await response.json();
+
+            // Extract verses from chapter
+            const chapterContent = data.chapter.content
+                .filter(item => item.type === "verse")
+                .map(v => ({
+                    number: parseInt(v.number),
+                    text: clean_reference_text(v.content)
+                }));
+
+            // Filter by verse(s)
+            const filtered = chapterContent.filter(v => {
+                if (!end_verse_doc && start_chapter === end_chapter) {
+                    // Only one verse selected
+                    return v.number === start_verse_doc.verse;
+                }
+                if (ch === start_chapter && v.number < start_verse_doc.verse) return false;
+                if (end_verse_doc && ch === end_chapter && v.number > end_verse_doc.verse) return false;
+                return true;
             });
-        const supportedTranslations = (translationsData.translations || []).map(t => t.identifier || t.id);
-        const version = (translation.abbreviation || "").toLowerCase();
 
-        if (!supportedTranslations.includes(version)) {
-            frappe.msgprint(`The “${translation.abbreviation}” translation is not supported by bible-api.com.
-                It is likely that the version you are trying to use is copyrighted and therefore illegal to
-                use freely. We recommend using translations that are not bound by copyright because God's word
-                should not be for sale! (see <a href="https://copy.church/initiatives/bibles/">
-                https://copy.church/initiatives/bibles/</a> for more details.)`, "Unsupported Translation");
+            versesText.push(...filtered.map(v => `${v.number}. ${v.text}`));
+        }
+        if (versesText.length === 0) {
+            frappe.msgprint(`⚠️ No text found in ${translation_id} for the specified verse range.
+                <br>Please ensure your verses are valid and in the same book.
+                <br>Note: Fetching verses in different books is not supported.`);
             return;
         }
-
-
-        const url = `https://bible-api.com/${encodeURIComponent(passage)}?translation=${version}`;
-
-        // Fetch passage from https://bible-api.com/
-        const response = await fetch(url);
-        if (!response.ok) throw new Error(`Failed to fetch passage (${response.status})`);
-        const data = await response.json();
-
-        frm.set_value("reference_text", data.text.trim());
-        frappe.show_alert({ message: "Bible passage fetched!", indicator: "green" }, 3);
+        frm.set_value("reference_text", versesText.join(" ").trim());
+        frappe.show_alert({ message: `📖 ${translation_id} Bible passage fetched!`, indicator: "green" }, 3);
 
     } catch (err) {
         console.error(err);
-        frappe.msgprint("Error fetching passage. Please ensure you have valid verse references.");
+        frappe.msgprint(`❌ Error fetching passage: ${err.message}`);
     }
 }
 
-// Fetch a Bible verse from DB
-function get_verse_reference(name) {
-    if (!name) return Promise.resolve(null);
-    return frappe.db.get_doc("Church Bible Verse", name)
-        .then(doc => ({ book: doc.book, chapter: doc.chapter, verse: doc.verse }))
-        .catch(() => {
-            console.warn("Verse not found:", name);
-            return null;
-        });
+// Flatten nested content arrays into plain text
+function clean_reference_text(contentArray) {
+    if (!Array.isArray(contentArray)) return contentArray;
+    return contentArray
+        .map(item => {
+            if (typeof item === "string") return item;
+            if (item.text) return item.text;
+            return "";
+        })
+        .join(" ")
+        .replace(/\s+/g, " ")
+        .trim();
 }
 
-// Fetch translation from DB
-function get_translation(name) {
-    if (!name) return Promise.resolve(null);
-    return frappe.db.get_doc("Church Bible Translation", name)
-        .catch(() => {
-            console.warn("Translation not found:", name);
-            return null;
-        });
+// Get book abbreviation from HelloAO API
+async function get_book_abbreviation(translation_id, book_abbr) {
+    const url = `https://bible.helloao.org/api/${encodeURIComponent(translation_id)}/books.json`;
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Failed to fetch book list from bible.helloao.org (${response.status})`);
+    const data = await response.json();
+
+    const match = data.books.find(b => b.id === book_abbr || b.shortName === book_abbr);
+    return match ? match.id : null;
+}
+
+// Fetch a Bible verse document
+async function get_verse_reference(name) {
+    if (!name) return null;
+    try {
+        const doc = await frappe.db.get_doc("Church Bible Verse", name);
+        return {
+            book: doc.book,       // link to Church Bible Book
+            chapter: parseInt(doc.chapter),
+            verse: parseInt(doc.verse)
+        };
+    } catch {
+        console.warn(`⚠️ Bible Verse "${name}" not found.`);
+        return null;
+    }
+}
+
+// Fetch translation ID from HelloAO API
+async function get_translation_id(shortname) {
+    const response = await fetch('https://bible.helloao.org/api/available_translations.json');
+    if (!response.ok) throw new Error(`Failed to fetch translations from bible.helloao.org (${response.status})`);
+    const data = await response.json();
+    const translation = data.translations.find(t => t.shortName === shortname && t.language === "eng");
+    if (!translation) throw new Error(`Translation "${shortname}" not found in bible.helloao.org API.
+        It is likely that the version you are trying to use is copyrighted and therefore illegal to
+        use freely. We recommend using translations that are not bound by copyright because God's word
+        should not be for sale! (see <a href="https://copy.church/initiatives/bibles/" target="_blank">
+        https://copy.church/initiatives/bibles/</a> for more details.)`);
+    return translation.id;
 }

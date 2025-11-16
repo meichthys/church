@@ -4,6 +4,7 @@
  "creation": "2025-10-08 00:56:01.628491",
  "description": "Items that make up an event schedule",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-ministries",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
@@ -66,7 +67,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-10-08 01:07:48.837205",
+ "modified": "2025-11-13 23:59:23.169607",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Church Event Schedule",

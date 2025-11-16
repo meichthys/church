@@ -5,6 +5,7 @@
  "creation": "2025-10-09 02:25:29.401455",
  "description": "A financial transaction that reduces the balance of a `Church Fund`",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-finances",
  "engine": "InnoDB",
  "field_order": [
   "type",
@@ -68,7 +69,7 @@
    "link_fieldname": "source"
   }
  ],
- "modified": "2025-10-09 23:46:57.471825",
+ "modified": "2025-11-15 01:36:35.919702",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Expense",
@@ -85,6 +86,22 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

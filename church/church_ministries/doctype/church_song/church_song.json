@@ -1,10 +1,11 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{title} - {####}",
+ "autoname": "format:Song {#}",
  "creation": "2025-10-10 22:36:42.168218",
  "description": "A song sung by the Church as part of worship or a `Church Event`",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-ministries",
  "engine": "InnoDB",
  "field_order": [
   "title",
@@ -56,7 +57,7 @@
    "link_fieldname": "item"
   }
  ],
- "modified": "2025-10-10 23:01:57.771243",
+ "modified": "2025-11-15 22:54:14.635022",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Church Song",
@@ -74,12 +75,27 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "title",
  "track_changes": 1,
  "track_views": 1
 }

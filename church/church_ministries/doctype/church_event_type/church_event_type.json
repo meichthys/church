@@ -1,10 +1,11 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{type}",
+ "autoname": "format:Event Type {#}",
  "creation": "2025-08-31 23:41:14.325452",
  "description": "Types of church events (i.e Sunday services, community events, private events, etc)",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-ministries",
  "engine": "InnoDB",
  "field_order": [
   "type",
@@ -54,7 +55,7 @@
    "link_fieldname": "type"
   }
  ],
- "modified": "2025-10-07 22:26:25.870247",
+ "modified": "2025-11-15 22:57:02.207658",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Church Event Type",
@@ -72,11 +73,26 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Church Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
   }
  ],
  "quick_entry": 1,
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "type"
 }

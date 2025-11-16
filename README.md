@@ -26,7 +26,7 @@ If you would like to test out the current state of the application, you can try 
 
 ## ✨ Features
 
-The following features have been implemented in this app (see the [🗺️ Roadmap](#🗺️-roadmap) below for future plans):
+The following features have been implemented in this app (see the [🗺️ Roadmap](#-feature-roadmap) below for future plans):
 
 - Built-in Documentation for each module
 - Portal for users with a login:
@@ -55,6 +55,7 @@ The following features have been implemented in this app (see the [🗺️ Roadm
 - Church Letter tracking (from people & missionaries)
 - Bible Vers & Reference entry
   - Fetch Bible text from bible-api.com
+- Alms Requests
 
 ## 📥 Installing Frappe
 
@@ -125,8 +126,6 @@ Hopefully this roadmap will help avoid too much scope creep and provide a sense 
   - Beliefs/Statement of Faith
   - Calendar
   - Contact Us
-- Collection Improvements
-  - Make collections submittable(?)
 - Additional portal pages
   - Show tracked giving
   - Show tracked attendance
@@ -142,14 +141,13 @@ If you need help setting up the app or configuring it, you can reach out in our 
 
 Contributions are very welcome! If you plan any large contributions, please let me know first so we can coordinate and make the chances of a merged pull-request more likely.
 
-- Doctype Naming: I've generally been using a single fieldname for the doctype names when the records in the doctype have low chance of clashing. If there is a higher chance of clashing, I've been using multiple fields in the name along with a `{##}` auto increment. The number of digits in the auto-increment are just sane values that should never be exceeded. I then specify the Title Field in the View Settings, and check the `Show Title in LInk Fields` option. This mostly hides the autonumber name from the user and lets the user only see the not-so-confusing name specified in the `Title Field` (sometimes I create a custom field to concatenate values - since the `Title Field` cannot take multiple fields at once afaik.)
+- Doctype Naming: I've generally been using a single fieldname for the doctype names when the records in the doctype have low chance of clashing. If there is a higher chance of clashing, I've been using multiple fields in the name along with a `{#}` auto increment. The number of digits in the auto-increment are just sane values that should never be exceeded. I then specify the Title Field in the View Settings, and check the `Show Title in LInk Fields` option. This mostly hides the autonumber name from the user and lets the user only see the not-so-confusing name specified in the `Title Field` (sometimes I create a custom field to concatenate values - since the `Title Field` cannot take multiple fields at once afaik.)
 
 ## Steps for adding a new doctype:
   - Make sure the doctype name is pre-pended with `Church `
   - Add a doctype description on the settings tab
   - Add fields for the doctype (if necessary add field descriptions).
-  - Add permissions for the new doctype to the `Church User` and `Church Admin` roles. (Not necessary for child tables)
-    - After adding permissions, export the permissions by going to the DocType and chosing ... > Customize > Action > Export Customizations. Select the relevant `Church` module and check both the 'Sync on Migrate' and `Export Custom Permissions` options and click 'Submit'.
+  - Add permissions to the doctype for `Church User` and `Church Admin` roles. (Not necessary for child tables)
   - Add the doctype to the relevant workspace. (not necessary for child tables)
   - If necessary, add an onboarding step & form tour to explain specific fields.
   - If any default records for this doctype should be shipped with the app, add fixtures for them in `hooks.py`.
