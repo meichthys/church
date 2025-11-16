@@ -1,5 +1,5 @@
 {
- "allow_comments": 0,
+ "allow_comments": 1,
  "allow_delete": 1,
  "allow_edit": 1,
  "allow_incomplete": 0,
@@ -43,10 +43,10 @@
    "label": "Description"
   }
  ],
- "list_title": "Your Prayer Requests",
+ "list_title": "Your Alms Requests",
  "login_required": 1,
  "max_attachment_size": 0,
- "modified": "2025-11-15 01:31:29.579626",
+ "modified": "2025-11-16 00:07:44.428695",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "alms-request",
@@ -100,22 +100,7 @@
    "show_in_filter": 0
   },
   {
-   "allow_read_on_all_link_options": 0,
-   "default": "Church Person",
-   "fieldname": "recipient_type",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Recipient Type",
-   "max_length": 0,
-   "max_value": 0,
-   "options": "",
-   "precision": "",
-   "read_only": 0,
-   "reqd": 1,
-   "show_in_filter": 0
-  },
-  {
-   "allow_read_on_all_link_options": 0,
+   "allow_read_on_all_link_options": 1,
    "fieldname": "recipient",
    "fieldtype": "Link",
    "hidden": 0,
