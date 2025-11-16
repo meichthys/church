@@ -36,7 +36,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-13 23:59:48.185963",
+ "modified": "2025-11-15 22:54:40.556718",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Church Missionary Support Frequency",
@@ -67,13 +67,6 @@
    "select": 1,
    "share": 1,
    "write": 1
-  },
-  {
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Church User"
   }
  ],
  "row_format": "Dynamic",

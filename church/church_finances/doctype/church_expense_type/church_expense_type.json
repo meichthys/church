@@ -106,7 +106,7 @@
    "link_fieldname": "type"
   }
  ],
- "modified": "2025-11-13 23:57:46.458068",
+ "modified": "2025-11-15 22:52:18.102093",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Church Expense Type",
@@ -138,12 +138,6 @@
    "select": 1,
    "share": 1,
    "write": 1
-  },
-  {
-   "export": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Church User"
   }
  ],
  "row_format": "Dynamic",

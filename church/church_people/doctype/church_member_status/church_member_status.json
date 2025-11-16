@@ -43,7 +43,7 @@
    "link_fieldname": "membership_status"
   }
  ],
- "modified": "2025-11-14 00:00:12.390435",
+ "modified": "2025-11-15 22:55:21.448686",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Member Status",
@@ -74,13 +74,6 @@
    "select": 1,
    "share": 1,
    "write": 1
-  },
-  {
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Church User"
   }
  ],
  "quick_entry": 1,

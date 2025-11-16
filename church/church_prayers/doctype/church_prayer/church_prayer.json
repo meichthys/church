@@ -59,7 +59,7 @@
    "link_fieldname": "item"
   }
  ],
- "modified": "2025-11-14 00:00:36.954400",
+ "modified": "2025-11-15 22:56:20.377317",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Church Prayer",
@@ -90,11 +90,6 @@
    "select": 1,
    "share": 1,
    "write": 1
-  },
-  {
-   "export": 1,
-   "read": 1,
-   "role": "Church User"
   }
  ],
  "row_format": "Dynamic",

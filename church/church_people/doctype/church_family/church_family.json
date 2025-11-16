@@ -70,7 +70,7 @@
    "link_fieldname": "recipient"
   }
  ],
- "modified": "2025-11-14 00:00:11.907274",
+ "modified": "2025-11-15 22:55:14.237301",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Family",
@@ -101,16 +101,6 @@
    "role": "Church Manager",
    "select": 1,
    "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Church User",
    "write": 1
   }
  ],

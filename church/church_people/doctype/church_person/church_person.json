@@ -320,7 +320,7 @@
    "link_fieldname": "recipient"
   }
  ],
- "modified": "2025-11-15 01:12:45.338412",
+ "modified": "2025-11-15 22:57:32.308071",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Person",
@@ -352,10 +352,6 @@
    "select": 1,
    "share": 1,
    "write": 1
-  },
-  {
-   "read": 1,
-   "role": "Church User"
   }
  ],
  "quick_entry": 1,

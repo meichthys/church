@@ -133,7 +133,7 @@
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-13 23:59:48.323882",
+ "modified": "2025-11-15 22:54:32.224489",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Church Missionary",
@@ -163,14 +163,6 @@
    "role": "Church Manager",
    "select": 1,
    "share": 1,
-   "write": 1
-  },
-  {
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Church User",
    "write": 1
   }
  ],

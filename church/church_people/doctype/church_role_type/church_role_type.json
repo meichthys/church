@@ -37,7 +37,7 @@
    "table_fieldname": "church_roles"
   }
  ],
- "modified": "2025-11-14 00:00:11.746942",
+ "modified": "2025-11-15 22:54:52.639182",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Role Type",
@@ -68,13 +68,6 @@
    "select": 1,
    "share": 1,
    "write": 1
-  },
-  {
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Church User"
   }
  ],
  "row_format": "Dynamic",

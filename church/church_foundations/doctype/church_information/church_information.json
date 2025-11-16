@@ -63,7 +63,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-11-13 23:58:58.054889",
+ "modified": "2025-11-15 22:53:46.638825",
  "modified_by": "Administrator",
  "module": "Church Foundations",
  "name": "Church Information",
@@ -89,11 +89,6 @@
    "select": 1,
    "share": 1,
    "write": 1
-  },
-  {
-   "print": 1,
-   "read": 1,
-   "role": "Church User"
   }
  ],
  "row_format": "Dynamic",
