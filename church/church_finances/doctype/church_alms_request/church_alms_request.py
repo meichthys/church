@@ -26,3 +26,11 @@ def create_expense(alms_request_name):
 	expense.insert(ignore_permissions=True)
 	frappe.msgprint(f"✅ {expense.type} expense created.")
 	expense.submit()
+
+
+def get_list_context(context):
+	# Only show documents created by active user
+	context.filters = {"owner": frappe.session.user}
+	# Sort the portal list view by status descending
+	context.order_by = "modified desc"
+	return context
