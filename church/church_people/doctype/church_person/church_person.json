@@ -320,7 +320,7 @@
    "link_fieldname": "recipient"
   }
  ],
- "modified": "2025-11-15 22:57:32.308071",
+ "modified": "2025-11-18 23:43:11.668299",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Person",
@@ -356,6 +356,7 @@
  ],
  "quick_entry": 1,
  "row_format": "Dynamic",
+ "search_fields": "last_name, first_name",
  "show_preview_popup": 1,
  "show_title_field_in_link": 1,
  "sort_field": "modified",
