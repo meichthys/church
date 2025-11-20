@@ -7,9 +7,9 @@
 
 A fully open-source church management app built on the [Frappe Framework](https://frappe.io/framework).
 
-Prayers                   |       People              | Finances
-:-------------------------:|:-------------------------: |:-----:
-![](./screenshots/prayers.png)  |  ![](./screenshots/people.png) | ![](./screenshots/finances.png)
+![](./church/public/media/feature_image.png)
+
+
 
 ## 🧪 Demo
 
