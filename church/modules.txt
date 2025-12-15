@@ -7,3 +7,4 @@ Church Foundations
 Church Study
 Church Customizations
 Church Communications
+Church Operations
