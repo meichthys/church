@@ -44,11 +44,13 @@ The following features have been implemented in this app (see the [🗺️ Roadm
 - Church module desk workspace with guided setup steps
 - Event tracking
   - Event types, details, basic attendance tracking & reporting & templating
+- Simple Task tracking
 - Collection/donation tracking
   - Donation entry with collection totals & split check support
   - Bank reconciliation report
 - Fund balance tracking
   - Collections automatically update funds when saved
+- Basic Asset Tracking
 - Church Belief tracking
 - Basic Church Website
   - About Page
