@@ -1,0 +1,59 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"T2NecsUQOb\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>\\\"As good stewards of the manifold grace of God, each of you should use whatever gift he has received to serve one another.\\\"</i>\",\"col\":12}},{\"id\":\"G8_0zqHj_v\",\"type\":\"card\",\"data\":{\"card_name\":\"Operations Documents\",\"col\":4}}]",
+ "creation": "2025-12-15 00:04:59.607521",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "getting-started",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Operations",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Operations Documents",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Church Assets",
+   "link_count": 0,
+   "link_to": "Church Asset",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Church Tasks",
+   "link_count": 0,
+   "link_to": "Church Task",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-12-15 01:14:50.411941",
+ "modified_by": "Administrator",
+ "module": "Church Operations",
+ "name": "Operations",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 9.1,
+ "shortcuts": [],
+ "title": "Operations"
+}
