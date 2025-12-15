@@ -1,0 +1,32 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Portal Menu Item",
+  "enabled": 1,
+  "modified": "2025-11-15 23:38:38.644781",
+  "name": "4st08lkutb",
+  "parent": "Portal Settings",
+  "parentfield": "custom_menu",
+  "parenttype": "Portal Settings",
+  "reference_doctype": "Church Prayer Request",
+  "role": "",
+  "route": "prayer-request",
+  "target": null,
+  "title": "Prayer Requests"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Portal Menu Item",
+  "enabled": 1,
+  "modified": "2025-11-15 23:38:38.644781",
+  "name": "mas674p3kd",
+  "parent": "Portal Settings",
+  "parentfield": "custom_menu",
+  "parenttype": "Portal Settings",
+  "reference_doctype": "Church Alms Request",
+  "role": "",
+  "route": "alms-request",
+  "target": null,
+  "title": "Alms Requests"
+ }
+]

@@ -7,9 +7,9 @@
 
 A fully open-source church management app built on the [Frappe Framework](https://frappe.io/framework).
 
-Prayers                   |       People              | Finances
-:-------------------------:|:-------------------------: |:-----:
-![](./screenshots/prayers.png)  |  ![](./screenshots/people.png) | ![](./screenshots/finances.png)
+![](./church/public/media/feature_image.png)
+
+
 
 ## 🧪 Demo
 
@@ -44,11 +44,13 @@ The following features have been implemented in this app (see the [🗺️ Roadm
 - Church module desk workspace with guided setup steps
 - Event tracking
   - Event types, details, basic attendance tracking & reporting & templating
+- Simple Task tracking
 - Collection/donation tracking
   - Donation entry with collection totals & split check support
   - Bank reconciliation report
 - Fund balance tracking
   - Collections automatically update funds when saved
+- Basic Asset Tracking
 - Church Belief tracking
 - Basic Church Website
   - About Page
@@ -63,10 +65,10 @@ To use the 'Church' app, you must have a working Frappe environment first. There
 
 ### ☁️ In the Cloud
 The easiest (but not free) way to get a working Frappe environment is to use [Frappe Cloud](https://frappe.io/cloud). For a few dollars per month you can run an instance in the cloud. You get your choice of support options and shouldn't need to worry about data loss yourself.
-Note: Wit this option, the money you pay to FrappeCloud is not received by maintainers of this 'Church' app. - We offer the 'Church' software for free, but you pay for the cloud hosting through Frappe.
+Note: With this option, the money you pay to FrappeCloud is not received by maintainers of this 'Church' app. - We offer the 'Church' software for free, but you pay the cloud hosting costs to [Frappe](https://frappe.io/).
 
 ### 💪 Self-Host
-If you're the more technical and/or frugal type, you can self-host an instance on a home pc or server. [Frappe Manager](https://github.com/rtcamp/frappe-manager) can be used to quickly setup a local frappe instance. It's not as easy as a simple .exe file install, but we think you can do it (Please ask us for help if you can't)! The general steps are:
+If you're the more technical and/or frugal type, you can self-host an instance of the Church app on a home pc or server. [Frappe Manager](https://github.com/rtcamp/frappe-manager) can be used to quickly setup a local frappe instance. It's not as easy as a simple app install, but we think you can do it (Please ask us for help if you can't)! The general steps are:
 
 1. Find a machine onto which you can install Frappe (A dedicated linux-based machine is best. Windows is possible, but is not recommended as it requires some extra steps and the use of [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).)
 2. Run the [frappe-manager install script](https://github.com/rtCamp/Frappe-Manager/tree/develop/scripts)
@@ -151,6 +153,7 @@ Contributions are very welcome! If you plan any large contributions, please let 
   - Add the doctype to the relevant workspace. (not necessary for child tables)
   - If necessary, add an onboarding step & form tour to explain specific fields.
   - If any default records for this doctype should be shipped with the app, add fixtures for them in `hooks.py`.
+  - If necessary, update this readme with the new functionality
 
 # 🔑 License: MIT
 

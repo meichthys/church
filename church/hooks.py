@@ -195,6 +195,10 @@ fixtures = [
 		"filters": [["Name", "like", "Church%"]],
 	},
 	{
+		"dt": "Portal Menu Item",
+		"filters": [["title", "in", ["Prayer Requests", "Alms Requests"]]],
+	},
+	{
 		"dt": "Role",
 		"filters": [["Name", "like", "Church%"]],
 	},

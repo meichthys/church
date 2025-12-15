@@ -51,8 +51,19 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-11-14 00:00:58.422530",
+ "links": [
+  {
+   "group": "Start Verse:",
+   "link_doctype": "Church Bible Reference",
+   "link_fieldname": "start_verse"
+  },
+  {
+   "group": "End Verse:",
+   "link_doctype": "Church Bible Reference",
+   "link_fieldname": "end_verse"
+  }
+ ],
+ "modified": "2025-11-18 23:49:06.050570",
  "modified_by": "Administrator",
  "module": "Church Study",
  "name": "Church Bible Verse",

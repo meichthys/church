@@ -24,7 +24,8 @@
    "in_standard_filter": 1,
    "label": "Start Verse",
    "options": "Church Bible Verse",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fieldname": "end_verse",
@@ -33,7 +34,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "End Verse",
-   "options": "Church Bible Verse"
+   "options": "Church Bible Verse",
+   "search_index": 1
   },
   {
    "fieldname": "column_break_fdwn",
@@ -67,8 +69,14 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-11-15 22:56:34.302563",
+ "links": [
+  {
+   "link_doctype": "Church Belief",
+   "link_fieldname": "reference",
+   "table_fieldname": "bible_references"
+  }
+ ],
+ "modified": "2025-11-18 23:52:19.026266",
  "modified_by": "Administrator",
  "module": "Church Study",
  "name": "Church Bible Reference",
