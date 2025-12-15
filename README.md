@@ -151,6 +151,7 @@ Contributions are very welcome! If you plan any large contributions, please let 
   - Add the doctype to the relevant workspace. (not necessary for child tables)
   - If necessary, add an onboarding step & form tour to explain specific fields.
   - If any default records for this doctype should be shipped with the app, add fixtures for them in `hooks.py`.
+  - If necessary, update this readme with the new functionality
 
 # 🔑 License: MIT
 
