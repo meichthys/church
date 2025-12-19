@@ -90,3 +90,11 @@ class ChurchPerson(Document):
 				role.is_current_role = 1
 			else:
 				role.is_current_role = 0
+
+
+def get_list_context(context):
+	# Only show documents related to the active user
+	context.filters = {"app_user": frappe.session.user}
+	# Sort the portal list view by status descending
+	context.order_by = "modified desc"
+	return context
