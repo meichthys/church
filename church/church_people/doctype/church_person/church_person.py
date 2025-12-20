@@ -8,10 +8,41 @@ from frappe.model.document import Document
 
 
 class ChurchPerson(Document):
+	def on_update(self):
+		# Update Family Member list in Church Family
+		if self.family:
+			family = frappe.get_doc("Church Family", self.family)
+			found = False
+			for member in family.members:
+				if member.member == self.name:
+					found = True
+					break
+			if not found:
+				family.append("members", {"member": self.name})
+			family.save()
+		# Remove person from Church Family if family is removed
+		if not self.family and hasattr(self.get_doc_before_save(), "family"):
+			family = frappe.get_doc("Church Family", self.get_doc_before_save().family)
+			for member in family.members:
+				if member.member == self.name:
+					family.remove(member)
+					break
+			family.save()
+
 	def before_save(self):
 		# We set this here since virtual fields do not work with
 		#   View Settings -> Title Field as of 2025-08-26
 		self.full_name = f"{self.first_name}" + ((" " + self.last_name) if self.last_name else "")
+
+	def before_delete(self):
+		# Remove person from Church Family
+		if self.family:
+			family = frappe.get_doc("Church Family", self.family)
+			for member in family.members:
+				if member.name == self.name:
+					family.remove(member)
+					break
+			family.save()
 
 	def validate(self):
 		# Remove head of household status when family is removed
