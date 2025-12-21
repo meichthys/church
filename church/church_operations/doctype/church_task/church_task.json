@@ -1,10 +1,11 @@
 {
  "actions": [],
  "allow_import": 1,
- "autoname": "autoincrement",
+ "autoname": "format:Task {#}",
  "creation": "2025-12-15 00:41:21.858015",
  "description": "Things that need to get done (Like a checklist or ToDo list)",
  "doctype": "DocType",
+ "documentation": "/app/manual%3A-operations",
  "engine": "InnoDB",
  "field_order": [
   "section_break_fgnk",
@@ -13,7 +14,9 @@
   "assigned_person",
   "column_break_yrnx",
   "is_group",
-  "parent_church_task",
+  "parent_task",
+  "section_break_kwag",
+  "task_items",
   "section_break_ysry",
   "notes",
   "hidden_fields_section",
@@ -45,6 +48,7 @@
   {
    "allow_in_quick_entry": 1,
    "default": "0",
+   "description": "Checking this box allows you to add 'generic' sub-tasks and link them to this task. For items that already exist in the system, use the 'Task Items' table below.",
    "fieldname": "is_group",
    "fieldtype": "Check",
    "in_preview": 1,
@@ -55,17 +59,6 @@
    "fieldname": "old_parent",
    "fieldtype": "Link",
    "label": "Old Parent",
-   "options": "Church Task"
-  },
-  {
-   "allow_in_quick_entry": 1,
-   "fieldname": "parent_church_task",
-   "fieldtype": "Link",
-   "ignore_user_permissions": 1,
-   "in_list_view": 1,
-   "in_preview": 1,
-   "in_standard_filter": 1,
-   "label": "Parent Task",
    "options": "Church Task"
   },
   {
@@ -119,18 +112,42 @@
    "fieldtype": "Section Break",
    "hidden": 1,
    "label": "Hidden Fields"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "description": "If this task is a sub-task, select the parent task here.",
+   "fieldname": "parent_task",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Parent Task",
+   "options": "Church Task"
+  },
+  {
+   "fieldname": "section_break_kwag",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "description": "For generic items that do not exist in the system, you can create sub-tasks by checking 'Is Group' and then creating new tasks wit hthis task selected in the new task's 'Parent Task' field. ",
+   "fieldname": "task_items",
+   "fieldtype": "Table",
+   "label": "Task Items",
+   "options": "Church Task Item"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_tree": 1,
  "links": [],
- "modified": "2025-12-15 00:59:25.234829",
+ "modified": "2025-12-20 22:43:14.677845",
  "modified_by": "Administrator",
  "module": "Church Operations",
  "name": "Church Task",
- "naming_rule": "Autoincrement",
- "nsm_parent_field": "parent_church_task",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_task",
  "owner": "Administrator",
  "permissions": [
   {
