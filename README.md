@@ -50,7 +50,7 @@ The following features have been implemented in this app (see the [🗺️ Roadm
   - Bank reconciliation report
 - Fund balance tracking
   - Collections automatically update funds when saved
-- Basic Asset Tracking
+- Basic Asset Tracking (location, details)
 - Church Belief tracking
 - Basic Church Website
   - About Page
