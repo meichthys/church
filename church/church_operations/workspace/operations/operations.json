@@ -35,9 +35,9 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Church Tasks",
+   "label": "Church Locations",
    "link_count": 0,
-   "link_to": "Church Task",
+   "link_to": "Church Location",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -45,15 +45,15 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Church Locations",
+   "label": "Church Tasks",
    "link_count": 0,
-   "link_to": "Church Location",
+   "link_to": "Church Task",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2026-01-05 23:51:05.865566",
+ "modified": "2026-01-05 23:54:03.614596",
  "modified_by": "Administrator",
  "module": "Church Operations",
  "name": "Operations",
