@@ -5,7 +5,7 @@
 
 # ⛪ Church
 
-A fully open-source church management app built on the [Frappe Framework](https://frappe.io/framework).
+A fully open-source church management system built on the [Frappe Framework](https://frappe.io/framework).
 
 ![](./church/public/media/feature_image.png)
 
