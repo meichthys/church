@@ -21,7 +21,7 @@ class ChurchPerson(Document):
 				family.append("members", {"member": self.name})
 			family.save()
 		# Remove person from Church Family if family is removed
-		if not self.family and hasattr(self.get_doc_before_save(), "family"):
+		if not self.family and self.get_doc_before_save().family is not None:
 			family = frappe.get_doc("Church Family", self.get_doc_before_save().family)
 			for member in family.members:
 				if member.member == self.name:

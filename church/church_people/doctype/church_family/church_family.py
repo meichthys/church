@@ -24,7 +24,7 @@ class ChurchFamily(Document):
 
 	def before_save(self):
 		# Remove family from Church Person records when Person is removed from ChurchFamily
-		if self.get_doc_before_save().members:
+		if self.get_doc_before_save() and self.get_doc_before_save().members:
 			for member in self.get_doc_before_save().members:
 				if member not in self.members:
 					frappe.db.set_value("Church Person", member.member, "family", None, update_modified=False)
