@@ -122,10 +122,41 @@ class ChurchPerson(Document):
 			else:
 				role.is_current_role = 0
 
+	@frappe.whitelist()
+	def invite_to_portal(self):
+		# Check if user already exists with this email
+		user = frappe.db.exists("User", {"email": self.email})
+
+		if not user:
+			# Create a new portal user
+			new_user = frappe.new_doc("User")
+			new_user.email = self.email
+			new_user.first_name = self.first_name
+			new_user.last_name = self.last_name
+			new_user.send_welcome_email = 1
+			new_user.enabled = 1
+			new_user.role_profile_name = "Church User"
+			new_user.save(ignore_permissions=True)
+
+			# Update Church Person to mark as portal user
+			self.portal_user = new_user.name
+			self.save(ignore_permissions=True)
+
+			frappe.msgprint(
+				f"👤 Portal user created and linked: <a href='/app/user/{new_user.name}'>{self.full_name}</a>"
+			)
+		else:
+			# User already exists, just update the portal_user field
+			self.portal_user = user
+			self.save(ignore_permissions=True)
+			frappe.msgprint(
+				f"⚠️ Portal user <a href='/app/user/{user}'>{user}</a> already exists. User is now linked to this person."
+			)
+
 
 def get_list_context(context):
 	# Only show documents related to the active user
-	context.filters = {"app_user": frappe.session.user}
+	context.filters = {"portal_user": frappe.session.user}
 	# Sort the portal list view by status descending
 	context.order_by = "modified desc"
 	return context

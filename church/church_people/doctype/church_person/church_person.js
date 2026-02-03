@@ -8,11 +8,20 @@ frappe.ui.form.on("Church Person", {
 			frm.add_custom_button(__('New Family From Person'), function () {
 				frm.call("new_family_from_person")
 			})
-		};
+		}
+
+		// Add 'Invite to Portal' button if email is provided and no Portal User is linked
+		if (frm.doc.email && !frm.doc.portal_user) {
+			frm.add_custom_button(__('Invite to Portal'), function () {
+				frm.call("invite_to_portal")
+			});
+		}
+
 		// Add 'Church Person Tour' button
 		frm.add_custom_button(__('Tutorial'), function () {
 			frm.tour.init("Church Person").then(() => frm.tour.start());
 		});
+
 	},
 
 	after_save(frm) {
@@ -20,5 +29,3 @@ frappe.ui.form.on("Church Person", {
 	},
 
 });
-
-

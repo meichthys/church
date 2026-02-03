@@ -18,7 +18,7 @@
   "photo",
   "birthday",
   "alergies",
-  "app_user",
+  "portal_user",
   "church_records_section",
   "is_member",
   "membership_date",
@@ -296,9 +296,9 @@
    "print_hide": 1
   },
   {
-   "fieldname": "app_user",
+   "fieldname": "portal_user",
    "fieldtype": "Link",
-   "label": "App User",
+   "label": "Portal User",
    "options": "User"
   }
  ],
@@ -327,7 +327,7 @@
    "link_fieldname": "recipient"
   }
  ],
- "modified": "2025-12-18 23:37:10.065945",
+ "modified": "2026-02-02 22:55:22.764479",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Person",
