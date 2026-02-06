@@ -61,7 +61,11 @@ The following features have been implemented in this app (see the [🗺️ Roadm
 
 ## 📥 Installing Frappe
 
-To use the 'Church' app, you must have a working Frappe environment first. There are a variety of ways to install a Frappe instance. The recommended ways for this project are:
+To use the 'Church' app, you must have a working Frappe environment first. There are a variety of ways to install a Frappe instance.
+  If you are running a Frappe v15 environment, then use the `version-15` branch.
+  If you are running a Frappe v16 environment, then use the `version-16` branch
+
+The recommended ways for installig this project are:
 
 ### ☁️ In the Cloud
 The easiest (but not free) way to get a working Frappe environment is to use [Frappe Cloud](https://frappe.io/cloud). For a few dollars per month you can run an instance in the cloud. You get your choice of support options and shouldn't need to worry about data loss yourself.
