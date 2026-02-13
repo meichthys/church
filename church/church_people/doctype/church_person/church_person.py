@@ -5,6 +5,7 @@ from datetime import datetime
 
 import frappe
 from frappe.model.document import Document
+from frappe.utils import get_link_to_form
 
 
 class ChurchPerson(Document):
@@ -112,7 +113,8 @@ class ChurchPerson(Document):
 		self.set("is_head_of_household", True)
 		self.save()
 		self.reload()
-		frappe.msgprint(f"New family created: {doc.family_name}")
+		family_link = get_link_to_form("Church Family", doc.name, doc.family_name)
+		frappe.msgprint(f"👨‍👩‍👧‍👦 New family created: {family_link}")
 
 	@frappe.whitelist()
 	def update_is_current_role(self):
