@@ -22,8 +22,8 @@ class ChurchPerson(Document):
 				family.append("members", {"member": self.name})
 			family.save()
 
-		# Return if person doesn't have family
-		if not self.family and not self.get_doc_before_save().family:
+		# Return if this is a new person
+		if not self.get_doc_before_save():
 			return
 		# Remove person from Church Family if family is removed
 		if not self.family and self.get_doc_before_save().family is not None:
