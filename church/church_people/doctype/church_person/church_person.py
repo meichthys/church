@@ -5,13 +5,49 @@ from datetime import datetime
 
 import frappe
 from frappe.model.document import Document
+from frappe.utils import get_link_to_form
 
 
 class ChurchPerson(Document):
+	def on_update(self):
+		# Update Family Member list in Church Family
+		if self.family:
+			family = frappe.get_doc("Church Family", self.family)
+			found = False
+			for member in family.members:
+				if member.member == self.name:
+					found = True
+					break
+			if not found:
+				family.append("members", {"member": self.name})
+			family.save()
+
+		# Return if this is a new person
+		if not self.get_doc_before_save():
+			return
+		# Remove person from Church Family if family is removed
+		if not self.family and self.get_doc_before_save().family is not None:
+			family = frappe.get_doc("Church Family", self.get_doc_before_save().family)
+			for member in family.members:
+				if member.member == self.name:
+					family.remove(member)
+					break
+			family.save()
+
 	def before_save(self):
 		# We set this here since virtual fields do not work with
 		#   View Settings -> Title Field as of 2025-08-26
 		self.full_name = f"{self.first_name}" + ((" " + self.last_name) if self.last_name else "")
+
+	def before_delete(self):
+		# Remove person from Church Family
+		if self.family:
+			family = frappe.get_doc("Church Family", self.family)
+			for member in family.members:
+				if member.name == self.name:
+					family.remove(member)
+					break
+			family.save()
 
 	def validate(self):
 		# Remove head of household status when family is removed
@@ -77,7 +113,8 @@ class ChurchPerson(Document):
 		self.set("is_head_of_household", True)
 		self.save()
 		self.reload()
-		frappe.msgprint(f"New family created: {doc.family_name}")
+		family_link = get_link_to_form("Church Family", doc.name, doc.family_name)
+		frappe.msgprint(f"👨‍👩‍👧‍👦 New family created: {family_link}")
 
 	@frappe.whitelist()
 	def update_is_current_role(self):
@@ -90,3 +127,42 @@ class ChurchPerson(Document):
 				role.is_current_role = 1
 			else:
 				role.is_current_role = 0
+
+	@frappe.whitelist()
+	def invite_to_portal(self):
+		# Check if user already exists with this email
+		user = frappe.db.exists("User", {"email": self.email})
+
+		if not user:
+			# Create a new portal user
+			new_user = frappe.new_doc("User")
+			new_user.email = self.email
+			new_user.first_name = self.first_name
+			new_user.last_name = self.last_name
+			new_user.send_welcome_email = 1
+			new_user.enabled = 1
+			new_user.role_profile_name = "Church User"
+			new_user.save(ignore_permissions=True)
+
+			# Update Church Person to mark as portal user
+			self.portal_user = new_user.name
+			self.save(ignore_permissions=True)
+
+			frappe.msgprint(
+				f"👤 Portal user created and linked: <a href='/app/user/{new_user.name}'>{self.full_name}</a>"
+			)
+		else:
+			# User already exists, just update the portal_user field
+			self.portal_user = user
+			self.save(ignore_permissions=True)
+			frappe.msgprint(
+				f"⚠️ Portal user <a href='/app/user/{user}'>{user}</a> already exists. User is now linked to this person."
+			)
+
+
+def get_list_context(context):
+	# Only show documents related to the active user
+	context.filters = {"portal_user": frappe.session.user}
+	# Sort the portal list view by status descending
+	context.order_by = "modified desc"
+	return context

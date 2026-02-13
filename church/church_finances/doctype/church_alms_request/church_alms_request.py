@@ -21,7 +21,7 @@ def create_expense(alms_request_name):
 	expense = frappe.new_doc("Church Expense")
 	expense.amount = alms.amount
 	expense.notes = f"Church Alms Request: {alms.name}"
-	expense.type = frappe.db.get_value("Church Expense Type", {"name": "Alms"}, "name")
+	expense.type = frappe.db.get_value("Church Expense Type", alms.expense_type, "type")
 	expense.date = frappe.utils.now()
 	expense.insert(ignore_permissions=True)
 	frappe.msgprint(f"✅ {expense.type} expense created.")

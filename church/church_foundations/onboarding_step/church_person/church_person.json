@@ -1,7 +1,7 @@
 {
  "action": "Create Entry",
  "action_label": "Add Church Person",
- "creation": "2025-09-26 23:06:43.748709",
+ "creation": "2026-01-15 11:02:52.699437",
  "description": "Adding `Church Person`s allows you to track the person's roles, attendance, donations, etc.",
  "docstatus": 0,
  "doctype": "Onboarding Step",
@@ -10,7 +10,7 @@
  "is_complete": 0,
  "is_single": 0,
  "is_skipped": 0,
- "modified": "2025-09-07 00:57:18.263385",
+ "modified": "2025-09-30 21:56:12.070093",
  "modified_by": "Administrator",
  "name": "Church Person",
  "owner": "Administrator",

@@ -1,0 +1,18 @@
+{
+ "action": "Create Entry",
+ "creation": "2026-02-02 23:21:46.133462",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2026-02-02 23:21:46.133462",
+ "modified_by": "Administrator",
+ "name": "Email Configuration",
+ "owner": "Administrator",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Email Configuration",
+ "validate_action": 1
+}
