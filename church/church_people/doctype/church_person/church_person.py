@@ -20,6 +20,10 @@ class ChurchPerson(Document):
 			if not found:
 				family.append("members", {"member": self.name})
 			family.save()
+
+		# Return if person doesn't have family
+		if not self.family and not self.get_doc_before_save().family:
+			return
 		# Remove person from Church Family if family is removed
 		if not self.family and self.get_doc_before_save().family is not None:
 			family = frappe.get_doc("Church Family", self.get_doc_before_save().family)
