@@ -106,6 +106,22 @@ class ChurchPerson(Document):
 
 	@frappe.whitelist()
 	def new_family_from_person(self):
+		# Check if a family with this person's name already exists
+		existing_family = frappe.db.exists(
+			"Church Family", {"family_name": f"{self.last_name} - {self.first_name}"}
+		)
+
+		if existing_family:
+			# Set this person's family to the existing one
+			self.family = existing_family
+			self.is_head_of_household = False  # Not head of household in an existing family
+			self.save()
+			frappe.msgprint(
+				f"⚠️ The <a href='/app/church-family/{existing_family}'>{self.last_name} - {self.first_name}</a> family already exists. This person has been added to that family."
+			)
+
+			return  # Don't create a new family
+
 		doc = frappe.new_doc("Church Family")
 		doc.family_name = f"{self.last_name} - {self.first_name}"
 		doc.save()
