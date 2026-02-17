@@ -224,6 +224,7 @@ fixtures = [
 			]
 		],
 	},
+	{"dt": "Web Page", "filters": [["module", "like", "%Church%"]]},
 	{"dt": "Website Settings"},
 ]
 # Apps
