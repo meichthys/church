@@ -11,7 +11,7 @@
   "title",
   "agency",
   "photo",
-  "data_btqw",
+  "email",
   "website",
   "support_amount",
   "support_frequency",
@@ -90,13 +90,6 @@
    "unique": 1
   },
   {
-   "fieldname": "data_btqw",
-   "fieldtype": "Data",
-   "in_preview": 1,
-   "label": "Email",
-   "options": "Email"
-  },
-  {
    "fieldname": "website",
    "fieldtype": "Data",
    "label": "Website",
@@ -127,13 +120,20 @@
    "label": "Support Frequency",
    "mandatory_depends_on": "eval: doc.support_amount>0;",
    "options": "Church Missionary Support Frequency"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_preview": 1,
+   "label": "Email",
+   "options": "Email"
   }
  ],
  "grid_page_length": 50,
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-15 22:54:32.224489",
+ "modified": "2026-02-17 00:37:54.702486",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Church Missionary",
