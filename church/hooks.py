@@ -7,6 +7,8 @@ app_license = "mit"
 app_logo_url = "/assets/church/media/church_logo.png"
 develop_version = "develop"
 
+website_context = {"favicon": "/assets/church/icons/favicon.ico"}
+
 fixtures = [
 	{
 		"dt": "Church Bible Book",
