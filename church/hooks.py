@@ -7,7 +7,10 @@ app_license = "mit"
 app_logo_url = "/assets/church/media/church_logo.png"
 develop_version = "develop"
 
-website_context = {"favicon": "/assets/church/icons/favicon.ico"}
+website_context = {
+	"favicon": "/assets/church/icons/favicon.ico",
+	"splash_image": "/assets/church/media/church_logo.png",
+}
 
 fixtures = [
 	{
