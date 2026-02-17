@@ -24,7 +24,8 @@
    "label": "Book",
    "options": "Church Bible Book",
    "reqd": 1,
-   "search_index": 1
+   "search_index": 1,
+   "set_only_once": 1
   },
   {
    "allow_in_quick_entry": 1,
@@ -35,7 +36,8 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Chapter",
-   "reqd": 1
+   "reqd": 1,
+   "set_only_once": 1
   },
   {
    "allow_in_quick_entry": 1,
@@ -46,7 +48,8 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Verse",
-   "reqd": 1
+   "reqd": 1,
+   "set_only_once": 1
   }
  ],
  "grid_page_length": 50,
@@ -63,7 +66,7 @@
    "link_fieldname": "end_verse"
   }
  ],
- "modified": "2025-11-18 23:49:06.050570",
+ "modified": "2026-02-16 21:56:18.344040",
  "modified_by": "Administrator",
  "module": "Church Study",
  "name": "Church Bible Verse",
