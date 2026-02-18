@@ -20,8 +20,10 @@
   "physical_address",
   "website",
   "support_section",
-  "support_amount",
+  "support_start_date",
+  "support_end_date",
   "column_break_esna",
+  "support_amount",
   "support_frequency",
   "section_break_appf",
   "notes",
@@ -152,7 +154,7 @@
   },
   {
    "collapsible": 1,
-   "collapsible_depends_on": "eval:doc.support_amount",
+   "collapsible_depends_on": "eval:doc.support_amount>0",
    "fieldname": "support_section",
    "fieldtype": "Section Break",
    "label": "Support"
@@ -165,13 +167,27 @@
    "fieldname": "mission_statement",
    "fieldtype": "Small Text",
    "label": "Mission Statement"
+  },
+  {
+   "fieldname": "support_start_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Support Start Date",
+   "mandatory_depends_on": "eval:doc.support_amount>0"
+  },
+  {
+   "fieldname": "support_end_date",
+   "fieldtype": "Date",
+   "label": "Support End Date"
   }
  ],
  "grid_page_length": 50,
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-17 22:58:58.813086",
+ "modified": "2026-02-17 23:10:10.683044",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Church Missionary",
