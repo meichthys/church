@@ -99,7 +99,7 @@
   },
   {
    "fieldname": "notes",
-   "fieldtype": "Small Text",
+   "fieldtype": "Text Editor",
    "label": "Notes"
   },
   {
@@ -139,9 +139,23 @@
    "reqd": 1
   },
   {
-   "fieldname": "mission_statement",
-   "fieldtype": "Small Text",
-   "label": "Mission Statement"
+   "collapsible": 1,
+   "collapsible_depends_on": "eval:doc.notes",
+   "fieldname": "section_break_appf",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "eval:doc.support_amount",
+   "fieldname": "support_section",
+   "fieldtype": "Section Break",
+   "label": "Support"
+  },
+  {
+   "fieldname": "column_break_esna",
+   "fieldtype": "Column Break"
+  },
   }
  ],
  "grid_page_length": 50,
