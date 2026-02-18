@@ -74,6 +74,7 @@
    "options": "Dynamic Link"
   },
   {
+   "depends_on": "eval:!doc.photo",
    "fieldname": "photo",
    "fieldtype": "Attach Image",
    "label": "Photo"
