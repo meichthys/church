@@ -9,16 +9,21 @@
  "engine": "InnoDB",
  "field_order": [
   "title",
+  "person",
   "agency",
+  "mission_statement",
   "photo",
-  "email",
-  "website",
-  "support_amount",
-  "support_frequency",
   "column_break_vedu",
   "country",
+  "email",
   "mailing_address",
   "physical_address",
+  "website",
+  "support_section",
+  "support_amount",
+  "column_break_esna",
+  "support_frequency",
+  "section_break_appf",
   "notes",
   "section_break_qxbh",
   "letters",
@@ -99,7 +104,7 @@
   },
   {
    "fieldname": "notes",
-   "fieldtype": "Text Editor",
+   "fieldtype": "Small Text",
    "label": "Notes"
   },
   {
@@ -139,23 +144,9 @@
    "reqd": 1
   },
   {
-   "collapsible": 1,
-   "collapsible_depends_on": "eval:doc.notes",
-   "fieldname": "section_break_appf",
-   "fieldtype": "Section Break",
-   "label": "Notes"
-  },
-  {
-   "collapsible": 1,
-   "collapsible_depends_on": "eval:doc.support_amount",
-   "fieldname": "support_section",
-   "fieldtype": "Section Break",
-   "label": "Support"
-  },
-  {
-   "fieldname": "column_break_esna",
-   "fieldtype": "Column Break"
-  },
+   "fieldname": "mission_statement",
+   "fieldtype": "Small Text",
+   "label": "Mission Statement"
   }
  ],
  "grid_page_length": 50,
