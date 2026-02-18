@@ -29,7 +29,7 @@
   "home_page": "",
   "indexing_authorization_code": null,
   "indexing_refresh_token": null,
-  "modified": "2026-02-12 22:06:39.776572",
+  "modified": "2026-02-17 22:08:14.501243",
   "name": "Website Settings",
   "navbar_search": 0,
   "navbar_template": null,
@@ -42,7 +42,38 @@
   "splash_image": "",
   "subdomain": null,
   "title_prefix": null,
-  "top_bar_items": [],
+  "top_bar_items": [
+   {
+    "label": "About",
+    "open_in_new_tab": 0,
+    "parent": "Website Settings",
+    "parent_label": null,
+    "parentfield": "top_bar_items",
+    "parenttype": "Website Settings",
+    "right": 1,
+    "url": "/about"
+   },
+   {
+    "label": "Beliefs",
+    "open_in_new_tab": 0,
+    "parent": "Website Settings",
+    "parent_label": "",
+    "parentfield": "top_bar_items",
+    "parenttype": "Website Settings",
+    "right": 1,
+    "url": "/beliefs"
+   },
+   {
+    "label": "Missions",
+    "open_in_new_tab": 0,
+    "parent": "Website Settings",
+    "parent_label": null,
+    "parentfield": "top_bar_items",
+    "parenttype": "Website Settings",
+    "right": 1,
+    "url": "/missions"
+   }
+  ],
   "website_theme": "Standard",
   "website_theme_image_link": null
  }
