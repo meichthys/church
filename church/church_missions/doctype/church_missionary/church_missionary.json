@@ -74,12 +74,12 @@
    "options": "Dynamic Link"
   },
   {
-   "depends_on": "eval:!doc.photo",
    "fieldname": "photo",
    "fieldtype": "Attach Image",
    "label": "Photo"
   },
   {
+   "description": "The name of the Missionary (Person / Family / Organization)",
    "fieldname": "title",
    "fieldtype": "Data",
    "in_filter": 1,
