@@ -99,7 +99,7 @@
   },
   {
    "fieldname": "notes",
-   "fieldtype": "Small Text",
+   "fieldtype": "Text Editor",
    "label": "Notes"
   },
   {
@@ -137,6 +137,13 @@
    "label": "Person",
    "options": "Church Person",
    "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "eval:doc.notes",
+   "fieldname": "section_break_appf",
+   "fieldtype": "Section Break",
+   "label": "Notes"
   },
   }
  ],
