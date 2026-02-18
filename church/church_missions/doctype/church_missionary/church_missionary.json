@@ -19,6 +19,7 @@
   "mailing_address",
   "physical_address",
   "website",
+  "private",
   "support_section",
   "support_start_date",
   "support_end_date",
@@ -173,7 +174,6 @@
    "fieldtype": "Date",
    "in_filter": 1,
    "in_preview": 1,
-   "in_standard_filter": 1,
    "label": "Support Start Date",
    "mandatory_depends_on": "eval:doc.support_amount>0"
   },
@@ -181,13 +181,24 @@
    "fieldname": "support_end_date",
    "fieldtype": "Date",
    "label": "Support End Date"
+  },
+  {
+   "default": "0",
+   "description": "Prevents missionary information from displaying on missions page of website.",
+   "fieldname": "private",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Private"
   }
  ],
  "grid_page_length": 50,
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-17 23:10:10.683044",
+ "modified": "2026-02-17 23:45:27.482806",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Church Missionary",
