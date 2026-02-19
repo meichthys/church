@@ -8,18 +8,20 @@
  "documentation": "/app/doctype?module=Church+Missions",
  "engine": "InnoDB",
  "field_order": [
+  "section_break_oyuw",
   "title",
   "person",
   "agency",
   "mission_statement",
-  "photo",
+  "publish",
+  "sensitive",
   "column_break_vedu",
   "country",
   "email",
   "mailing_address",
   "physical_address",
   "website",
-  "private",
+  "photo",
   "support_section",
   "support_start_date",
   "support_end_date",
@@ -88,7 +90,7 @@
    "label": "Photo"
   },
   {
-   "description": "The name of the Missionary (Person / Family / Organization)",
+   "description": "Name of the Missionary (Person / Family / Organization)",
    "fieldname": "title",
    "fieldtype": "Data",
    "in_filter": 1,
@@ -139,7 +141,7 @@
    "options": "Email"
   },
   {
-   "description": "(or primary contact)",
+   "description": "Link an associated `Church Person` (or primary contact person)",
    "fieldname": "person",
    "fieldtype": "Link",
    "label": "Person",
@@ -184,21 +186,32 @@
   },
   {
    "default": "0",
-   "description": "Prevents missionary information from displaying on missions page of website.",
-   "fieldname": "private",
+   "description": "Display this missionary on the public website.",
+   "fieldname": "publish",
    "fieldtype": "Check",
    "in_filter": 1,
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "Private"
+   "label": "Publish"
+  },
+  {
+   "default": "0",
+   "description": "Is this missionary information sensitive? (i.e. restricted country)",
+   "fieldname": "sensitive",
+   "fieldtype": "Check",
+   "label": "Sensitive"
+  },
+  {
+   "fieldname": "section_break_oyuw",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "image_field": "photo",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-17 23:45:27.482806",
+ "modified": "2026-02-19 00:58:04.376350",
  "modified_by": "Administrator",
  "module": "Church Missions",
  "name": "Church Missionary",
