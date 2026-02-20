@@ -10,10 +10,11 @@
  "field_order": [
   "status",
   "type",
-  "is_private",
+  "recipient_type",
+  "recipient",
   "column_break_ynvf",
   "requestor",
-  "recipient",
+  "is_private",
   "section_break_usaz",
   "request"
  ],
@@ -87,14 +88,23 @@
    "allow_in_quick_entry": 1,
    "description": "The person for whom prayers will be prayed.",
    "fieldname": "recipient",
-   "fieldtype": "Link",
+   "fieldtype": "Dynamic Link",
    "in_filter": 1,
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Recipient",
-   "options": "Church Person",
+   "options": "recipient_type",
    "search_index": 1
+  },
+  {
+   "default": "Church Person",
+   "description": "The type of entity for which prayer is being requested.",
+   "fieldname": "recipient_type",
+   "fieldtype": "Link",
+   "label": "Recipient Type",
+   "link_filters": "[[\"DocType\",\"name\",\"like\",\"%Church%\"]]",
+   "options": "DocType"
   }
  ],
  "grid_page_length": 50,
@@ -105,7 +115,7 @@
    "table_fieldname": "topics"
   }
  ],
- "modified": "2026-02-19 23:26:19.972696",
+ "modified": "2026-02-19 23:47:54.971006",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Church Prayer Request",
