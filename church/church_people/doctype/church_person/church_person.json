@@ -31,6 +31,7 @@
   "contact_information_tab",
   "contact_information_section",
   "home_address",
+  "different_mailing_address",
   "mailing_address",
   "column_break_vzrz",
   "primary_phone",
@@ -118,6 +119,7 @@
    "options": "Address"
   },
   {
+   "depends_on": "eval: doc.different_mailing_address",
    "fieldname": "mailing_address",
    "fieldtype": "Link",
    "label": "Mailing Address",
@@ -300,6 +302,12 @@
    "fieldtype": "Link",
    "label": "Portal User",
    "options": "User"
+  },
+  {
+   "default": "0",
+   "fieldname": "different_mailing_address",
+   "fieldtype": "Check",
+   "label": "Different Mailing Address"
   }
  ],
  "grid_page_length": 50,
@@ -327,7 +335,7 @@
    "link_fieldname": "recipient"
   }
  ],
- "modified": "2026-02-02 22:55:22.764479",
+ "modified": "2026-02-22 23:11:46.660564",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Church Person",

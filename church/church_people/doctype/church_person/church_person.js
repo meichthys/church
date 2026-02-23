@@ -28,4 +28,11 @@ frappe.ui.form.on("Church Person", {
 		frm.call("update_is_current_role")
 	},
 
+	// Set mailing address to home address if "Different Mailing Address" is unchecked
+	before_save: function(frm) {
+		if (!frm.doc.different_mailing_address) {
+			frm.set_value("mailing_address", frm.doc.home_address);
+		}
+	}
+
 });
