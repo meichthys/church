@@ -93,7 +93,11 @@ class ChurchPerson(Document):
 				# Link spouses
 				frappe.db.set_value("Church Person", spouse.name, "spouse", self.name)
 				frappe.db.set_value("Church Person", spouse.name, "is_married", True)
+				frappe.db.set_value("Church Person", spouse.name, "anniversary", self.anniversary)
 				frappe.msgprint(f"Spouses have been linked:<br>{self.full_name} 👩‍❤️‍👨 {spouse.full_name}")
+			elif spouse.anniversary != self.anniversary:
+				# Keep anniversary in sync when it changes on either side
+				frappe.db.set_value("Church Person", spouse.name, "anniversary", self.anniversary)
 		else:
 			if self._doc_before_save and self._doc_before_save.is_married and self._doc_before_save.spouse:
 				spouse = frappe.get_doc("Church Person", self._doc_before_save.spouse)
