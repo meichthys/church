@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-02-26 12:00:00.000000",
+ "description": "A slide in a Church Sermon that references a document from the Church App",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "slide_type",
+  "slide",
+  "display_fields",
+  "fields_selector",
+  "notes"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "slide_type",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Slide Type",
+   "link_filters": "[[\"DocType\",\"name\",\"like\",\"Church%\"]]",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "slide",
+   "fieldtype": "Dynamic Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Slide",
+   "options": "slide_type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "display_fields",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Display Fields"
+  },
+  {
+   "fieldname": "fields_selector",
+   "fieldtype": "HTML",
+   "label": "Display Fields"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Notes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-02-26 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Church Study",
+ "name": "Church Sermon Slide",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

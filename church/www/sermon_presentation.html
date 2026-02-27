@@ -1,0 +1,291 @@
+<!-- AI was used to generate this file -->
+{% block title %}{{ sermon_title }} - Presentation{% endblock %}
+
+{% block page_content %}
+<div id="sermon-presentation">
+	<!-- Cover Slide -->
+	<div class="sermon-slide sermon-slide--cover" data-slide="1" style="display: none;">
+		<div class="slide-body cover-body">
+			<h1 class="cover-title">{{ sermon_title }}</h1>
+			{% if prepared_by %}
+			<p class="cover-prepared-by">{{ prepared_by }}</p>
+			{% endif %}
+			<p class="cover-date">{{ frappe.utils.formatdate(frappe.utils.today(), "MMMM d, YYYY") }}</p>
+		</div>
+	</div>
+
+	{% if slides %}
+	{% for slide in slides %}
+	<div class="sermon-slide" data-slide="{{ loop.index + 1 }}" style="display: none;">
+		{% if slide.title %}
+		<div class="slide-header">
+			<h1 class="slide-title">{{ slide.title }}</h1>
+		</div>
+		{% endif %}
+		{% if slide.content or slide.notes %}
+		<div class="slide-body">
+			{% if slide.content %}
+			<div class="slide-content">{{ slide.content }}</div>
+			{% endif %}
+			{% if slide.notes %}
+			<div class="slide-notes">{{ slide.notes }}</div>
+			{% endif %}
+		</div>
+		{% endif %}
+	</div>
+	{% endfor %}
+	{% else %}
+	<div class="sermon-slide sermon-slide--empty" data-slide="1" style="display: flex;">
+		<div class="slide-body">
+			<p>No slides in this sermon. Add slides to the Church Sermon document to begin.</p>
+		</div>
+	</div>
+	{% endif %}
+
+	<div class="slide-controls">
+		<button class="slide-nav-btn" id="prev-btn" title="Previous (Left Arrow)">&#8592;</button>
+		<span class="slide-counter">
+			<span id="current-slide">1</span> / <span id="total-slides">{{ (slides | length) + 1 }}</span>
+		</span>
+		<button class="slide-nav-btn" id="next-btn" title="Next (Right Arrow)">&#8594;</button>
+	</div>
+
+	<button class="slide-exit-btn" id="exit-btn" title="Exit (Escape)">&#10005;</button>
+</div>
+{% endblock %}
+
+{% block style %}
+<style>
+	/* Hide Frappe chrome */
+	.page-header, .web-footer, .navbar, .page-header-wrapper,
+	footer, .website-footer, .web-sidebar, .breadcrumb-container,
+	.page-content-wrapper > .container > .page-header { display: none !important; }
+	body { margin: 0; padding: 0; overflow: hidden; background: #1a1a2e; }
+	.page-content-wrapper, .container { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+	.main-section { padding: 0 !important; }
+	[data-page-container] { padding: 0 !important; }
+
+	#sermon-presentation {
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+		background: #1a1a2e;
+		color: #eee;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	}
+
+	.sermon-slide {
+		width: 100%;
+		height: 100%;
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 60px 80px 100px;
+		box-sizing: border-box;
+		animation: fadeIn 0.3s ease-in-out;
+	}
+
+	@keyframes fadeIn {
+		from { opacity: 0; transform: translateY(10px); }
+		to { opacity: 1; transform: translateY(0); }
+	}
+
+	.slide-header {
+		text-align: center;
+		margin-bottom: 40px;
+		width: 100%;
+		max-width: 1000px;
+	}
+
+	.slide-type-badge {
+		display: inline-block;
+		background: rgba(255,255,255,0.1);
+		color: #8888cc;
+		padding: 4px 16px;
+		border-radius: 20px;
+		font-size: 0.85rem;
+		letter-spacing: 0.5px;
+		margin-bottom: 16px;
+		text-transform: uppercase;
+	}
+
+	.slide-title {
+		font-size: 2.8rem;
+		font-weight: 700;
+		color: #fff;
+		margin: 0;
+		line-height: 1.2;
+	}
+
+	.slide-body {
+		width: 100%;
+		max-width: 1000px;
+		text-align: center;
+		overflow-y: auto;
+		max-height: calc(100vh - 220px);
+	}
+
+	.slide-content {
+		font-size: 1.4rem;
+		line-height: 1.8;
+		color: #ddd;
+	}
+
+	.slide-content p { margin: 0 0 16px; }
+	.slide-content strong { color: #fff; }
+	.slide-content img { max-width: 80%; max-height: 50vh; border-radius: 8px; margin: 16px auto; display: block; }
+
+	.slide-notes {
+		margin-top: 30px;
+		padding-top: 20px;
+		border-top: 1px solid rgba(255,255,255,0.1);
+		font-size: 1.1rem;
+		color: #aaa;
+		font-style: italic;
+		line-height: 1.6;
+	}
+
+	.slide-controls {
+		position: fixed;
+		bottom: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		z-index: 10000;
+	}
+
+	.slide-nav-btn {
+		background: rgba(255,255,255,0.1);
+		border: none;
+		color: #fff;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		font-size: 1.4rem;
+		cursor: pointer;
+		transition: background 0.2s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.slide-nav-btn:hover { background: rgba(255,255,255,0.25); }
+	.slide-nav-btn:disabled { opacity: 0.3; cursor: default; }
+
+	.slide-counter {
+		font-size: 1rem;
+		color: #888;
+		min-width: 60px;
+		text-align: center;
+	}
+
+	.slide-exit-btn {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		background: rgba(255,255,255,0.1);
+		border: none;
+		color: #888;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		font-size: 1.2rem;
+		cursor: pointer;
+		z-index: 10000;
+		transition: background 0.2s, color 0.2s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.slide-exit-btn:hover { background: rgba(255,255,255,0.2); color: #fff; }
+
+	.sermon-slide--cover .cover-body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.cover-title {
+		font-size: 3.5rem;
+		font-weight: 700;
+		color: #fff;
+		margin: 0 0 24px;
+		line-height: 1.2;
+	}
+
+	.cover-prepared-by {
+		font-size: 1.6rem;
+		color: #ccc;
+		margin: 0 0 12px;
+	}
+
+	.cover-date {
+		font-size: 1.2rem;
+		color: #888;
+		margin: 0;
+	}
+
+	.sermon-slide--empty {
+		display: flex;
+		color: #888;
+		font-size: 1.2rem;
+	}
+</style>
+{% endblock %}
+
+{% block script %}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+	const slides = document.querySelectorAll(".sermon-slide");
+	const totalSlides = slides.length;
+	const currentSlideEl = document.getElementById("current-slide");
+	const prevBtn = document.getElementById("prev-btn");
+	const nextBtn = document.getElementById("next-btn");
+	const exitBtn = document.getElementById("exit-btn");
+	let currentSlide = 1;
+
+	function showSlide(n) {
+		if (n < 1 || n > totalSlides) return;
+		slides.forEach(function (s) { s.style.display = "none"; });
+		const target = document.querySelector('[data-slide="' + n + '"]');
+		if (target) {
+			target.style.display = "flex";
+			target.style.animation = "none";
+			target.offsetHeight; // trigger reflow
+			target.style.animation = "fadeIn 0.3s ease-in-out";
+		}
+		currentSlide = n;
+		currentSlideEl.textContent = n;
+		prevBtn.disabled = (n === 1);
+		nextBtn.disabled = (n === totalSlides);
+	}
+
+	prevBtn.addEventListener("click", function () { showSlide(currentSlide - 1); });
+	nextBtn.addEventListener("click", function () { showSlide(currentSlide + 1); });
+	exitBtn.addEventListener("click", function () { window.close(); });
+
+	document.addEventListener("keydown", function (e) {
+		if (e.key === "ArrowRight" || e.key === " ") {
+			e.preventDefault();
+			showSlide(currentSlide + 1);
+		} else if (e.key === "ArrowLeft") {
+			e.preventDefault();
+			showSlide(currentSlide - 1);
+		} else if (e.key === "Escape") {
+			window.close();
+		}
+	});
+
+	// Show first slide
+	showSlide(1);
+});
+</script>
+{% endblock %}
