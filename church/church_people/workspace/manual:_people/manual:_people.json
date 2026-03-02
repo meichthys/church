@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Manual: People",
  "links": [],
- "modified": "2026-02-02 23:53:05.514800",
+ "modified": "2026-03-01 23:53:34.182905",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Manual: People",
@@ -23,7 +23,7 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 5.8,
+ "sequence_id": 17.0,
  "shortcuts": [],
  "title": "Manual: People"
 }

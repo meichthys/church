@@ -211,19 +211,6 @@ fixtures = [
 		"dt": "Role Profile",
 		"filters": [["Name", "like", "Church%"]],
 	},
-	{
-		"dt": "Web Page",
-		"filters": [
-			[
-				"Name",
-				"in",
-				[
-					"About Us",
-					"Our Beliefs",
-				],
-			]
-		],
-	},
 	{"dt": "Web Page", "filters": [["module", "like", "%Church%"]]},
 	{"dt": "Website Settings"},
 ]

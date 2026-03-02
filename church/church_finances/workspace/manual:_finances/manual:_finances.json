@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Manual: Finances",
  "links": [],
- "modified": "2025-11-12 23:24:05.428984",
+ "modified": "2026-03-01 23:53:34.004566",
  "modified_by": "Administrator",
  "module": "Church Finances",
  "name": "Manual: Finances",
@@ -23,7 +23,7 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 5.1,
+ "sequence_id": 7.0,
  "shortcuts": [],
  "title": "Manual: Finances"
 }

@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Manual: Ministries",
  "links": [],
- "modified": "2025-11-02 01:25:17.457302",
+ "modified": "2026-03-01 23:53:34.074310",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Manual: Ministries",
@@ -23,7 +23,7 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 5.3,
+ "sequence_id": 11.0,
  "shortcuts": [],
  "title": "Manual: Ministries"
 }
