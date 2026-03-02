@@ -25,11 +25,11 @@
   "google_analytics_id": null,
   "head_html": null,
   "hide_footer_signup": 0,
-  "hide_login": 0,
+  "hide_login": 1,
   "home_page": "home",
   "indexing_authorization_code": null,
   "indexing_refresh_token": null,
-  "modified": "2026-03-01 23:50:17.840650",
+  "modified": "2026-03-02 00:13:09.713562",
   "name": "Website Settings",
   "navbar_search": 0,
   "navbar_template": null,
@@ -102,6 +102,16 @@
     "parenttype": "Website Settings",
     "right": 1,
     "url": "/contact"
+   },
+   {
+    "label": "Login",
+    "open_in_new_tab": 0,
+    "parent": "Website Settings",
+    "parent_label": null,
+    "parentfield": "top_bar_items",
+    "parenttype": "Website Settings",
+    "right": 1,
+    "url": "/login"
    }
   ],
   "website_theme": "Standard",
