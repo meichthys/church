@@ -3,7 +3,7 @@
   "abbreviation": "REV",
   "book": "Revelation",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.435866",
   "name": "Revelation"
  },
@@ -11,7 +11,7 @@
   "abbreviation": "JUD",
   "book": "Jude",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.428128",
   "name": "Jude"
  },
@@ -19,7 +19,7 @@
   "abbreviation": "2JN",
   "book": "2 John",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.412496",
   "name": "2 John"
  },
@@ -27,7 +27,7 @@
   "abbreviation": "1JN",
   "book": "1 John",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.405366",
   "name": "1 John"
  },
@@ -35,7 +35,7 @@
   "abbreviation": "1PE",
   "book": "1 Peter",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.390842",
   "name": "1 Peter"
  },
@@ -43,7 +43,7 @@
   "abbreviation": "JAS",
   "book": "James",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.384283",
   "name": "James"
  },
@@ -51,7 +51,7 @@
   "abbreviation": "HEB",
   "book": "Hebrews",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.377081",
   "name": "Hebrews"
  },
@@ -59,7 +59,7 @@
   "abbreviation": "PHM",
   "book": "Philemon",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.370557",
   "name": "Philemon"
  },
@@ -67,7 +67,7 @@
   "abbreviation": "TIT",
   "book": "Titus",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.362941",
   "name": "Titus"
  },
@@ -75,7 +75,7 @@
   "abbreviation": "2TI",
   "book": "2 Timothy",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.355408",
   "name": "2 Timothy"
  },
@@ -83,7 +83,7 @@
   "abbreviation": "1TI",
   "book": "1 Timothy",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.349289",
   "name": "1 Timothy"
  },
@@ -91,7 +91,7 @@
   "abbreviation": "2TH",
   "book": "2 Thessalonians",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.342430",
   "name": "2 Thessalonians"
  },
@@ -99,7 +99,7 @@
   "abbreviation": "1TH",
   "book": "1 Thessalonians",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.335349",
   "name": "1 Thessalonians"
  },
@@ -107,7 +107,7 @@
   "abbreviation": "COL",
   "book": "Colossians",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.328412",
   "name": "Colossians"
  },
@@ -115,7 +115,7 @@
   "abbreviation": "PHP",
   "book": "Philippians",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.320853",
   "name": "Philippians"
  },
@@ -123,7 +123,7 @@
   "abbreviation": "EPH",
   "book": "Ephesians",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.314584",
   "name": "Ephesians"
  },
@@ -131,7 +131,7 @@
   "abbreviation": "GAL",
   "book": "Galatians",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.308299",
   "name": "Galatians"
  },
@@ -139,7 +139,7 @@
   "abbreviation": "2CO",
   "book": "2 Corinthians",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.301972",
   "name": "2 Corinthians"
  },
@@ -147,7 +147,7 @@
   "abbreviation": "1CO",
   "book": "1 Corinthians",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.295341",
   "name": "1 Corinthians"
  },
@@ -155,7 +155,7 @@
   "abbreviation": "ROM",
   "book": "Romans",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.289020",
   "name": "Romans"
  },
@@ -163,7 +163,7 @@
   "abbreviation": "ACT",
   "book": "Acts",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.282971",
   "name": "Acts"
  },
@@ -171,7 +171,7 @@
   "abbreviation": "JHN",
   "book": "John",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.276501",
   "name": "John"
  },
@@ -179,7 +179,7 @@
   "abbreviation": "LUK",
   "book": "Luke",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.269597",
   "name": "Luke"
  },
@@ -187,7 +187,7 @@
   "abbreviation": "MRK",
   "book": "Mark",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.262903",
   "name": "Mark"
  },
@@ -195,7 +195,7 @@
   "abbreviation": "MAT",
   "book": "Matthew",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.256820",
   "name": "Matthew"
  },
@@ -203,7 +203,7 @@
   "abbreviation": "MAL",
   "book": "Malachi",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.250840",
   "name": "Malachi"
  },
@@ -211,7 +211,7 @@
   "abbreviation": "ZEC",
   "book": "Zechariah",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.244547",
   "name": "Zechariah"
  },
@@ -219,7 +219,7 @@
   "abbreviation": "HAG",
   "book": "Haggai",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.238069",
   "name": "Haggai"
  },
@@ -227,7 +227,7 @@
   "abbreviation": "ZEP",
   "book": "Zephaniah",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.231855",
   "name": "Zephaniah"
  },
@@ -235,7 +235,7 @@
   "abbreviation": "HAB",
   "book": "Habakkuk",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.225111",
   "name": "Habakkuk"
  },
@@ -243,7 +243,7 @@
   "abbreviation": "NAM",
   "book": "Nahum",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.218905",
   "name": "Nahum"
  },
@@ -251,7 +251,7 @@
   "abbreviation": "MIC",
   "book": "Micah",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.212258",
   "name": "Micah"
  },
@@ -259,7 +259,7 @@
   "abbreviation": "JON",
   "book": "Jonah",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.205891",
   "name": "Jonah"
  },
@@ -267,7 +267,7 @@
   "abbreviation": "OBA",
   "book": "Obadiah",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.198866",
   "name": "Obadiah"
  },
@@ -275,7 +275,7 @@
   "abbreviation": "AMO",
   "book": "Amos",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.189189",
   "name": "Amos"
  },
@@ -283,7 +283,7 @@
   "abbreviation": "JOL",
   "book": "Joel",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.179795",
   "name": "Joel"
  },
@@ -291,7 +291,7 @@
   "abbreviation": "HOS",
   "book": "Hosea",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.171495",
   "name": "Hosea"
  },
@@ -299,7 +299,7 @@
   "abbreviation": "DAN",
   "book": "Daniel",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-09 23:46:05.085800",
   "name": "Daniel"
  },
@@ -307,7 +307,7 @@
   "abbreviation": "EZK",
   "book": "Ezekiel",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.160649",
   "name": "Ezekiel"
  },
@@ -315,7 +315,7 @@
   "abbreviation": "LAM",
   "book": "Lamentations",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.153440",
   "name": "Lamentations"
  },
@@ -323,7 +323,7 @@
   "abbreviation": "JER",
   "book": "Jeremiah",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.145342",
   "name": "Jeremiah"
  },
@@ -331,7 +331,7 @@
   "abbreviation": "ISA",
   "book": "Isaiah",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.138046",
   "name": "Isaiah"
  },
@@ -339,7 +339,7 @@
   "abbreviation": "SNG",
   "book": "Song of Solomon",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-09 23:45:49.079240",
   "name": "Song of Solomon"
  },
@@ -347,7 +347,7 @@
   "abbreviation": "ECC",
   "book": "Ecclesiastes",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.128109",
   "name": "Ecclesiastes"
  },
@@ -355,7 +355,7 @@
   "abbreviation": "PRO",
   "book": "Proverbs",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.120397",
   "name": "Proverbs"
  },
@@ -363,7 +363,7 @@
   "abbreviation": "PSA",
   "book": "Psalms",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.111998",
   "name": "Psalms"
  },
@@ -371,7 +371,7 @@
   "abbreviation": "JOB",
   "book": "Job",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.105039",
   "name": "Job"
  },
@@ -379,7 +379,7 @@
   "abbreviation": "EST",
   "book": "Esther",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-09 23:45:23.124686",
   "name": "Esther"
  },
@@ -387,7 +387,7 @@
   "abbreviation": "NEH",
   "book": "Nehemiah",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.093714",
   "name": "Nehemiah"
  },
@@ -395,7 +395,7 @@
   "abbreviation": "EZR",
   "book": "Ezra",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.085685",
   "name": "Ezra"
  },
@@ -403,7 +403,7 @@
   "abbreviation": "2CH",
   "book": "2 Chronicles",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.077295",
   "name": "2 Chronicles"
  },
@@ -411,7 +411,7 @@
   "abbreviation": "1CH",
   "book": "1 Chronicles",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.068925",
   "name": "1 Chronicles"
  },
@@ -419,7 +419,7 @@
   "abbreviation": "2KI",
   "book": "2 Kings",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.061525",
   "name": "2 Kings"
  },
@@ -427,7 +427,7 @@
   "abbreviation": "1KI",
   "book": "1 Kings",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.054355",
   "name": "1 Kings"
  },
@@ -435,7 +435,7 @@
   "abbreviation": "2SA",
   "book": "2 Samuel",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.047023",
   "name": "2 Samuel"
  },
@@ -443,7 +443,7 @@
   "abbreviation": "RUT",
   "book": "Ruth",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.032809",
   "name": "Ruth"
  },
@@ -451,7 +451,7 @@
   "abbreviation": "JDG",
   "book": "Judges",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.024608",
   "name": "Judges"
  },
@@ -459,7 +459,7 @@
   "abbreviation": "JOS",
   "book": "Joshua",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.017796",
   "name": "Joshua"
  },
@@ -467,7 +467,7 @@
   "abbreviation": "DEU",
   "book": "Deuteronomy",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.009611",
   "name": "Deuteronomy"
  },
@@ -475,7 +475,7 @@
   "abbreviation": "NUM",
   "book": "Numbers",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.002849",
   "name": "Numbers"
  },
@@ -483,7 +483,7 @@
   "abbreviation": "LEV",
   "book": "Leviticus",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:36.994681",
   "name": "Leviticus"
  },
@@ -491,7 +491,7 @@
   "abbreviation": "EXO",
   "book": "Exodus",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-10-30 00:29:35.421522",
   "name": "Exodus"
  },
@@ -499,7 +499,7 @@
   "abbreviation": "GEN",
   "book": "Genesis",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:36.963115",
   "name": "Genesis"
  },
@@ -507,7 +507,7 @@
   "abbreviation": "3JN",
   "book": "3 John",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.420494",
   "name": "3 John"
  },
@@ -515,7 +515,7 @@
   "abbreviation": "2PE",
   "book": "2 Peter",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.398271",
   "name": "2 Peter"
  },
@@ -523,7 +523,7 @@
   "abbreviation": "1SA",
   "book": "1 Samuel",
   "docstatus": 0,
-  "doctype": "Church Bible Book",
+  "doctype": "Bible Book",
   "modified": "2025-11-06 00:18:37.039529",
   "name": "1 Samuel"
  }

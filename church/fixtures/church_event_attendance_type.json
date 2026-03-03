@@ -1,32 +1,32 @@
 [
  {
-  "description": "It is unknown if the `Church Person` was present.",
+  "description": "It is unknown if the `Person` was present.",
   "docstatus": 0,
-  "doctype": "Church Event Attendance Type",
+  "doctype": "Event Attendance Type",
   "modified": "2025-09-01 00:49:02.575272",
   "name": "Unknown",
   "type": "Unknown"
  },
  {
-  "description": "`Church Person` was absent.",
+  "description": "`Person` was absent.",
   "docstatus": 0,
-  "doctype": "Church Event Attendance Type",
+  "doctype": "Event Attendance Type",
   "modified": "2025-09-01 00:50:25.152727",
   "name": "Absent",
   "type": "Absent"
  },
  {
-  "description": "The `Church Person` was assumed to be present.",
+  "description": "The `Person` was assumed to be present.",
   "docstatus": 0,
-  "doctype": "Church Event Attendance Type",
+  "doctype": "Event Attendance Type",
   "modified": "2025-09-01 00:48:23.253888",
   "name": "Assumed",
   "type": "Assumed"
  },
  {
-  "description": "The `Church Person` was confirmed to be present.",
+  "description": "The `Person` was confirmed to be present.",
   "docstatus": 0,
-  "doctype": "Church Event Attendance Type",
+  "doctype": "Event Attendance Type",
   "modified": "2025-09-01 00:48:37.750184",
   "name": "Confirmed",
   "type": "Confirmed"

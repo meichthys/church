@@ -73,8 +73,8 @@ def get_context(context):
 	if not name:
 		frappe.throw("Please specify a sermon name", frappe.exceptions.ValidationError)
 
-	sermon = frappe.get_doc("Church Sermon", name)
-	frappe.has_permission("Church Sermon", doc=sermon, throw=True)
+	sermon = frappe.get_doc("Sermon", name)
+	frappe.has_permission("Sermon", doc=sermon, throw=True)
 
 	slides = []
 	for row in sermon.get("slides", []):
@@ -108,7 +108,7 @@ def get_context(context):
 
 	prepared_by_name = ""
 	if sermon.prepared_by:
-		prepared_by_name = frappe.get_doc("Church Person", sermon.prepared_by).get_title()
+		prepared_by_name = frappe.get_doc("Person", sermon.prepared_by).get_title()
 
 	context.sermon_title = sermon.title or sermon.name
 	context.prepared_by = prepared_by_name

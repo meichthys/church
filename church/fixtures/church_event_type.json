@@ -2,7 +2,7 @@
  {
   "description": null,
   "docstatus": 0,
-  "doctype": "Church Event Type",
+  "doctype": "Event Type",
   "modified": "2025-09-01 00:59:38.988367",
   "name": "Sunday Evening Service",
   "template_event": null,
@@ -11,7 +11,7 @@
  {
   "description": null,
   "docstatus": 0,
-  "doctype": "Church Event Type",
+  "doctype": "Event Type",
   "modified": "2025-09-01 01:00:17.100333",
   "name": "Prayer Meeting",
   "template_event": null,
@@ -20,7 +20,7 @@
  {
   "description": "",
   "docstatus": 0,
-  "doctype": "Church Event Type",
+  "doctype": "Event Type",
   "modified": "2025-09-01 01:01:46.102984",
   "name": "Business Meeting",
   "template_event": null,
@@ -29,7 +29,7 @@
  {
   "description": null,
   "docstatus": 0,
-  "doctype": "Church Event Type",
+  "doctype": "Event Type",
   "modified": "2025-09-01 00:59:49.876562",
   "name": "Sunday Morning Service",
   "template_event": null,
@@ -38,7 +38,7 @@
  {
   "description": null,
   "docstatus": 0,
-  "doctype": "Church Event Type",
+  "doctype": "Event Type",
   "modified": "2025-09-01 01:00:51.578037",
   "name": "Communion",
   "template_event": null,
@@ -47,7 +47,7 @@
  {
   "description": null,
   "docstatus": 0,
-  "doctype": "Church Event Type",
+  "doctype": "Event Type",
   "modified": "2025-11-07 01:09:09.288659",
   "name": "Baptism",
   "template_event": "",

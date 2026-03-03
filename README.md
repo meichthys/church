@@ -31,16 +31,16 @@ The following features have been implemented in this app (see the [🗺️ Roadm
 - Built-in Documentation for each module
 - Portal for users with a login:
   - Prayer request submission & viewing
-- `Church Person` tracking
-  - Define and track `Church Person Relation`ships
-    - Define `Church Person Relation Type`s
-  - Define & track `Church Person Role`s (i.e. board member, deacon, pastor, etc)
-- `Church Family` tracking
-  - Track head of household (Set on `Church Person` record)
-- `Church Prayer Request` tracking
+- `Person` tracking
+  - Define and track `Person Relation`ships
+    - Define `Person Relation Type`s
+  - Define & track `Person Role`s (i.e. board member, deacon, pastor, etc)
+- `Family` tracking
+  - Track head of household (Set on `Person` record)
+- `Prayer Request` tracking
   - Authenticated or Anonymous web-form submissions
   - Authenticated users can manage their own prayer requests
-- `Church Missionary` & `Church Missionary Agency` tracking
+- `Missionary` & `Missionary Agency` tracking
 - Church module desk workspace with guided setup steps
 - Event tracking
   - Event types, details, basic attendance tracking & reporting & templating
@@ -51,10 +51,10 @@ The following features have been implemented in this app (see the [🗺️ Roadm
 - Fund balance tracking
   - Collections automatically update funds when saved
 - Basic Asset Tracking (location, details)
-- Church Belief tracking
-- Basic Church Website
+- Belief tracking
+- Basic Website
   - About Page
-- Church Letter tracking (from people & missionaries)
+- Letter tracking (from people & missionaries)
 - Bible Vers & Reference entry
   - Fetch Bible text from bible-api.com
 - Alms Requests

@@ -25,7 +25,7 @@
   "documentation_url": "https://github.com/meichthys/church",
   "is_complete": 0,
   "modified": "2025-09-30 21:21:52.088048",
-  "module": "Church Foundations",
+  "module": "Foundations",
   "name": "Church",
   "steps": [
    {
@@ -38,31 +38,31 @@
     "parent": "Church",
     "parentfield": "steps",
     "parenttype": "Module Onboarding",
-    "step": "Church Information"
+    "step": "Information"
    },
    {
     "parent": "Church",
     "parentfield": "steps",
     "parenttype": "Module Onboarding",
-    "step": "Church Person"
+    "step": "Person"
    },
    {
     "parent": "Church",
     "parentfield": "steps",
     "parenttype": "Module Onboarding",
-    "step": "Church Family"
+    "step": "Family"
    },
    {
     "parent": "Church",
     "parentfield": "steps",
     "parenttype": "Module Onboarding",
-    "step": "Church Event"
+    "step": "Function"
    },
    {
     "parent": "Church",
     "parentfield": "steps",
     "parenttype": "Module Onboarding",
-    "step": "Church Prayer Request"
+    "step": "Prayer Request"
    }
   ],
   "subtitle": "People, Families, Events, Ministries, Collections, and more...",

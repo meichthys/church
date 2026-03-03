@@ -14,13 +14,13 @@ website_context = {
 
 fixtures = [
 	{
-		"dt": "Church Bible Book",
+		"dt": "Bible Book",
 	},
 	{
-		"dt": "Church Bible Translation",
+		"dt": "Bible Translation",
 	},
 	{
-		"dt": "Church Event Attendance Type",
+		"dt": "Event Attendance Type",
 		"filters": [
 			[
 				"type",
@@ -35,7 +35,7 @@ fixtures = [
 		],
 	},
 	{
-		"dt": "Church Event Type",
+		"dt": "Event Type",
 		"filters": [
 			[
 				"type",
@@ -51,9 +51,9 @@ fixtures = [
 			]
 		],
 	},
-	# `Church Fund` fixtures are manually created since we don't want to export test data
+	# `Fund` fixtures are manually created since we don't want to export test data
 	{
-		"dt": "Church Missionary Support Frequency",
+		"dt": "Missionary Support Frequency",
 		"filters": [
 			[
 				"frequency",
@@ -70,7 +70,7 @@ fixtures = [
 		],
 	},
 	{
-		"dt": "Church Payment Type",
+		"dt": "Payment Type",
 		"filters": [
 			[
 				"type",
@@ -83,7 +83,7 @@ fixtures = [
 		],
 	},
 	{
-		"dt": "Church Person Relation Type",
+		"dt": "Person Relation Type",
 		"filters": [
 			[
 				"relation_type",
@@ -118,7 +118,7 @@ fixtures = [
 		],
 	},
 	{
-		"dt": "Church Member Status",
+		"dt": "Member Status",
 		"filters": [
 			[
 				"status",
@@ -131,7 +131,7 @@ fixtures = [
 		],
 	},
 	{
-		"dt": "Church Prayer Request Status",
+		"dt": "Prayer Request Status",
 		"filters": [
 			[
 				"status",
@@ -145,7 +145,7 @@ fixtures = [
 		],
 	},
 	{
-		"dt": "Church Prayer Request Type",
+		"dt": "Prayer Request Type",
 		"filters": [
 			[
 				"type",
@@ -160,7 +160,7 @@ fixtures = [
 		],
 	},
 	{
-		"dt": "Church Role Type",
+		"dt": "Role Type",
 		"filters": [
 			[
 				"role",
@@ -237,6 +237,7 @@ fixtures = [
 # app_include_css = "/assets/church/css/church.css"
 app_include_js = [
 	"/assets/church/js/help_icon_on_form.js",
+	"/assets/church/js/church_utils.js",
 ]
 
 # include js, css files in header of web template

@@ -2,7 +2,7 @@
  {
   "description": null,
   "docstatus": 0,
-  "doctype": "Church Payment Type",
+  "doctype": "Payment Type",
   "modified": "2025-09-02 01:45:57.381589",
   "name": "Cash",
   "type": "Cash"
@@ -10,7 +10,7 @@
  {
   "description": null,
   "docstatus": 0,
-  "doctype": "Church Payment Type",
+  "doctype": "Payment Type",
   "modified": "2025-09-02 01:46:05.861238",
   "name": "Check",
   "type": "Check"

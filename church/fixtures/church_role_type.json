@@ -2,7 +2,7 @@
  {
   "description": null,
   "docstatus": 0,
-  "doctype": "Church Role Type",
+  "doctype": "Role Type",
   "modified": "2025-08-27 22:37:31.022091",
   "name": "Elder - 00002",
   "role": "Elder"
@@ -10,7 +10,7 @@
  {
   "description": null,
   "docstatus": 0,
-  "doctype": "Church Role Type",
+  "doctype": "Role Type",
   "modified": "2025-08-27 22:37:58.157108",
   "name": "Pastor - 00001",
   "role": "Pastor"
@@ -18,7 +18,7 @@
  {
   "description": null,
   "docstatus": 0,
-  "doctype": "Church Role Type",
+  "doctype": "Role Type",
   "modified": "2025-08-27 22:47:21.595158",
   "name": "Treasurer - 00004",
   "role": "Treasurer"
@@ -26,7 +26,7 @@
  {
   "description": null,
   "docstatus": 0,
-  "doctype": "Church Role Type",
+  "doctype": "Role Type",
   "modified": "2025-08-27 22:47:44.456382",
   "name": "Secretary - 00005",
   "role": "Secretary"
@@ -34,7 +34,7 @@
  {
   "description": "",
   "docstatus": 0,
-  "doctype": "Church Role Type",
+  "doctype": "Role Type",
   "modified": "2025-10-10 22:35:39.135319",
   "name": "Deacon - 00003",
   "role": "Deacon"
