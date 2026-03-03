@@ -316,7 +316,7 @@
  "links": [
   {
    "link_doctype": "Church Prayer Request",
-   "link_fieldname": "related_person"
+   "link_fieldname": "requestor"
   },
   {
    "link_doctype": "Church Prayer",
