@@ -26,7 +26,8 @@ class BibleReference(Document):
 		else:
 			frappe.throw("A start verse is required to name the reference")
 		if self.translation:
-			return f"{ref} ({self.translation})"
+			abbr = frappe.db.get_value("Bible Translation", self.translation, "abbreviation")
+			return f"{ref} ({abbr})"
 		else:
 			return ref
 
