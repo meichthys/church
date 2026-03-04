@@ -150,7 +150,6 @@ Contributions are very welcome! If you plan any large contributions, please let 
 - Doctype Naming: I've generally been using a single fieldname for the doctype names when the records in the doctype have low chance of clashing. If there is a higher chance of clashing, I've been using multiple fields in the name along with a `{#}` auto increment. The number of digits in the auto-increment are just sane values that should never be exceeded. I then specify the Title Field in the View Settings, and check the `Show Title in LInk Fields` option. This mostly hides the autonumber name from the user and lets the user only see the not-so-confusing name specified in the `Title Field` (sometimes I create a custom field to concatenate values - since the `Title Field` cannot take multiple fields at once afaik.)
 
 ## Steps for adding a new doctype:
-  - Make sure the doctype name is pre-pended with `Church `
   - Add a doctype description on the settings tab
   - Add fields for the doctype (if necessary add field descriptions).
   - Add permissions to the doctype for `Church User` and `Church Admin` roles. (Not necessary for child tables)
