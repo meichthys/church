@@ -13,6 +13,7 @@ website_context = {
 }
 
 fixtures = [
+	{"dt": "About Us Settings"},
 	{
 		"dt": "Bible Book",
 	},
