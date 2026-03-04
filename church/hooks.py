@@ -211,7 +211,7 @@ fixtures = [
 		"dt": "Role Profile",
 		"filters": [["Name", "like", "Church%"]],
 	},
-	{"dt": "Web Page", "filters": [["module", "like", "%Church%"]]},
+	{"dt": "Web Page", "filters": [["module", "like", "Church%"]]},
 	{"dt": "Website Settings"},
 ]
 # Apps
