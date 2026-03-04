@@ -25,7 +25,7 @@
   "documentation_url": "https://github.com/meichthys/church",
   "is_complete": 0,
   "modified": "2025-09-30 21:21:52.088048",
-  "module": "Foundations",
+  "module": "Church Foundations",
   "name": "Church",
   "steps": [
    {
