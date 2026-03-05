@@ -1,31 +1,32 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{role} - {#####}",
+ "autoname": "field:position",
  "creation": "2025-08-26 22:57:29.102805",
- "description": "Types of roles that `Person`s can fill in the church.",
+ "description": "Types of positions that `Person`s can fill in the church.",
  "doctype": "DocType",
  "documentation": "/app/manual%3A-people",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "role",
+  "position",
   "description"
  ],
  "fields": [
-  {
-   "description": "The name of the role  or position that a `Person` can fulfill.",
-   "fieldname": "role",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Role",
-   "reqd": 1
-  },
   {
    "fieldname": "description",
    "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Description"
+  },
+  {
+   "description": "The name of the position (role) that a `Person` can fulfill.",
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Position",
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
@@ -33,15 +34,15 @@
  "links": [
   {
    "link_doctype": "Person",
-   "link_fieldname": "role",
+   "link_fieldname": "position",
    "table_fieldname": "positions"
   }
  ],
- "modified": "2025-11-15 22:54:52.639182",
+ "modified": "2026-03-04 21:50:16.632466",
  "modified_by": "Administrator",
  "module": "Church People",
- "name": "Role Type",
- "naming_rule": "Expression",
+ "name": "Position Type",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -75,5 +76,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "role"
+ "title_field": "position"
 }

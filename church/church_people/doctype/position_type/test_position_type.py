@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestRoleType(FrappeTestCase):
+class TestPositionType(FrappeTestCase):
 	pass

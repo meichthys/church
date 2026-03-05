@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:Role {#}",
+ "autoname": "field:position",
  "creation": "2025-08-26 22:42:20.029649",
  "description": "`Person` roles in the church.",
  "doctype": "DocType",
@@ -9,22 +9,12 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "role",
+  "position",
   "start_date",
   "end_date",
-  "is_current_role",
   "notes"
  ],
  "fields": [
-  {
-   "fieldname": "role",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Role",
-   "options": "Role Type",
-   "reqd": 1
-  },
   {
    "fieldname": "notes",
    "fieldtype": "Small Text",
@@ -48,23 +38,25 @@
    "label": "End Date"
   },
   {
-   "default": "0",
-   "fieldname": "is_current_role",
-   "fieldtype": "Check",
+   "fieldname": "position",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Is Current Role?"
+   "label": "Position",
+   "options": "Position Type",
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-11-14 00:00:12.088225",
+ "modified": "2026-03-04 21:55:11.820262",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "Position",
- "naming_rule": "Expression",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [],
  "quick_entry": 1,

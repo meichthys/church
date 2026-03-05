@@ -1,0 +1,42 @@
+[
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Position Type",
+  "modified": "2026-03-04 21:58:13.553853",
+  "name": "Treasurer",
+  "position": "Treasurer"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Position Type",
+  "modified": "2026-03-04 21:58:25.637939",
+  "name": "Secretary",
+  "position": "Secretary"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Position Type",
+  "modified": "2026-03-04 21:58:35.858099",
+  "name": "Pastor",
+  "position": "Pastor"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Position Type",
+  "modified": "2026-03-04 21:58:43.516127",
+  "name": "Elder",
+  "position": "Elder"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Position Type",
+  "modified": "2026-03-04 21:58:47.040017",
+  "name": "Deacon",
+  "position": "Deacon"
+ }
+]
