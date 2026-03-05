@@ -155,8 +155,57 @@ Contributions are very welcome! If you plan any large contributions, please let 
   - Add permissions to the doctype for `Church User` and `Church Admin` roles. (Not necessary for child tables)
   - Add the doctype to the relevant workspace. (not necessary for child tables)
   - If necessary, add an onboarding step & form tour to explain specific fields.
-  - If any default records for this doctype should be shipped with the app, add fixtures for them in `hooks.py`.
+  - If any default records for this doctype should be shipped with the app, see [Managing App Data](#managing-app-data) below.
   - If necessary, update this readme with the new functionality
+
+## Managing App Data
+
+There are two mechanisms for shipping data with the app. Choosing the right one depends on whether the data belongs to the **app** or to the **user**.
+
+### Fixtures — app-owned data (re-applied on every `bench migrate`)
+
+We use fixtures to load data/configurations that the user should not change. If a user modifies or deletes a fixture record, it will be restored on the next migration.
+
+**Current fixtures in this app:**
+- `Role` — church-specific user roles
+- `Role Profile` — church-specific user role profiles
+- `Property Setter` — customizations to built-in Frappe doctypes
+
+To add a new fixture, add an entry to the `fixtures` list in `hooks.py` and run:
+```bash
+bench export-fixtures
+```
+
+### Patches — user-owned starter data (applied once per installation)
+
+We use patches for default/starter records that belong to the user once installed. The user can modify or delete them freely — they will not be recreated by a future migration. Examples: default funds, event types, Bible translations, web pages, etc.
+
+Patches are tracked in the `tabPatch Log` database table and run exactly once per site (on install or on the first migrate after the patch is added).
+
+#### Process for adding new starter data
+
+1. Set up the records in the Frappe desk exactly as you want them shipped.
+2. Temporarily add the doctype as a fixture in `hooks.py`:
+   ```python
+   {"dt": "My Doctype"},
+   ```
+3. Export the fixture to generate the JSON:
+   ```bash
+   bench export-fixtures
+   ```
+4. Move the generated JSON from `fixtures/` to the appropriate patch directory (See below for adding patches for a future version).
+5. Remove the temporary fixture entry from `hooks.py`.
+
+#### Patching for a future version
+
+If a specific patch (i.e. v1_0) has already run on existing installations, create a new version directory and patch:
+
+1. Create `church/patches/v2_0/data/` and place your JSON files there.
+2. Create `church/patches/v2_0/__init__.py` and `church/patches/v2_0/insert_data.py` (copy from `v1_0`).
+3. Append to `patches.txt` (always append — never insert above existing entries since patches are executed in this order):
+   ```
+   church.patches.v2_0.insert_data
+   ```
 
 # 🔑 License: MIT
 

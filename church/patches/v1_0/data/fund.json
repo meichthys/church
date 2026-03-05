@@ -1,0 +1,38 @@
+[
+ {
+  "balance": 0.0,
+  "description": "Funds for the building & maintenance of the church.",
+  "docstatus": 0,
+  "doctype": "Fund",
+  "end_date": null,
+  "fund": "Building",
+  "modified": "2025-10-02 00:56:20.007430",
+  "name": "Building",
+  "start_date": null,
+  "transactions": []
+ },
+ {
+  "balance": 0.0,
+  "description": "Financial support for missionaries",
+  "docstatus": 0,
+  "doctype": "Fund",
+  "end_date": null,
+  "fund": "Missions",
+  "modified": "2025-10-02 01:02:06.137140",
+  "name": "Missions",
+  "start_date": null,
+  "transactions": []
+ },
+ {
+  "balance": 0.0,
+  "description": "Church general fund.",
+  "docstatus": 0,
+  "doctype": "Fund",
+  "end_date": null,
+  "fund": "General",
+  "modified": "2025-10-02 01:03:14.200750",
+  "name": "General",
+  "start_date": null,
+  "transactions": []
+ }
+]
