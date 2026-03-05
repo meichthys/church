@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "format:{type}",
+ "autoname": "field:type",
  "creation": "2025-09-01 00:33:34.102307",
  "description": "Type of `Event Attendance` (i.e. Confirmed, Assumed, Unknown, Absent etc.)",
  "doctype": "DocType",
@@ -37,11 +37,11 @@
    "table_fieldname": "attendance"
   }
  ],
- "modified": "2025-11-13 23:59:23.271613",
+ "modified": "2026-03-04 21:37:45.793117",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Event Attendance Type",
- "naming_rule": "Expression",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
