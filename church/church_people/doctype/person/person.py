@@ -1,8 +1,6 @@
 # Copyright (c) 2025, meichthys and contributors
 # For license information, please see license.txt
 
-from datetime import datetime
-
 import frappe
 from frappe.model.document import Document
 from frappe.utils import get_link_to_form
@@ -135,18 +133,6 @@ class Person(Document):
 		self.reload()
 		family_link = get_link_to_form("Family", doc.name, doc.family_name)
 		frappe.msgprint(f"👨‍👩‍👧‍👦 New family created: {family_link}")
-
-	@frappe.whitelist()
-	def update_is_current_role(self):
-		for role in self.positions:
-			if (
-				frappe.utils.get_datetime(role.start_date)
-				< datetime.now()
-				< frappe.utils.get_datetime(role.end_date)
-			) or (not role.end_date and frappe.utils.get_datetime(role.start_date) < datetime.now()):
-				role.is_current_role = 1
-			else:
-				role.is_current_role = 0
 
 	@frappe.whitelist()
 	def invite_to_portal(self):

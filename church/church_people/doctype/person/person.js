@@ -24,10 +24,6 @@ frappe.ui.form.on("Person", {
 
 	},
 
-	after_save(frm) {
-		frm.call("update_is_current_role")
-	},
-
 	// Set mailing address to home address if "Different Mailing Address" is unchecked
 	before_save: function(frm) {
 		if (!frm.doc.different_mailing_address) {
