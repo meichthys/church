@@ -52,7 +52,6 @@ fixtures = [
 			]
 		],
 	},
-	# `Fund` fixtures are manually created since we don't want to export test data
 	{
 		"dt": "Missionary Support Frequency",
 		"filters": [
@@ -66,6 +65,20 @@ fixtures = [
 					"Bi-Monthly",
 					"Quarterly",
 					"Yearly",
+				),
+			]
+		],
+	},
+	{
+		"dt": "Fund",
+		"filters": [
+			[
+				"fund",
+				"in",
+				(
+					"Building",
+					"General",
+					"Missions",
 				),
 			]
 		],
@@ -161,10 +174,10 @@ fixtures = [
 		],
 	},
 	{
-		"dt": "Role Type",
+		"dt": "Position Type",
 		"filters": [
 			[
-				"role",
+				"position",
 				"in",
 				(
 					"Deacon",
