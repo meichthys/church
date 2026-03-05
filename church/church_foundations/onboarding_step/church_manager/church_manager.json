@@ -1,7 +1,7 @@
 {
  "action": "Create Entry",
  "action_label": "Create Church Manager User",
- "creation": "2026-01-15 11:02:52.707437",
+ "creation": "2026-03-04 23:17:59.350147",
  "description": "Before you get started, you should create a new user. The `Administrator` user should not be used on a daily basis and should be reserved for setting up new users, troubleshooting and system configuration. At least one separate user should be created with the `Church Manager` RoleProfile and the `Church` ModuleProfile permissions. These users will have full access to the Church app.\n\nAdditional users can also be created with the `Church User` RoleProfile and no ModuleProfile permissions. These users will only have access to specific forms. \n\nTo see the exact permissions that a user has, you can (with the `Administrator` account) use the seach bar at the top to search for `Role Permissions Manager` and select the `Church Manager` or `Church User` role to see what is accessible by eacy type of user.\n\nTo summarize:\n- Only the `Administrator` user has permission to create new users.\n- `Church Managers` have full access to the Church app - This is best for church leadership.\n- `Church Users` have limited (portal) access - This is best for church members/attendees.",
  "docstatus": 0,
  "doctype": "Onboarding Step",

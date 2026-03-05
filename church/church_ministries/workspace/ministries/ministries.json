@@ -16,45 +16,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Event Documents",
-   "link_count": 3,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Events",
-   "link_count": 0,
-   "link_to": "Function",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Event Types",
-   "link_count": 0,
-   "link_to": "Event Type",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Event Attendance Types",
-   "link_count": 0,
-   "link_to": "Event Attendance Type",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Event Reports",
    "link_count": 3,
    "link_type": "DocType",
@@ -110,9 +71,48 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Event Documents",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Events",
+   "link_count": 0,
+   "link_to": "Function",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Event Types",
+   "link_count": 0,
+   "link_to": "Event Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Event Attendance Types",
+   "link_count": 0,
+   "link_to": "Event Attendance Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2026-03-01 23:53:34.057250",
+ "modified": "2026-03-04 22:12:52.113466",
  "modified_by": "Administrator",
  "module": "Church Ministries",
  "name": "Ministries",
