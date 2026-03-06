@@ -8,6 +8,10 @@ from frappe.utils import get_link_to_form
 
 class Person(Document):
 	def on_update(self):
+		# Sync church to linked portal user when church field changes
+		if self.portal_user and self.has_value_changed("church"):
+			frappe.db.set_value("User", self.portal_user, "church", self.church)
+
 		# Update Family Member list in Family
 		if self.family:
 			family = frappe.get_doc("Family", self.family)
