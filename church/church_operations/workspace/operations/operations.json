@@ -17,7 +17,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Operations Documents",
-   "link_count": 3,
+   "link_count": 2,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -28,16 +28,6 @@
    "label": "Church Assets",
    "link_count": 0,
    "link_to": "Church Asset",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Church Locations",
-   "link_count": 0,
-   "link_to": "Church Location",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
