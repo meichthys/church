@@ -8,7 +8,8 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "member"
+  "member",
+  "relationship_to_head"
  ],
  "fields": [
   {
@@ -19,6 +20,13 @@
    "label": "Family Member",
    "options": "Person",
    "reqd": 1
+  },
+  {
+   "fieldname": "relationship_to_head",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Relationship to Head",
+   "options": "Person Relation Type"
   }
  ],
  "grid_page_length": 50,

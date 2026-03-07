@@ -109,9 +109,7 @@ class Person(Document):
 	@frappe.whitelist()
 	def new_family_from_person(self):
 		# Check if a family with this person's name already exists
-		existing_family = frappe.db.exists(
-			"Family", {"family_name": f"{self.last_name} - {self.first_name}"}
-		)
+		existing_family = frappe.db.exists("Family", {"family_name": f"{self.last_name} - {self.first_name}"})
 
 		if existing_family:
 			# Set this person's family to the existing one
