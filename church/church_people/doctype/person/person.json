@@ -47,7 +47,6 @@
     "anniversary",
     "spouse",
     "column_break_fkwj",
-    "relationships",
     "notes_tab",
     "notes"
   ],
@@ -276,15 +275,6 @@
       "fieldname": "notes",
       "fieldtype": "Text Editor",
       "label": "Notes",
-      "print_hide": 1
-    },
-    {
-      "allow_in_quick_entry": 1,
-      "description": "Note: Relations are not automatically reciprocal. (i.e. If you are editing 'Mark' and add 'Jane' as 'Sister', Jane's record will not automatically be updated to show 'Mark' as 'Brother'. ",
-      "fieldname": "relationships",
-      "fieldtype": "Table",
-      "label": "Notable Relationships",
-      "options": "Person Relation",
       "print_hide": 1
     },
     {

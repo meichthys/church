@@ -1,11 +1,11 @@
 {
  "charts": [
   {
-   "chart_name": "Persons Count",
+   "chart_name": "People",
    "label": "Persons"
   },
   {
-   "chart_name": "Member Count (New by Month)",
+   "chart_name": "Members",
    "label": "New Members"
   }
  ],
@@ -83,11 +83,22 @@
    "type": "Link"
   },
   {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Church Directory",
+   "link_count": 0,
+   "link_to": "Church Directory Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Family",
+   "type": "Link"
+  },
+  {
    "description": "These are some pre-prepared reports. You can always create your own reports by going to `[Document] Report`, filtering the report, then choosing `save as` in the `...` menu.",
    "hidden": 0,
    "is_query_report": 0,
    "label": "Person Reports",
-   "link_count": 5,
+   "link_count": 6,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -144,9 +155,19 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Church Directory",
+   "link_count": 0,
+   "link_to": "Church Directory Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2026-03-04 23:13:06.657575",
+ "modified": "2026-03-07 16:11:26.024550",
  "modified_by": "Administrator",
  "module": "Church People",
  "name": "People",
@@ -157,11 +178,11 @@
   },
   {
    "label": "Members",
-   "number_card_name": "Church Members"
+   "number_card_name": "Members"
   },
   {
    "label": "Families",
-   "number_card_name": "Church Families"
+   "number_card_name": "Families"
   }
  ],
  "owner": "Administrator",

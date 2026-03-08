@@ -4,17 +4,17 @@
   "allow_rename": 1,
   "autoname": "field:church_name",
   "creation": "2025-09-17 21:10:06.782386",
-  "default_view": "Tree",
+  "default_view": "List",
   "description": "A church or church branch.",
   "doctype": "DocType",
   "engine": "InnoDB",
   "field_order": [
     "church_name",
     "legal_name",
-    "founding_date",
-    "column_break_rmsm",
     "is_group",
     "parent_church",
+    "column_break_rmsm",
+    "founding_date",
     "address",
     "default_bible_translation",
     "mission_statement",
@@ -32,7 +32,8 @@
       "in_list_view": 1,
       "in_standard_filter": 1,
       "label": "Name",
-      "reqd": 1
+      "reqd": 1,
+      "unique": 1
     },
     {
       "fieldname": "legal_name",
@@ -60,6 +61,7 @@
       "fieldname": "parent_church",
       "fieldtype": "Link",
       "ignore_user_permissions": 1,
+      "in_list_view": 1,
       "label": "Parent Church",
       "options": "Church"
     },
@@ -123,7 +125,7 @@
   "index_web_pages_for_search": 1,
   "is_tree": 1,
   "links": [],
-  "modified": "2025-11-15 22:53:46.638825",
+  "modified": "2026-03-07 17:02:03.356563",
   "modified_by": "Administrator",
   "module": "Church Foundations",
   "name": "Church",
