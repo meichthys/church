@@ -67,6 +67,7 @@ app_include_js = [
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
+doctype_js = {"User": "public/js/user.js"}
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
@@ -161,13 +162,12 @@ app_include_icons = ["/assets/church/icons/church.svg"]
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"User": {
+		"after_insert": "church.church_customizations.user_permissions.sync_user_permission",
+		"on_update": "church.church_customizations.user_permissions.sync_user_permission",
+	},
+}
 
 # Scheduled Tasks
 # ---------------

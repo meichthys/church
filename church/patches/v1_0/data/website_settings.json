@@ -74,6 +74,16 @@
     "url": "/missions"
    },
    {
+    "label": "Locations",
+    "open_in_new_tab": 0,
+    "parent": "Website Settings",
+    "parent_label": null,
+    "parentfield": "top_bar_items",
+    "parenttype": "Website Settings",
+    "right": 1,
+    "url": "/locations"
+   },
+   {
     "label": "Blog",
     "open_in_new_tab": 0,
     "parent": "Website Settings",
