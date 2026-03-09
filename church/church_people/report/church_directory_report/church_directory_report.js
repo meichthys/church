@@ -64,6 +64,10 @@ frappe.query_reports["Church Directory Report"] = {
 	],
 
 	onload: function (report) {
+		$('<div class="alert alert-info small" style="margin: var(--margin-sm);">' +
+			'Tip: You can print this directory as a booklet: ' +
+			'<a href="https://helpx.adobe.com/acrobat/kb/print-booklets-acrobat-reader.html" target="_blank">Learn how to print as a booklet</a>.' +
+		'</div>').prependTo(report.page.main);
 		report.page.add_inner_button(__('Print Directory'), function () {
 			const church = report.get_filter_value('church');
 			const include_sub_churches = report.get_filter_value('include_sub_churches') ? 1 : 0;
