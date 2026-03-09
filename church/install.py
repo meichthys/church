@@ -1,12 +1,6 @@
 import frappe
 
 
-def before_install():
-	# Ensure ERPNext is installed
-	if "erpnext" not in frappe.get_installed_apps():
-		raise FileNotFoundError("ERPNext must be installed before installing this app.")
-
-
 def after_install():
 	adjust_gender_options()
 
