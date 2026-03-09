@@ -19,8 +19,13 @@ def execute():
 			name = record.get("name")
 			if not doctype or not name:
 				continue
-			if not frappe.db.exists(doctype, name):
-				try:
+			try:
+				meta = frappe.get_meta(doctype)
+				if meta.issingle:
+					doc = frappe.get_doc(doctype)
+					doc.update(record)
+					doc.save(ignore_permissions=True)
+				elif not frappe.db.exists(doctype, name):
 					frappe.get_doc(record).insert(ignore_permissions=True)
-				except Exception:
-					frappe.log_error(frappe.get_traceback(), f"insert_data patch failed: {doctype} {name}")
+			except Exception:
+				frappe.log_error(frappe.get_traceback(), f"insert_data patch failed: {doctype} {name}")
