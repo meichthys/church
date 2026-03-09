@@ -25,7 +25,6 @@ fixtures = [
 		"dt": "Role Profile",
 		"filters": [["Name", "like", "Church%"]],
 	},
-	{"dt": "Number Card", "filters": [["Name", "in", ["Members", "Families"]]]},
 ]
 # Apps
 # ------------------
@@ -109,7 +108,7 @@ app_include_icons = ["/assets/church/icons/church.svg"]
 # ------------
 
 # before_install = "install.before_install"
-# after_install = "install.after_install"
+after_install = "church.patches.v1_0.insert_data"
 
 # Uninstallation
 # ------------

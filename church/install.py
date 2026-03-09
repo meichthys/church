@@ -1,7 +1,5 @@
 import frappe
 
-from church.patches.v1_0.insert_data import execute as insert_data
-
 
 def before_install():
 	# Ensure ERPNext is installed
@@ -11,7 +9,6 @@ def before_install():
 
 def after_install():
 	adjust_gender_options()
-	insert_data()
 
 
 def adjust_gender_options():
