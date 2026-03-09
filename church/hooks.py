@@ -108,7 +108,7 @@ app_include_icons = ["/assets/church/icons/church.svg"]
 # ------------
 
 # before_install = "install.before_install"
-after_install = "church.patches.v1_0.insert_data"
+after_install = "church.patches.v1_0.insert_data.execute"
 
 # Uninstallation
 # ------------
