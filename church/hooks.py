@@ -25,6 +25,7 @@ fixtures = [
 		"dt": "Role Profile",
 		"filters": [["Name", "like", "Church%"]],
 	},
+	{"dt": "Number Card", "filters": [["Name", "in", ["Members", "Families"]]]},
 ]
 # Apps
 # ------------------
