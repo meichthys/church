@@ -23,6 +23,7 @@
       "in_standard_filter": 1,
       "label": "Church",
       "options": "Church",
+      "reqd": 1,
       "search_index": 1
     },
     {
