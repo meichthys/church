@@ -128,6 +128,7 @@ class Person(Document):
 
 		doc = frappe.new_doc("Family")
 		doc.family_name = f"{self.last_name} - {self.first_name}"
+		doc.church = self.church
 		doc.save()
 		self.set("family", doc)
 		self.set("is_head_of_household", True)
