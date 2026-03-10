@@ -70,6 +70,20 @@
  "title": "Prayer Request ",
  "web_form_fields": [
   {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "church",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Church",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Church",
+   "precision": "",
+   "read_only": 1,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
    "allow_read_on_all_link_options": 1,
    "default": "Requested",
    "fieldname": "status",
