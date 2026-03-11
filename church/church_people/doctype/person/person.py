@@ -139,6 +139,14 @@ class Person(Document):
 
 	@frappe.whitelist()
 	def invite_to_portal(self):
+		# Block invitation if outgoing email is not configured
+		if not frappe.db.exists("Email Account", {"enable_outgoing": 1, "default_outgoing": 1}):
+			frappe.throw(
+				"Outgoing email is not configured. Please set up a default "
+				"<a href='/app/email-account'>Email Account</a> before inviting portal users.",
+				title="Email Not Configured",
+			)
+
 		# Check if user already exists with this email
 		user = frappe.db.exists("User", {"email": self.email})
 
@@ -158,7 +166,10 @@ class Person(Document):
 			self.save(ignore_permissions=True)
 
 			frappe.msgprint(
-				f"👤 Portal user created and linked: <a href='/app/user/{new_user.name}'>{self.full_name}</a>"
+				f"👤 Portal user created for <a href='/app/user/{new_user.name}'>{self.full_name}</a> "
+				f"and an invitation email was sent to {self.email}.",
+				title="Invitation Sent",
+				indicator="green",
 			)
 		else:
 			# User already exists, just update the portal_user field

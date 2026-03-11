@@ -3,7 +3,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.653758",
+  "modified": "2026-03-08 20:31:46.956729",
   "name": "Uncle",
   "relation_type": "Uncle"
  },
@@ -11,7 +11,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.657867",
+  "modified": "2026-03-08 20:31:46.957544",
   "name": "Stepsister",
   "relation_type": "Stepsister"
  },
@@ -19,7 +19,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.661456",
+  "modified": "2026-03-08 20:31:46.958380",
   "name": "Stepmother",
   "relation_type": "Stepmother"
  },
@@ -27,7 +27,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.665259",
+  "modified": "2026-03-08 20:31:46.959172",
   "name": "Stepfather",
   "relation_type": "Stepfather"
  },
@@ -35,7 +35,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.669379",
+  "modified": "2026-03-08 20:31:46.960003",
   "name": "Stepbrother",
   "relation_type": "Stepbrother"
  },
@@ -43,7 +43,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.673111",
+  "modified": "2026-03-08 20:31:46.960826",
   "name": "Son",
   "relation_type": "Son"
  },
@@ -51,7 +51,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.676676",
+  "modified": "2026-03-08 20:31:46.961662",
   "name": "Sister-in-law",
   "relation_type": "Sister-in-law"
  },
@@ -59,7 +59,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.680119",
+  "modified": "2026-03-08 20:31:46.962477",
   "name": "Niece",
   "relation_type": "Niece"
  },
@@ -67,7 +67,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.683478",
+  "modified": "2026-03-08 20:31:46.963304",
   "name": "Nephew",
   "relation_type": "Nephew"
  },
@@ -75,7 +75,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.687305",
+  "modified": "2026-03-08 20:31:46.964185",
   "name": "Mother-in-law",
   "relation_type": "Mother-in-law"
  },
@@ -83,7 +83,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.695315",
+  "modified": "2026-03-08 20:31:46.965040",
   "name": "Grandson",
   "relation_type": "Grandson"
  },
@@ -91,7 +91,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.698809",
+  "modified": "2026-03-08 20:31:46.965907",
   "name": "Grandmother",
   "relation_type": "Grandmother"
  },
@@ -99,7 +99,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.702102",
+  "modified": "2026-03-08 20:31:46.966708",
   "name": "Grandfather",
   "relation_type": "Grandfather"
  },
@@ -107,7 +107,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.705686",
+  "modified": "2026-03-08 20:31:46.967489",
   "name": "Granddaughter",
   "relation_type": "Granddaughter"
  },
@@ -115,7 +115,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.710246",
+  "modified": "2026-03-08 20:31:46.968332",
   "name": "Father-in-law",
   "relation_type": "Father-in-law"
  },
@@ -123,7 +123,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.713876",
+  "modified": "2026-03-08 20:31:46.969191",
   "name": "Daughter",
   "relation_type": "Daughter"
  },
@@ -131,7 +131,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.717387",
+  "modified": "2026-03-08 20:31:46.970031",
   "name": "Brother-in-law",
   "relation_type": "Brother-in-law"
  },
@@ -139,7 +139,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.721712",
+  "modified": "2026-03-08 20:31:46.970805",
   "name": "Aunt",
   "relation_type": "Aunt"
  },
@@ -147,7 +147,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.726072",
+  "modified": "2026-03-08 20:31:46.971646",
   "name": "Father",
   "relation_type": "Father"
  },
@@ -155,7 +155,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.730197",
+  "modified": "2026-03-08 20:31:46.972483",
   "name": "Mother",
   "relation_type": "Mother"
  },
@@ -163,7 +163,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.733999",
+  "modified": "2026-03-08 20:31:46.973311",
   "name": "Sister",
   "relation_type": "Sister"
  },
@@ -171,7 +171,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.640635",
+  "modified": "2026-03-08 20:31:46.974137",
   "name": "Wife",
   "relation_type": "Wife"
  },
@@ -179,7 +179,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:24:08.691750",
+  "modified": "2026-03-08 20:31:46.974924",
   "name": "Husband",
   "relation_type": "Husband"
  },
@@ -187,7 +187,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Person Relation Type",
-  "modified": "2025-08-26 01:30:00.557230",
+  "modified": "2026-03-08 20:31:46.975728",
   "name": "Brother",
   "relation_type": "Brother"
  }

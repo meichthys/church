@@ -176,36 +176,72 @@ To add a new fixture, add an entry to the `fixtures` list in `hooks.py` and run:
 bench export-fixtures
 ```
 
-### Patches — user-owned starter data (applied once per installation)
+### After-install data — user-owned starter data (applied once, on new installs only)
 
-We use patches for default/starter records that belong to the user once installed. The user can modify or delete them freely — they will not be recreated by a future migration. Examples: default funds, event types, Bible translations, web pages, etc.
+We use `patches/after_install/` for shipping default documents. Users can modify or delete them freely and they will not be recreated on migration or upgrade. Examples: default funds, event types, Bible translations, web pages, etc.
 
-Patches are tracked in the `tabPatch Log` database table and run exactly once per site (on install or on the first migrate after the patch is added).
+This data is loaded by the `after_install` hook (`church.patches.after_install.execute`) which runs only when the app is first installed on a new site. Existing sites are not affected.
 
 #### Process for adding new starter data
 
 1. Set up the records in the Frappe desk exactly as you want them shipped.
-2. Temporarily add the doctype as a fixture in `hooks.py`:
+2. Add the doctype as a fixture in `hooks.py` with a `"patch": "after_install"` key (leave it there permanently — it tells the `update_patches` utility script where to move the files):
    ```python
-   {"dt": "My Doctype"},
+   {"dt": "My Doctype", "filters": [...], "patch": "after_install"}
+   ```
+   Use the optional `"order"` key if this doctype must be inserted before others (e.g. a parent document before its children):
+   ```python
+   {"dt": "My Doctype", "filters": [...], "patch": "after_install", "order": 4}
    ```
 3. Export the fixture to generate the JSON:
    ```bash
    bench export-fixtures
    ```
-4. Move the generated JSON from `fixtures/` to the appropriate patch directory (See below for adding patches for a future version).
-5. Remove the temporary fixture entry from `hooks.py`.
-
-#### Patching for a future version
-
-If a specific patch (i.e. v1_0) has already run on existing installations, create a new version directory and patch:
-
-1. Create `church/patches/v2_0/data/` and place your JSON files there.
-2. Create `church/patches/v2_0/__init__.py` and `church/patches/v2_0/insert_data.py` (copy from `v1_0`).
-3. Append to `patches.txt` (always append — never insert above existing entries since patches are executed in this order):
+4. Run the `update_patches` utility script to automatically move the exported file into `patches/after_install/data/`:
+   ```bash
+   bench execute church.utils.update_patches
    ```
-   church.patches.v2_0.insert_data
+   - If the file is **new or changed**, it is moved to `patches/after_install/data/`.
+   - If the file is **identical** to the existing one, it is removed (no change needed).
+
+#### Pushing new starter data to existing sites
+
+The `after_install` hook does not run on existing installations. If we need to push new records to **all** sites (new and existing), we can use a versioned patch instead:
+
+1. Add the doctype as a fixture in `hooks.py` with `"patch": "<patch_name>"` (e.g. `"patch": "v2_0"`).
+2. Export the fixture:
+   ```bash
+   bench export-fixtures
    ```
+3. Run the `update_patches` utility script — it moves the fixture files, scaffolds `__init__.py` and `insert_data.py` from the template, and registers the patch in `patches.txt` automatically:
+   ```bash
+   bench execute church.utils.update_patches
+   ```
+
+#### Removing data from existing sites
+
+Removal always requires a hand-written patch — there is no automated utility script for this. Be cautious: check whether the record still exists and whether other records might be linking to it before deleting.
+
+Create a descriptively named patch file alongside the other patches in the relevant version directory:
+
+```
+church/patches/v2_0/remove_old_attendance_type.py
+```
+
+```python
+import frappe
+
+
+def execute():
+    if frappe.db.exists("Event Attendance Type", "Old Type"):
+        frappe.delete_doc("Event Attendance Type", "Old Type", force=True)
+```
+
+Then append to `patches.txt` (always append — never insert above existing entries):
+
+```
+church.patches.v2_0.remove_old_attendance_type
+```
 
 # 🔑 License: MIT
 

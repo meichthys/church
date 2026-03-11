@@ -3,7 +3,7 @@
   "abbreviation": "KJV",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-11-11 00:31:43.241625",
+  "modified": "2026-03-08 20:31:46.852930",
   "name": "King James Version",
   "translation": "King James Version"
  },
@@ -11,7 +11,7 @@
   "abbreviation": "NIV",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.798606",
+  "modified": "2026-03-08 20:31:46.853812",
   "name": "New International Version",
   "translation": "New International Version"
  },
@@ -19,7 +19,7 @@
   "abbreviation": "ESV",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.808630",
+  "modified": "2026-03-08 20:31:46.854691",
   "name": "English Standard Version",
   "translation": "English Standard Version"
  },
@@ -27,7 +27,7 @@
   "abbreviation": "NLT",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.818323",
+  "modified": "2026-03-08 20:31:46.855536",
   "name": "New Living Translation",
   "translation": "New Living Translation"
  },
@@ -35,7 +35,7 @@
   "abbreviation": "CSB",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.829058",
+  "modified": "2026-03-08 20:31:46.856366",
   "name": "Christian Standard Bible",
   "translation": "Christian Standard Bible"
  },
@@ -43,7 +43,7 @@
   "abbreviation": "NKJV",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.838678",
+  "modified": "2026-03-08 20:31:46.857223",
   "name": "New King James Version",
   "translation": "New King James Version"
  },
@@ -51,7 +51,7 @@
   "abbreviation": "NASB",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.849367",
+  "modified": "2026-03-08 20:31:46.858056",
   "name": "New American Standard Bible",
   "translation": "New American Standard Bible"
  },
@@ -59,7 +59,7 @@
   "abbreviation": "NABRE",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.861138",
+  "modified": "2026-03-08 20:31:46.858899",
   "name": "New American Bible Revised Edition",
   "translation": "New American Bible Revised Edition"
  },
@@ -67,7 +67,7 @@
   "abbreviation": "MSG",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.871084",
+  "modified": "2026-03-08 20:31:46.859704",
   "name": "The Message",
   "translation": "The Message"
  },
@@ -75,7 +75,7 @@
   "abbreviation": "AMP",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.881176",
+  "modified": "2026-03-08 20:31:46.860497",
   "name": "Amplified Bible",
   "translation": "Amplified Bible"
  },
@@ -83,7 +83,7 @@
   "abbreviation": "NRSV",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.891513",
+  "modified": "2026-03-08 20:31:46.861344",
   "name": "New Revised Standard Version",
   "translation": "New Revised Standard Version"
  },
@@ -91,7 +91,7 @@
   "abbreviation": "ASV",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.901640",
+  "modified": "2026-03-08 20:31:46.862190",
   "name": "American Standard Version",
   "translation": "American Standard Version"
  },
@@ -99,7 +99,7 @@
   "abbreviation": "DRB",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.912327",
+  "modified": "2026-03-08 20:31:46.863053",
   "name": "Douay-Rheims Bible",
   "translation": "Douay-Rheims Bible"
  },
@@ -107,7 +107,7 @@
   "abbreviation": "RSV",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.922454",
+  "modified": "2026-03-08 20:31:46.863819",
   "name": "Revised Standard Version",
   "translation": "Revised Standard Version"
  },
@@ -115,7 +115,7 @@
   "abbreviation": "JB",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.932427",
+  "modified": "2026-03-08 20:31:46.864591",
   "name": "Jerusalem Bible",
   "translation": "Jerusalem Bible"
  },
@@ -123,7 +123,7 @@
   "abbreviation": "NJB",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.942446",
+  "modified": "2026-03-08 20:31:46.865416",
   "name": "New Jerusalem Bible",
   "translation": "New Jerusalem Bible"
  },
@@ -131,7 +131,7 @@
   "abbreviation": "CEB",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.952487",
+  "modified": "2026-03-08 20:31:46.866258",
   "name": "Common English Bible",
   "translation": "Common English Bible"
  },
@@ -139,7 +139,7 @@
   "abbreviation": "GNT",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.962669",
+  "modified": "2026-03-08 20:31:46.867097",
   "name": "Good News Translation",
   "translation": "Good News Translation"
  },
@@ -147,7 +147,7 @@
   "abbreviation": "CEV",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.972350",
+  "modified": "2026-03-08 20:31:46.867879",
   "name": "Contemporary English Version",
   "translation": "Contemporary English Version"
  },
@@ -155,7 +155,7 @@
   "abbreviation": "NET",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.982197",
+  "modified": "2026-03-08 20:31:46.868631",
   "name": "New English Translation",
   "translation": "New English Translation"
  },
@@ -163,7 +163,7 @@
   "abbreviation": "NIrV",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:25.991980",
+  "modified": "2026-03-08 20:31:46.869472",
   "name": "New International Reader's Version",
   "translation": "New International Reader's Version"
  },
@@ -171,7 +171,7 @@
   "abbreviation": "CJB",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:26.011591",
+  "modified": "2026-03-08 20:31:46.870306",
   "name": "Complete Jewish Bible",
   "translation": "Complete Jewish Bible"
  },
@@ -179,7 +179,7 @@
   "abbreviation": "TPT",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:26.031151",
+  "modified": "2026-03-08 20:31:46.871147",
   "name": "The Passion Translation",
   "translation": "The Passion Translation"
  },
@@ -187,7 +187,7 @@
   "abbreviation": "LIVING",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:26.041142",
+  "modified": "2026-03-08 20:31:46.871949",
   "name": "The Living Bible",
   "translation": "The Living Bible"
  },
@@ -195,7 +195,7 @@
   "abbreviation": "MEV",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:26.053780",
+  "modified": "2026-03-08 20:31:46.872798",
   "name": "Modern English Version",
   "translation": "Modern English Version"
  },
@@ -203,7 +203,7 @@
   "abbreviation": "NCV",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:26.064127",
+  "modified": "2026-03-08 20:31:46.873657",
   "name": "New Century Version",
   "translation": "New Century Version"
  },
@@ -211,7 +211,7 @@
   "abbreviation": "VOICE",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:26.074321",
+  "modified": "2026-03-08 20:31:46.874486",
   "name": "The Voice",
   "translation": "The Voice"
  },
@@ -219,7 +219,7 @@
   "abbreviation": "WEB",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-10-29 22:34:57.443008",
+  "modified": "2026-03-08 20:31:46.875328",
   "name": "World English Bible",
   "translation": "World English Bible"
  },
@@ -227,7 +227,7 @@
   "abbreviation": "BSB",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-11-06 01:17:39.595353",
+  "modified": "2026-03-08 20:31:46.876156",
   "name": "Berean Standard Bible",
   "translation": "Berean Standard Bible"
  },
@@ -235,7 +235,7 @@
   "abbreviation": "BBE",
   "docstatus": 0,
   "doctype": "Bible Translation",
-  "modified": "2025-09-17 23:23:26.021513",
+  "modified": "2026-03-08 20:31:46.876979",
   "name": "Bible in Basic English",
   "translation": "Bible in Basic English"
  }

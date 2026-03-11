@@ -3,7 +3,7 @@
   "description": "It is unknown if the `Person` was present.",
   "docstatus": 0,
   "doctype": "Event Attendance Type",
-  "modified": "2025-09-01 00:49:02.575272",
+  "modified": "2026-03-08 20:31:46.892952",
   "name": "Unknown",
   "type": "Unknown"
  },
@@ -11,7 +11,7 @@
   "description": "`Person` was absent.",
   "docstatus": 0,
   "doctype": "Event Attendance Type",
-  "modified": "2025-09-01 00:50:25.152727",
+  "modified": "2026-03-08 20:31:46.893829",
   "name": "Absent",
   "type": "Absent"
  },
@@ -19,7 +19,7 @@
   "description": "The `Person` was assumed to be present.",
   "docstatus": 0,
   "doctype": "Event Attendance Type",
-  "modified": "2025-09-01 00:48:23.253888",
+  "modified": "2026-03-08 20:31:46.894663",
   "name": "Assumed",
   "type": "Assumed"
  },
@@ -27,7 +27,7 @@
   "description": "The `Person` was confirmed to be present.",
   "docstatus": 0,
   "doctype": "Event Attendance Type",
-  "modified": "2025-09-01 00:48:37.750184",
+  "modified": "2026-03-08 20:31:46.895501",
   "name": "Confirmed",
   "type": "Confirmed"
  }

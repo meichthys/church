@@ -3,7 +3,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Payment Type",
-  "modified": "2025-09-02 01:45:57.381589",
+  "modified": "2026-03-08 20:31:46.947011",
   "name": "Cash",
   "type": "Cash"
  },
@@ -11,7 +11,7 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Payment Type",
-  "modified": "2025-09-02 01:46:05.861238",
+  "modified": "2026-03-08 20:31:46.947979",
   "name": "Check",
   "type": "Check"
  }
