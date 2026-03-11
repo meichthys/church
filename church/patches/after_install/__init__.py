@@ -1,7 +1,9 @@
 import frappe
+from . import insert_data
 
 
-def after_install():
+def execute():
+	insert_data.execute()
 	adjust_gender_options()
 
 
