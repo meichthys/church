@@ -173,7 +173,7 @@ We use fixtures to load data/configurations that the user should not change. If 
 
 To add a new fixture, add an entry to the `fixtures` list in `hooks.py` and run:
 ```bash
-bench export-fixtures
+bench execute church.utils.export_fixtures
 ```
 
 ### After-install data — user-owned starter data (applied once, on new installs only)
@@ -193,29 +193,24 @@ This data is loaded by the `after_install` hook (`church.patches.after_install.e
    ```python
    {"dt": "My Doctype", "filters": [...], "patch": "after_install", "order": 4}
    ```
-3. Export the fixture to generate the JSON:
+3. Run the `export_fixtures` utility script — it exports all fixtures and automatically moves patch fixture files into `patches/after_install/data/`:
    ```bash
-   bench export-fixtures
-   ```
-4. Run the `update_patches` utility script to automatically move the exported file into `patches/after_install/data/`:
-   ```bash
-   bench execute church.utils.update_patches
+   bench execute church.utils.export_fixtures
    ```
    - If the file is **new or changed**, it is moved to `patches/after_install/data/`.
    - If the file is **identical** to the existing one, it is removed (no change needed).
+
+> [!WARNING]
+> Never run `bench export-fixtures` directly. Always use `bench execute church.utils.export_fixtures` instead, which handles routing patch fixture files automatically.
 
 #### Pushing new starter data to existing sites
 
 The `after_install` hook does not run on existing installations. If we need to push new records to **all** sites (new and existing), we can use a versioned patch instead:
 
 1. Add the doctype as a fixture in `hooks.py` with `"patch": "<patch_name>"` (e.g. `"patch": "v2_0"`).
-2. Export the fixture:
+2. Run the `export_fixtures` utility script — it exports all fixtures, moves the files, scaffolds `__init__.py` and `insert_data.py` from the template, and registers the patch in `patches.txt` automatically:
    ```bash
-   bench export-fixtures
-   ```
-3. Run the `update_patches` utility script — it moves the fixture files, scaffolds `__init__.py` and `insert_data.py` from the template, and registers the patch in `patches.txt` automatically:
-   ```bash
-   bench execute church.utils.update_patches
+   bench execute church.utils.export_fixtures
    ```
 
 #### Removing data from existing sites

@@ -4,6 +4,7 @@ import os
 import shutil
 
 import frappe
+from frappe.utils.fixtures import export_fixtures as _frappe_export_fixtures
 
 _IGNORE_FIELDS = {"modified"}
 
@@ -11,20 +12,24 @@ AFTER_INSTALL_PATCH = "after_install"
 _TEMPLATE_DIR = os.path.join(os.path.dirname(__file__), "patches", "_template")
 
 
-def update_patches():
+def export_fixtures():
 	"""
-	Route exported fixture files marked with a "patch" key to the corresponding
-	patch data directory. Fixtures stay in hooks.py permanently.
+	Export all app fixtures and route any patch fixture files to their patch data directory.
+	This replaces running `bench export-fixtures` directly — always use this instead.
+
+	Patch fixtures (those with a "patch" key in hooks.py) are moved out of fixtures/ and
+	into their patch data directory after export. Regular fixtures remain in fixtures/.
 
 	- If the exported file differs from the existing patch data file (or is new),
 	  it is moved to the patch data directory.
-	- If the exported file is identical to the existing one, it is simply removed.
+	- If the exported file is identical (ignoring the "modified" field), it is removed.
+	- For versioned patches (any patch name other than "after_install"), __init__.py,
+	  insert_data.py, and the patches.txt entry are scaffolded automatically if missing.
 
 	Usage:
 	    1. Add fixture with "patch" key in hooks.py (leave it there permanently):
 	           {"dt": "Member Status", "patch": "after_install"}
-	    2. Run: bench export-fixtures
-	    3. Run: bench execute church.utils.update_patches
+	    2. Run: bench execute church.utils.export_fixtures
 
 	    For versioned patches (to push data to existing sites), use a patch name
 	    other than "after_install" (e.g. "v2_0"). The script will automatically
@@ -42,6 +47,8 @@ def update_patches():
 	    after any numbered files. Multiple fixtures can share the same order value
 	    if their relative order doesn't matter.
 	"""
+	_frappe_export_fixtures(app="church")
+
 	app_dir = os.path.dirname(__file__)
 	hooks_path = os.path.join(app_dir, "hooks.py")
 	fixtures_dir = os.path.join(app_dir, "fixtures")
