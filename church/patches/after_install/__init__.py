@@ -623,7 +623,7 @@ def _create_form_tour_person():
 				},
 				{
 					"title": "Church Roles",
-					"fieldname": "church_roles",
+					"fieldname": "positions",
 					"fieldtype": "Table",
 					"position": "Top Center",
 					"description": (
@@ -631,19 +631,7 @@ def _create_form_tour_person():
 						"Go ahead and assign this person a 'Secretary' role starting today by clicking"
 						" on the `Add Row` button below."
 					),
-					"next_step_condition": "eval: doc.church_roles;",
-				},
-				{
-					"title": "Notable Relationships",
-					"fieldname": "relationships",
-					"fieldtype": "Table",
-					"position": "Bottom",
-					"description": (
-						"In this table (on the 'Family' tab) you can define relationships that this"
-						" person has with other `Person`s. Additional `Person Relation"
-						" Type`s can be defined in the drop-down list.\n"
-						"Let's skip adding relationships for now."
-					),
+					"next_step_condition": "eval: doc.positions;",
 				},
 			],
 		}
