@@ -1,0 +1,56 @@
+{% set root_churches = frappe.get_list("Church", fields=["name"], filters={"parent_church": ""}, ignore_permissions=True, limit=1) %}
+{% if root_churches %}
+{% set root_church = frappe.get_doc("Church", root_churches[0].name) %}
+{% set sub_churches = frappe.get_list("Church", fields=["name"], filters={"parent_church": root_churches[0].name}, ignore_permissions=True) %}
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <strong>{{ root_church.legal_name or root_church.church_name }}</strong>
+                {% if root_church.founding_date %}
+                    <br>
+                    Established: {{ root_church.founding_date }}
+                {% endif %}
+            </div>
+            <div class="card-body">
+                {% if root_church.about %}
+                <p class="card-text">{{ root_church.about }}</p>
+                {% endif %}
+            </div>
+            {% if root_church.mission_statement %}
+            <div class="card-footer">
+                <div class="small text-muted">
+                    &ldquo;{{ root_church.mission_statement }}&rdquo;
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% for doc in sub_churches %}
+    {% set church = frappe.get_doc("Church", doc.name) %}
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <strong>{{ church.legal_name or church.church_name }}</strong>
+                {% if church.founding_date %}
+                    <br>
+                    Established: {{ church.founding_date }}
+                {% endif %}
+            </div>
+            <div class="card-body">
+                {% if church.about %}
+                <p class="card-text">{{ church.about }}</p>
+                {% endif %}
+            </div>
+            {% if church.mission_statement %}
+            <div class="card-footer">
+                <div class="small text-muted">
+                    &ldquo;{{ church.mission_statement }}&rdquo;
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
