@@ -622,13 +622,23 @@ def _create_form_tour_person():
 					"next_step_condition": 'eval: doc.membership_status=="Active";',
 				},
 				{
-					"title": "Church Roles",
+					"title": "Church",
+					"fieldname": "church",
+					"fieldtype": "Link",
+					"position": "Top",
+					"description": (
+						"Select the `Church` this person belongs to.\n"
+						"This links the person to their church congregation."
+					),
+				},
+				{
+					"title": "Church Position",
 					"fieldname": "positions",
 					"fieldtype": "Table",
 					"position": "Top Center",
 					"description": (
-						"You can define `Church Role`s that this person had been or is currently assigned.\n"
-						"Go ahead and assign this person a 'Secretary' role starting today by clicking"
+						"You can define `Church Position`s that this person has been or is currently assigned.\n"
+						"Go ahead and assign this person a 'Secretary' position starting today by clicking"
 						" on the `Add Row` button below."
 					),
 					"next_step_condition": "eval: doc.positions;",
@@ -738,7 +748,7 @@ def _create_module_onboarding():
 			"steps": [
 				{"step": "Email Configuration"},
 				{"step": "Church Manager"},
-				{"step": "Information"},
+				{"step": "Church"},
 				{"step": "Person"},
 				{"step": "Family"},
 				{"step": "Function"},
