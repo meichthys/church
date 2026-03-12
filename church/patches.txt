@@ -5,5 +5,3 @@
 
 # Patches added in this section will be executed after doctypes are migrated
 [post_model_sync]
-# Load 'seed' data (base documents and document types)
-church.patches.v1_0.insert_data

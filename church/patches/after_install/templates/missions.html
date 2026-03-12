@@ -1,0 +1,47 @@
+<div class="row">
+{% set root_churches = frappe.get_list("Church", fields=["name"], filters={"parent_church": ""}, ignore_permissions=True, limit=1) %}
+{% if root_churches %}
+{% set root_church_name = root_churches[0].name %}
+{% set missionary_docs = frappe.get_list("Missionary", fields=["name"], filters={"publish": 1, "church": root_church_name}, ignore_permissions=True) %}
+{% for doc in missionary_docs if not frappe.get_doc("Missionary", doc.name).sensitive %}
+    {% set missionary = frappe.get_doc("Missionary", doc.name) %}
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <strong>
+                    {{ missionary.title }}
+                    <br>
+                    {% if missionary.agency %}
+                        ({{ missionary.agency }})
+                    {% endif %}
+                </strong>
+            </div>
+            <div class="card-body">
+                {% if missionary.photo %}
+                    <p class="card-text">
+                        <img src="{{ missionary.photo }}">
+                    </p>
+                {% endif %}
+            </div>
+            <div class="card-footer">
+                <div class="small text-muted">
+                    {% if missionary.email %}
+                        <a href="mailto:{{ missionary.email }}">{{ missionary.email }} </a>
+                    {% endif %}
+                    {% set country_code = frappe.db.get_value("Country", missionary.country, "code") %}
+                    {% if country_code %}
+                        <img src="https://flagcdn.com/w40/{{ country_code | lower }}.png"
+                             alt="{{ missionary.country }} flag"
+                             title="{{ missionary.country }} flag"
+                             style="width: 2em">
+                    {% endif %}
+                    {% if missionary.website %}
+                        <a href="{{ missionary.website }}" target="_blank"> {{ missionary.website }}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+{% endif %}
+</div>

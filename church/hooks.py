@@ -13,18 +13,9 @@ website_context = {
 }
 
 fixtures = [
-	{
-		"dt": "Property Setter",
-		"filters": [["doc_type", "=", "About Us Settings"]],
-	},
-	{
-		"dt": "Role",
-		"filters": [["Name", "like", "Church%"]],
-	},
-	{
-		"dt": "Role Profile",
-		"filters": [["Name", "like", "Church%"]],
-	},
+	{"dt": "Property Setter", "filters": [["doc_type", "=", "About Us Settings"]]},
+	{"dt": "Role", "filters": [["Name", "like", "Church%"]]},
+	{"dt": "Role Profile", "filters": [["Name", "like", "Church%"]]},
 ]
 # Apps
 # ------------------
@@ -108,7 +99,7 @@ app_include_icons = ["/assets/church/icons/church.svg"]
 # ------------
 
 # before_install = "install.before_install"
-after_install = "church.patches.v1_0.insert_data.execute"
+after_install = "church.patches.after_install.execute"
 
 # Uninstallation
 # ------------
