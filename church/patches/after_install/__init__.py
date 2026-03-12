@@ -551,6 +551,16 @@ def _create_form_tour_person():
 			"save_on_complete": 1,
 			"steps": [
 				{
+					"title": "Church",
+					"fieldname": "church",
+					"fieldtype": "Link",
+					"position": "Top",
+					"description": (
+						"Select the `Church` this person belongs to.\n"
+						"This links the person to their church congregation."
+					),
+				},
+				{
 					"title": "First Name",
 					"fieldname": "first_name",
 					"fieldtype": "Data",
@@ -622,16 +632,6 @@ def _create_form_tour_person():
 					"next_step_condition": 'eval: doc.membership_status=="Active";',
 				},
 				{
-					"title": "Church",
-					"fieldname": "church",
-					"fieldtype": "Link",
-					"position": "Top",
-					"description": (
-						"Select the `Church` this person belongs to.\n"
-						"This links the person to their church congregation."
-					),
-				},
-				{
 					"title": "Church Position",
 					"fieldname": "positions",
 					"fieldtype": "Table",
@@ -682,8 +682,8 @@ def _create_form_tour_church():
 					"description": (
 						"Check `Is Group` if this church has multiple locations or branches.\n"
 						"Marking a church as a group allows other churches to be linked under it"
-						" via the `Parent Church` field. The public `/locations` page displays the"
-						" root (group) church alongside all of its sub-churches."
+						" via the `Parent Church` field. The `/locations` web route will display"
+						" the parent church alongside all of its sub-churches."
 					),
 				},
 				{
@@ -692,9 +692,9 @@ def _create_form_tour_church():
 					"fieldtype": "Link",
 					"position": "Bottom",
 					"description": (
-						"If this church is a branch or campus of another, select the parent church here.\n"
-						"This church will then appear as a sub-location under the parent on the"
-						" public `/locations` page."
+						"If this church is a branch of another church, select the parent church here.\n"
+						"This church will then appear as a location on the public `/locations` page"
+						" of the website."
 					),
 				},
 				{
@@ -704,7 +704,7 @@ def _create_form_tour_church():
 					"position": "Bottom",
 					"description": (
 						"Link a physical address to this church.\n"
-						"The address record can be created directly from the drop-down."
+						"The address may be used on the public website."
 					),
 				},
 				{
@@ -715,7 +715,7 @@ def _create_form_tour_church():
 					"description": (
 						"A short statement of the church's purpose or calling.\n"
 						"It appears in the footer of each church card on the public `/locations` page"
-						" and in the footer of the `/home` page for the root church."
+						" and in the footer of the `/home` page for the top-level parent church."
 					),
 				},
 				{
@@ -726,8 +726,8 @@ def _create_form_tour_church():
 					"description": (
 						"A description of the church shown in the body of each church card on the"
 						" public `/locations` page, and in the main content area of the `/home` page"
-						" for the root church.\n"
-						"It is also the default content for the `/about` page."
+						" for the top-level parent church.\n"
+						"It is also the default content for the `/about` page of the public website."
 					),
 				},
 			],
