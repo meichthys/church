@@ -464,7 +464,7 @@ def _create_form_tour_church_manager():
 			"name": "Church Manager",
 			"title": "Church Manager",
 			"reference_doctype": "User",
-			"module": "Desk",
+			"module": "Church Foundations",
 			"is_standard": 1,
 			"save_on_complete": 1,
 			"steps": [
@@ -546,7 +546,7 @@ def _create_form_tour_person():
 			"name": "Person",
 			"title": "Person",
 			"reference_doctype": "Person",
-			"module": "Desk",
+			"module": "Church People",
 			"is_standard": 1,
 			"save_on_complete": 1,
 			"steps": [
@@ -659,7 +659,7 @@ def _create_form_tour_church():
 			"name": "Church",
 			"title": "Church",
 			"reference_doctype": "Church",
-			"module": "Desk",
+			"module": "Church Foundations",
 			"is_standard": 1,
 			"save_on_complete": 0,
 			"steps": [
@@ -667,13 +667,67 @@ def _create_form_tour_church():
 					"title": "Legal Name",
 					"fieldname": "legal_name",
 					"fieldtype": "Data",
-					"element_selector": "div.form-dashboard",
 					"position": "Bottom",
 					"description": (
-						"All of the information entered on this page may be used on the"
-						" public-facing website. (i.e. in the footer or 'about-us' page.).\n"
-						"When you are finished entering the information, click the 'save'"
-						" button at the top right."
+						"The `Legal Name` is the official registered name of the church, if different"
+						" from the common name. It is displayed in the header of each church card on"
+						" the public `/locations` page and on the `/home` page."
+					),
+				},
+				{
+					"title": "Is Group",
+					"fieldname": "is_group",
+					"fieldtype": "Check",
+					"position": "Bottom",
+					"description": (
+						"Check `Is Group` if this church has multiple locations or branches.\n"
+						"Marking a church as a group allows other churches to be linked under it"
+						" via the `Parent Church` field. The public `/locations` page displays the"
+						" root (group) church alongside all of its sub-churches."
+					),
+				},
+				{
+					"title": "Parent Church",
+					"fieldname": "parent_church",
+					"fieldtype": "Link",
+					"position": "Bottom",
+					"description": (
+						"If this church is a branch or campus of another, select the parent church here.\n"
+						"This church will then appear as a sub-location under the parent on the"
+						" public `/locations` page."
+					),
+				},
+				{
+					"title": "Address",
+					"fieldname": "address",
+					"fieldtype": "Link",
+					"position": "Bottom",
+					"description": (
+						"Link a physical address to this church.\n"
+						"The address record can be created directly from the drop-down."
+					),
+				},
+				{
+					"title": "Mission Statement",
+					"fieldname": "mission_statement",
+					"fieldtype": "Small Text",
+					"position": "Bottom",
+					"description": (
+						"A short statement of the church's purpose or calling.\n"
+						"It appears in the footer of each church card on the public `/locations` page"
+						" and in the footer of the `/home` page for the root church."
+					),
+				},
+				{
+					"title": "About",
+					"fieldname": "about",
+					"fieldtype": "Text Editor",
+					"position": "Top",
+					"description": (
+						"A description of the church shown in the body of each church card on the"
+						" public `/locations` page, and in the main content area of the `/home` page"
+						" for the root church.\n"
+						"It is also the default content for the `/about` page."
 					),
 				},
 			],
