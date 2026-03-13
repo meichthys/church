@@ -3,10 +3,16 @@
 
 import frappe
 from frappe import _
-from frappe.model.document import Document
+from frappe.utils.nestedset import NestedSet
 
 
-class Church(Document):
+class Church(NestedSet):
+	nsm_parent_field = "parent_church"
+
+	def before_save(self):
+		if not self.parent_church:
+			self.is_group = 1
+
 	def validate(self):
 		if not self.parent_church:
 			existing_root = frappe.db.get_value(
@@ -16,7 +22,7 @@ class Church(Document):
 			)
 			if existing_root:
 				frappe.throw(
-					_("Only one root Church is allowed. '{0}' is already the root church. Please set a Parent Church.").format(
-						existing_root
-					)
+					_(
+						"Only one root Church is allowed. '{0}' is already the root church. Please set a Parent Church."
+					).format(existing_root)
 				)
