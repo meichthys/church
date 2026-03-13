@@ -372,6 +372,7 @@
     {
       "read": 1,
       "role": "Church User",
+      "select": 1,
       "write": 1
     }
   ],

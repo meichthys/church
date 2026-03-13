@@ -180,6 +180,36 @@ class Person(Document):
 			)
 
 
+def has_permission(doc, ptype, user):
+	if not user:
+		user = frappe.session.user
+
+	# Church Manager / System Manager — no extra restriction
+	if "Church Manager" in frappe.get_roles(user) or "System Manager" in frappe.get_roles(user):
+		return True
+
+	# Church User — can only access their own Person record
+	if "Church User" in frappe.get_roles(user):
+		return doc.portal_user == user
+
+	return None
+
+
+def get_permission_query_conditions(user):
+	if not user:
+		user = frappe.session.user
+
+	roles = frappe.get_roles(user)
+
+	if "System Manager" in roles or "Church Manager" in roles:
+		return ""
+
+	if "Church User" in roles:
+		return f"(`tabPerson`.portal_user = {frappe.db.escape(user)})"
+
+	return ""
+
+
 def get_list_context(context):
 	# Only show documents related to the active user
 	context.filters = {"portal_user": frappe.session.user}
