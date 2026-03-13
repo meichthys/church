@@ -133,13 +133,13 @@ after_install = "church.patches.after_install.execute"
 # -----------
 # Permissions evaluated in scripted ways
 
-# permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
-# }
-#
-# has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
-# }
+permission_query_conditions = {
+	"Person": "church.church_people.doctype.person.person.get_permission_query_conditions",
+}
+
+has_permission = {
+	"Person": "church.church_people.doctype.person.person.has_permission",
+}
 
 # DocType Class
 # ---------------

@@ -67,6 +67,7 @@
   ],
   "custom_perms": [
     {
+      "parent": "User",
       "role": "Church Manager",
       "permlevel": 0,
       "read": 1,
