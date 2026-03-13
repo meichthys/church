@@ -7,7 +7,7 @@
  "include_name_field": 0,
  "is_standard": 1,
  "list_name": "List",
- "modified": "2026-03-12 17:33:03.248719",
+ "modified": "2026-03-12 17:33:38.451347",
  "modified_by": "Administrator",
  "module": "Church Foundations",
  "name": "Church Manager",
@@ -18,7 +18,7 @@
  "save_on_complete": 1,
  "steps": [
   {
-   "description": "Enter the email of the users. This may be used for resetting passwords, sending notifications, etc.\nFor email notifications to work, the Administrator must configure a default outgoing email server using the `New Email Account` action.",
+   "description": "Enter the email of the user. This may be used for resetting passwords, sending notifications, etc.\nFor email notifications to work, the Administrator must configure a default outgoing email server using the `New Email Account` action.",
    "fieldname": "email",
    "fieldtype": "Data",
    "has_next_condition": 1,
