@@ -1,0 +1,16 @@
+{
+  "custom_fields": [],
+  "custom_perms": [
+    {
+      "parent": "Role Profile",
+      "role": "Church Manager",
+      "permlevel": 0,
+      "read": 1,
+      "select": 1
+    }
+  ],
+  "doctype": "Role Profile",
+  "links": [],
+  "property_setters": [],
+  "sync_on_migrate": 1
+}

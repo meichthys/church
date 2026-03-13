@@ -77,6 +77,13 @@
       "report": 1,
       "share": 1,
       "select": 1
+    },
+    {
+      "parent": "User",
+      "role": "Church Manager",
+      "permlevel": 1,
+      "read": 1,
+      "write": 1
     }
   ],
   "doctype": "User",

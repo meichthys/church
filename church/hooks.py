@@ -157,6 +157,7 @@ doc_events = {
 	"User": {
 		"after_insert": "church.church_customizations.user_permissions.sync_user_permission",
 		"on_update": "church.church_customizations.user_permissions.sync_user_permission",
+		"validate": "church.church_customizations.user_permissions.validate_church_manager_edits",
 	},
 }
 
