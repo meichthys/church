@@ -32,7 +32,7 @@ class Collection(Document):
 				]
 				fund_doc.balance = (fund_doc.balance or 0) - fund_total
 				fund_doc.save(ignore_permissions=True)
-				messages.append(f"💸 {fund_name} fund decreased by ${fund_total}")
+				messages.append(f"💸 {fund_doc.fund} fund decreased by ${fund_total}")
 			else:
 				fund_doc.append(
 					"transactions",
@@ -45,9 +45,9 @@ class Collection(Document):
 				)
 				fund_doc.balance = (fund_doc.balance or 0) + fund_total
 				fund_doc.save(ignore_permissions=True)
-				messages.append(f"💰 {fund_name} fund increased by ${fund_total}")
+				messages.append(f"💰 {fund_doc.fund} fund increased by ${fund_total}")
 		if messages:
 			frappe.msgprint("<br>".join(messages))
 		# Warn if funds are now negative
 		if fund_doc.balance < 0:
-			frappe.msgprint(f"⚠️ {fund_name} fund balance is negative: {fund_doc.balance}")
+			frappe.msgprint(f"⚠️ {fund_doc.fund} fund balance is negative: {fund_doc.balance}")
