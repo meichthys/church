@@ -44,6 +44,7 @@ def execute():
 
 	# Cleanup
 	_clean_gender_options()
+	_hide_default_workspaces()
 
 
 # ---------------------------------------------------------------------------
@@ -564,6 +565,22 @@ def _setup_portal_menu_items():
 			changed = True
 	if changed:
 		doc.save(ignore_permissions=True)
+
+
+# ---------------------------------------------------------------------------
+# Workspace visibility
+# ---------------------------------------------------------------------------
+
+
+def _hide_default_workspaces():
+	"""Hide built-in Frappe workspaces that are irrelevant to church users.
+
+	The is_hidden field is preserved through bench migrate / Frappe updates, so
+	this only needs to run once at install time.
+	"""
+	for workspace in ("Tools", "Build", "Users", "Integrations"):
+		if frappe.db.exists("Workspace", workspace):
+			frappe.db.set_value("Workspace", workspace, "is_hidden", 1)
 
 
 # ---------------------------------------------------------------------------
