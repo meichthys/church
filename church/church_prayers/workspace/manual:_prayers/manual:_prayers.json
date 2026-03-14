@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Manual: Prayers",
  "links": [],
- "modified": "2026-03-01 23:53:34.218246",
+ "modified": "2026-03-13 19:57:14.099581",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Manual: Prayers",
@@ -23,7 +23,7 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 19.0,
+ "sequence_id": 21.0,
  "shortcuts": [],
  "title": "Manual: Prayers"
 }
