@@ -1,0 +1,28 @@
+{
+ "content": null,
+ "creation": "2026-03-14 00:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "fa fa-database",
+ "idx": 0,
+ "modified": "2026-03-14 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Church Customizations",
+ "name": "sample-data",
+ "owner": "Administrator",
+ "page_name": "sample-data",
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Church Manager"
+  }
+ ],
+ "standard": "Yes",
+ "system_page": 0,
+ "title": "Sample Data"
+}

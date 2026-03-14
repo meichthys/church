@@ -23,6 +23,9 @@
  "owner": "Administrator",
  "steps": [
   {
+   "step": "Sample Data"
+  },
+  {
    "step": "Email Configuration"
   },
   {
@@ -45,6 +48,6 @@
   }
  ],
  "subtitle": "People, Families, Events, Ministries, Collections, and more...",
- "success_message": "Your Church is setup! \ud83c\udf89 May God grow your ministry \ud83d\ude4f",
+ "success_message": "",
  "title": "\u26ea Let's Set Up Your Church."
 }
