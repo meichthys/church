@@ -218,7 +218,7 @@
    "type": "Link"
   }
  ],
- "modified": "2026-03-13 19:57:33.764988",
+ "modified": "2026-03-13 20:01:01.241846",
  "modified_by": "Administrator",
  "module": "Church Setup",
  "name": "Settings",
@@ -228,7 +228,7 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 28.0,
+ "sequence_id": 24.0,
  "shortcuts": [],
  "title": "Settings"
 }

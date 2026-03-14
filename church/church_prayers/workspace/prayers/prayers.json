@@ -101,7 +101,7 @@
    "type": "Link"
   }
  ],
- "modified": "2026-03-13 19:57:14.054032",
+ "modified": "2026-03-13 20:01:01.004309",
  "modified_by": "Administrator",
  "module": "Church Prayers",
  "name": "Prayers",
@@ -120,7 +120,7 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 20.0,
+ "sequence_id": 18.0,
  "shortcuts": [],
  "title": "Prayers"
 }

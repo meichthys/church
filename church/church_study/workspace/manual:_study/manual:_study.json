@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Manual: Study",
  "links": [],
- "modified": "2026-03-13 19:57:14.179937",
+ "modified": "2026-03-13 20:01:01.111831",
  "modified_by": "Administrator",
  "module": "Church Study",
  "name": "Manual: Study",
@@ -23,7 +23,7 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 23.0,
+ "sequence_id": 21.0,
  "shortcuts": [],
  "title": "Manual: Study"
 }

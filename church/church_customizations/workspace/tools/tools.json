@@ -9,7 +9,7 @@
  "hide_custom": 0,
  "icon": "tool",
  "idx": 0,
- "is_hidden": 0,
+ "is_hidden": 1,
  "label": "Tools",
  "links": [
   {
@@ -310,7 +310,7 @@
    "type": "Link"
   }
  ],
- "modified": "2026-03-13 19:57:13.996719",
+ "modified": "2026-03-13 20:01:01.343412",
  "modified_by": "Administrator",
  "module": "Church Customizations",
  "name": "Tools",
@@ -321,7 +321,7 @@
  "quick_lists": [],
  "restrict_to_domain": "",
  "roles": [],
- "sequence_id": 19.0,
+ "sequence_id": 26.0,
  "shortcuts": [
   {
    "color": "Grey",
