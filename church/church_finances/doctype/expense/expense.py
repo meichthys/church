@@ -28,7 +28,7 @@ class Expense(Document):
 				updated_transactions.append(transaction)
 			else:
 				frappe.msgprint(
-					f"💰 Associated {get_link_to_form('Fund', fund_name)} fund has been increased by ${-transaction.amount}"
+					f"💰 Associated {get_link_to_form('Fund', fund.fund)} fund has been increased by ${-transaction.amount}"
 				)
 		fund.transactions = updated_transactions
 		fund.save(ignore_permissions=True)
@@ -57,5 +57,5 @@ class Expense(Document):
 		fund.save(ignore_permissions=True)
 		fund.reload()
 		frappe.msgprint(
-			f"💸 Associated {get_link_to_form('Fund', fund_name)} fund has been reduced by ${self.amount}"
+			f"💸 Associated {get_link_to_form('Fund', fund.fund)} fund has been reduced by ${self.amount}"
 		)
